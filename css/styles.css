@@ -4,7 +4,7 @@
    
 }
 
-#button-div{
+#button-div {
     display: flex;
     align-self: stretch;
     flex-direction: row;
@@ -12,3 +12,12 @@
     margin-top:500px;
 }
 
+#closed-door {
+    display: inline;
+    position: absolute;
+}
+
+#open-door {
+    position: absolute;
+    display: none;
+}
