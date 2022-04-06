@@ -1,8 +1,7 @@
 .flex-container {
     display: flex;
     align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
+   
 }
 
 #button-div{
@@ -10,4 +9,6 @@
     align-self: stretch;
     flex-direction: row;
     justify-content: center;
+    margin-top:40em;
 }
+
