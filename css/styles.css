@@ -186,3 +186,10 @@ body {
     position: relative;
     display: none;
 }
+
+#map{
+  border: 2px, solid, black;
+  width: 80px;
+  height: 80px;
+  color: yellow;
+}
