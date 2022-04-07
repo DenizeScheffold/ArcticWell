@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Armata&family=K2D:wght@700&display=swap');
 /* START OF RESET-CODE */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -131,8 +132,6 @@ table {
 }
 
 /* END OF RESET-CODE */
-
-@import url('https://fonts.googleapis.com/css2?family=Armata&family=K2D:wght@700&display=swap');
 
 body {
     flex-grow: 0;
