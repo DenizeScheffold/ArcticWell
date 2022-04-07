@@ -1,23 +1,29 @@
 .flex-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
    
 }
 
 #button-div {
     display: flex;
-    align-self: stretch;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin-top:500px;
+}
+
+.door {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #closed-door {
     display: inline;
-    position: absolute;
+    position: relative;
 }
 
 #open-door {
-    position: absolute;
+    position: relative;
     display: none;
 }
