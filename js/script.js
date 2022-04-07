@@ -1,4 +1,5 @@
-var landingPageButton = document.getElementById("landing-page-button");
+// var landingPageButton = document.getElementById("landing-page-button");
+var landingPageButton = document.getElementById("rectangle-81");
 var openDoorImg = document.getElementById("open-door");
 var closedDoorImg = document.getElementById("closed-door");
 
