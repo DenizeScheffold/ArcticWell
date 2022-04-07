@@ -26,6 +26,29 @@
     
     <h1>Find your Arctic Well</h1>
 
+<button onclick="getLocation()">Get your posistion</button>
+
+<p id="location"></p>
+
+<script>
+var x = document.getElementById("location");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+
     <div id="googleMap" style="width:100%;height:400px;"></div>
 
     <script>
