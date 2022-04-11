@@ -26,23 +26,54 @@
     
     <h1>Find your Arctic Well</h1>
 
-<button onclick="getLocation()">Get your posistion</button>
+<button onclick="getLocation()">Get your position</button>
 
 <p id="location"></p>
 
-
-    <div id="googleMap" style="width:100%;height:400px;"></div>
+    <div id="map" style="width:100%;height:400px;"></div>
 
 </div>
+
+<!-- https://softauthor.com/show-user-location-on-google-maps-using-javascript/ -->
+<script>
+navigator.geolocation.getCurrentPosition(
+   function (position) {
+      initMap(position.coords.latitude, position.coords.longitude)
+   },
+   function errorCallback(error) {
+      console.log(error)
+   }
+);
+
+function initMap(lat, lng) {
+var myLatLng = {
+   lat,
+   lng
+};
+
+var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: myLatLng
+   });
+
+  //  var marker = new google.maps.Marker({
+  //     position: myLatLng,
+  //     map: map,
+  //  });
+  }
+
+
+  </script>
+<!-- 
 <script>
   function myMap() {
   var mapProp= {
-    center:new google.maps.LatLng(59.305998776,18.020166586),
+    center:new google.maps.LatLng(57.305998776,18.020166586),
     zoom:15,
   };
-  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var map = new google.maps.Map(document.getElementById("map"),mapProp);
   }
-  </script>
+  </script> -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX7mdZbBYLkHDuDERyWCxBju2EpZGJ3Ac&callback=myMap"></script>
 
 <script src="./js/map.js"></script>
