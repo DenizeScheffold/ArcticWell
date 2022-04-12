@@ -166,7 +166,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    margin: auto;
 }
+
+
+
 
   .Rectangle-81 {
     margin-top: 16px;
@@ -191,6 +196,8 @@ body {
   letter-spacing: normal;
   text-align: center;
   color: #000;
+  
+    
 }
 
 
@@ -213,7 +220,16 @@ height: 500px;
 
 }
 
-#open-door {
-  position: relative;
-  display: none;
+.container-sm {
+  margin: auto;
 }
+
+
+
+
+
+
+
+
+
+
