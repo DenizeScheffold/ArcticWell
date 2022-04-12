@@ -180,12 +180,10 @@ body {
   }
 
 
-.text {
-  width: 304px;
-  height: 32px;
+.header-map {
   font-family: 'Armata', sans-serif;
   font-family: 'K2D', sans-serif;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;

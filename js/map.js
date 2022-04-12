@@ -15,15 +15,16 @@ function initMap(lat, lng) {
     lng,
   };
 
-   // var marker = new google.maps.Marker({
-   //    position: myLatLng,
-   //    map: map,
-   // });
-
+  
   var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
     center: myLatLng,
     mapTypeControl: false,
   });
+
+   var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+   });
 
 }
