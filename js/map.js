@@ -30,4 +30,18 @@ var map = new google.maps.Map(document.getElementById('map'), {
       mapTypeControl: false
       
   });
+
+  /*
+
+  <!-- 
+<script>
+  function myMap() {
+  var mapProp= {
+    center:new google.maps.LatLng(57.305998776,18.020166586),
+    zoom:15,
+  };
+  var map = new google.maps.Map(document.getElementById("map"),mapProp);
+  }
+  </script> --> 
+  */
 }
