@@ -42,4 +42,11 @@ function initMap(lat, lng) {
     icon: iconSnowflake,
   });
 
+  var a =  new google.maps.LatLng(59.31659359085035, 18.041815542691243);
+  var b = new google.maps.LatLng(59.31686639105647, 18.033475947597925);
+  
+//returns distance between
+  console.log(google.maps.geometry.spherical.computeDistanceBetween(a, b) + " meters");
+  
+
 }
