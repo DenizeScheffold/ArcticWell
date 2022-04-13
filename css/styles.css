@@ -138,23 +138,7 @@ body {
     background-color: #8ccbc7;
   }
 
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-  .Rectangle-81 {
-    margin-top: 16px;
-    width: 320px;
-    height: 64px;
-    padding: 14px 8px 18px;
-    border-radius: 14px;
-    border: solid 4px #000;
-    background-color: #feaa5d;
-    text-align: center;
-  }
+  /************CLASS*********************/
 
 .BUTTON-TEXT {
     width: 304px;
@@ -177,12 +161,78 @@ body {
     justify-content: center;
 }
 
-#closed-door {
-    display: inline;
-    position: relative;
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
 }
 
-#open-door {
-    position: relative;
-    display: none;
+.Rectangle-81 {
+    margin-top: 16px;
+    width: 320px;
+    height: 64px;
+    padding: 14px 8px 18px;
+    border-radius: 14px;
+    border: solid 4px #000;
+    background-color: #feaa5d;
+    text-align: center;
+  }
+
+
+.header-map {
+  font-family: 'Armata', sans-serif;
+  font-family: 'K2D', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  padding-bottom: 10px;
+  padding-top: 50px;
 }
+
+
+/****************** ID*****************************/
+
+.frame {
+  width: 520px;
+  height: 520px;
+  background: rgb(0, 0, 0);
+  margin: auto;
+  padding: 10px 10px;
+}
+
+#container-map{
+  color: red;
+  border: 2px, solid, black;
+}
+
+#closed-door {
+  display: inline;
+  position: relative;
+}
+
+#map{
+border: 2px, solid, black;
+width: 500px;
+height: 500px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
