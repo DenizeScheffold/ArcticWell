@@ -21,16 +21,15 @@ function initMap(lat, lng) {
     mapTypeControl: false,
   });
 
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-  });
+   var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+   });
+  
+  const iconSnowflake = "../images/SNOWFLAKE.png";
 
-  const iconSnowflake =
-    "https://user-images.githubusercontent.com/73476335/162979978-6d7678b6-bd6f-44b0-9b46-33b0fd578008.png";
-
-  var markerA = new google.maps.Marker({
-    position: { lat: 59.31659359085035, lng: 18.041815542691243 },
+   var markerA = new google.maps.Marker({
+    position: {lat: 59.31659359085035, lng: 18.041815542691243},
     map: map,
     title: "Artic Well",
     icon: iconSnowflake,
