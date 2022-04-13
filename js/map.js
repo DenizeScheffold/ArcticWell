@@ -27,6 +27,7 @@ function initMap(lat, lng) {
    });
   
   const iconSnowflake = "../images/SNOWFLAKE.png";
+  const biggestIconSnowflake = "../images/SNOWFLAKE@3x.png";
 
    var markerA = new google.maps.Marker({
     position: {lat: 59.31659359085035, lng: 18.041815542691243},
@@ -42,7 +43,8 @@ function initMap(lat, lng) {
     icon: iconSnowflake,
   });
 
-  const myPosition = myLatLng;
+
+  //calculate nearest marker
   const markers = [
     {
       name: "first marker",
@@ -88,5 +90,15 @@ function initMap(lat, lng) {
 
   const closestMarker = markersByDistance[0];
 
-  console.log(closestMarker);
+  console.log("closest marker is: ", closestMarker);
+
+  //not working - should place new icon for closest marker...:
+  // var setIconForClosestMarker = new google.maps.Marker({
+  //   position: closestMarker.position,
+  //   map: map,
+  //   title: "Nearest Artic Well",
+  //   icon: biggestIconSnowflake,
+  // });
+  // setIconForClosestMarker.setMap(map);
+  
 }
