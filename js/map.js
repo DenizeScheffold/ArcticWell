@@ -26,7 +26,8 @@ function initMap(lat, lng) {
       map: map,
    });
   
-   const iconSnowflake = "https://user-images.githubusercontent.com/73476335/162979978-6d7678b6-bd6f-44b0-9b46-33b0fd578008.png";
+  const iconSnowflake = "../images/SNOWFLAKE.png";
+  const biggestIconSnowflake = "../images/SNOWFLAKE@3x.png";
 
    var markerA = new google.maps.Marker({
     position: {lat: 59.31659359085035, lng: 18.041815542691243},
@@ -34,19 +35,70 @@ function initMap(lat, lng) {
     title: "Artic Well",
     icon: iconSnowflake,
   });
- 
+
   var markerB = new google.maps.Marker({
-    position: {lat: 59.31686639105647, lng: 18.033475947597925},
+    position: { lat: 59.31686639105647, lng: 18.033475947597925 },
     map: map,
     title: "Artic Well",
     icon: iconSnowflake,
   });
 
-  var a =  new google.maps.LatLng(59.31659359085035, 18.041815542691243);
-  var b = new google.maps.LatLng(59.31686639105647, 18.033475947597925);
-  
-//returns distance between
-  console.log(google.maps.geometry.spherical.computeDistanceBetween(a, b) + " meters");
-  
 
+  //calculate nearest marker
+  const markers = [
+    {
+      name: "first marker",
+
+      position: new google.maps.LatLng(59.31659359085035, 18.041815542691243),
+
+      distance: google.maps.geometry.spherical.computeDistanceBetween(
+        myLatLng,
+        new google.maps.LatLng(59.31659359085035, 18.041815542691243)
+      ),
+    },
+
+    {
+      name: "second marker",
+
+      position: new google.maps.LatLng(59.31686639105647, 18.033475947597925),
+
+      distance: google.maps.geometry.spherical.computeDistanceBetween(
+        myLatLng,
+        new google.maps.LatLng(59.31686639105647, 18.033475947597925)
+      ),
+    },
+  ];
+
+  console.log(markers);
+
+  const markersWithDistance = markers.map((marker) => {
+    const distance = google.maps.geometry.spherical.computeDistanceBetween(
+      myLatLng,
+      marker.position
+    );
+
+    return { marker, distance: distance };
+  });
+
+  console.log(markersWithDistance);
+
+  const markersByDistance = markersWithDistance.sort((a, b) => {
+    return a.distance - b.distance;
+  });
+
+  console.log(markersByDistance);
+
+  const closestMarker = markersByDistance[0];
+
+  console.log("closest marker is: ", closestMarker);
+
+  //not working - should place new icon for closest marker...:
+  // var setIconForClosestMarker = new google.maps.Marker({
+  //   position: closestMarker.position,
+  //   map: map,
+  //   title: "Nearest Artic Well",
+  //   icon: biggestIconSnowflake,
+  // });
+  // setIconForClosestMarker.setMap(map);
+  
 }

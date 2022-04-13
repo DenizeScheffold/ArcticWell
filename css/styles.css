@@ -203,6 +203,14 @@ body {
 
 /****************** ID*****************************/
 
+.frame {
+  width: 520px;
+  height: 520px;
+  background: rgb(0, 0, 0);
+  margin: auto;
+  padding: 10px 10px;
+}
+
 #container-map{
   color: red;
   border: 2px, solid, black;
