@@ -26,7 +26,7 @@ function initMap(lat, lng) {
       map: map,
    });
   
-   const iconSnowflake = "https://user-images.githubusercontent.com/73476335/162979978-6d7678b6-bd6f-44b0-9b46-33b0fd578008.png";
+  const iconSnowflake = "../images/SNOWFLAKE.png";
 
    var markerA = new google.maps.Marker({
     position: {lat: 59.31659359085035, lng: 18.041815542691243},
