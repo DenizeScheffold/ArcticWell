@@ -1,0 +1,15 @@
+/* Currently not used, but as soon as the React/Vite refactor we will store as many values here as is practical */
+
+
+/* @TODO: add variables for margins and paddings for both mobile and desktop view */
+/* @TODO: add spacing and other font-related styling here */
+:root {
+    --brand-white: #FFFFFF;
+    --brand-navy-dark: #374146;
+    --brand-dark-black: #000000;
+    --brand-sunny-yellow: #F6EE20;
+    --brand-dark-blue: #001E4E;
+    --brand-orange: #EA732E;
+    --brand-cyan: #4BDAF0;
+    --brand-middle-blue: #00ADE4;
+}
