@@ -1,7 +1,11 @@
-/* Currently not used, but as soon as the React/Vite refactor we will store as many values here as is practical */
-@import url('https://fonts.googleapis.com/css2?family=Armata&family=K2D:wght@700&display=swap');
+/* 
+Alternatively the fonts could be imported in the <head> of every relevant html file with the code below:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=K2D:wght@300;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">  */
 
-/* @TODO: add spacing and other font-related styling here */
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@300;700&family=Karla:wght@400;700&display=swap');
+
 :root {
     --brand-white: #FFFFFF;
     --brand-navy-dark: #374146;
@@ -23,28 +27,24 @@
     --mobile-heading-root-font-size: 13px;
     --desktop-heading-root-font-size: 16px;
     
-    /* should possibly only be K2D */
-    --heading-1-font-family: 'Armata', sans-serif, 'K2D', sans-serif;
+    --heading-1-font-family: 'K2D', sans-serif;
     --heading-1-font-weight: bold;
     /* ~48px / 3rem */
     --heading-1-font-size: 3rem; 
     /* ~56px / 3.5rem */
     --heading-1-line-height: 3.5rem;
 
-    /* should possibly only be K2D */
-    --heading-2-font-family: 'Armata', sans-serif, 'K2D', sans-serif;
+    --heading-2-font-family: 'K2D', sans-serif;
     --heading-2-font-weight: bold;
     --heading-2-font-size: 2.5rem; 
     --heading-2-line-height: 3rem;
 
-    /* should possibly only be K2D */
-    --heading-3-font-family: 'Armata', sans-serif, 'K2D', sans-serif;
+    --heading-3-font-family: 'K2D', sans-serif;
     --heading-3-font-weight: bold;
     --heading-3-font-size: 2rem; 
     --heading-3-line-height: 2.5rem;
 
-    /* should possibly only be K2D */
-    --heading-4-font-family: 'Armata', sans-serif, 'K2D', sans-serif;
+    --heading-4-font-family: 'K2D', sans-serif;
     --heading-4-font-weight: bold;
     --heading-4-font-size: 1.5rem; 
     --heading-4-line-height: 2rem;
@@ -65,7 +65,6 @@
     --heading-mobile-1-font-size: 3rem;
     --heading-mobile-1-line-height: 3.5rem;
 
-    /* @TODO import Karla to make this work */
     --heading-mobile-2-font-family: 'Karla', sans-serif;
     --heading-mobile-2-font-weight: bold;
     --heading-mobile-2-font-size: 2.5rem;
@@ -87,7 +86,6 @@
     --body-1-line-height: 1.5rem;
 
     --body-1-bold-font-family: 'Karla', sans-serif;
-    /* Style guide says "Regular / 500", unsure if typo */
     --body-1-bold-font-weight: bold;
     --body-1-bold-font-size: 1rem;
     --body-1-bold-line-height: 1.5rem;
@@ -112,32 +110,28 @@
     --body-3-bold-font-size: 0.625rem;
     --body-3-bold-line-height: 1rem;
 
-    /* @TODO import Helvetica Neue */
-    --label-regular-font-family: 'Helvetica Neue';
+    --label-regular-font-family: 'Karla', sans-serif;
     --label-regular-font-weight: normal;
     --label-regular-font-size: 0.8rem;
     --label-regular-line-height: 1.5rem;
 
-    --label-bold-font-family: 'Helvetica Neue';
+    --label-bold-font-family: 'Karla', sans-serif;
     --label-bold-font-weight: bold;
     --label-bold-font-size: 0.8rem;
     --label-bold-line-height: 1.5rem;
 
-    --label-large-regular-font-family: 'Helvetica Neue';
+    --label-large-regular-font-family: 'Karla', sans-serif;
     --label-large-regular-font-weight: normal;
     --label-large-regular-font-size: 1rem;
     --label-large-regular-line-height: 1.75rem;
 
-    --label-large-bold-font-family: 'Helvetica Neue';
+    --label-large-bold-font-family: 'Karla', sans-serif;
     --label-large-bold-font-weight: bold;
     --label-large-bold-font-size: 1rem;
     --label-large-bold-line-height: 1.75rem;
 
-    --label-button-regular-font-family: 'Helvetica Neue';
+    --label-button-regular-font-family: 'Karla', sans-serif;
     --label-button-regular-font-weight: normal;
     --label-button-regular-font-size: 1rem;
     --label-button-regular-line-height: 1rem;
-
-
-
 }
