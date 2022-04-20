@@ -96,4 +96,48 @@
     --body-2-font-weight: normal;
     --body-2-font-size: 0.8rem;
     --body-2-line-height: 1.25rem;
+
+    --body-2-bold-font-family: 'Karla', sans-serif;
+    --body-2-bold-font-weight: bold;
+    --body-2-bold-font-size: 0.8rem;
+    --body-2-bold-line-height: 1.25rem;
+
+    --body-3-font-family: 'Karla', sans-serif;
+    --body-3-font-weight: normal;
+    --body-3-font-size: 0.625rem;
+    --body-3-line-height: 1rem;
+
+    --body-3-bold-font-family: 'Karla', sans-serif;
+    --body-3-bold-font-weight: bold;
+    --body-3-bold-font-size: 0.625rem;
+    --body-3-bold-line-height: 1rem;
+
+    /* @TODO import Helvetica Neue */
+    --label-regular-font-family: 'Helvetica Neue';
+    --label-regular-font-weight: normal;
+    --label-regular-font-size: 0.8rem;
+    --label-regular-line-height: 1.5rem;
+
+    --label-bold-font-family: 'Helvetica Neue';
+    --label-bold-font-weight: bold;
+    --label-bold-font-size: 0.8rem;
+    --label-bold-line-height: 1.5rem;
+
+    --label-large-regular-font-family: 'Helvetica Neue';
+    --label-large-regular-font-weight: normal;
+    --label-large-regular-font-size: 1rem;
+    --label-large-regular-line-height: 1.75rem;
+
+    --label-large-bold-font-family: 'Helvetica Neue';
+    --label-large-bold-font-weight: bold;
+    --label-large-bold-font-size: 1rem;
+    --label-large-bold-line-height: 1.75rem;
+
+    --label-button-regular-font-family: 'Helvetica Neue';
+    --label-button-regular-font-weight: normal;
+    --label-button-regular-font-size: 1rem;
+    --label-button-regular-line-height: 1rem;
+
+
+
 }
