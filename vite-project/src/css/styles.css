@@ -183,18 +183,15 @@ body {
 
 
 .header-map {
-  font-family: 'Armata', sans-serif;
-  font-family: 'K2D', sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
+  font-family: var(--heading-1-font-family);
+  font-size: var(--heading-1-font-size);
+  font-weight: var(--heading-1-font-weight);
+  line-height: var(--heading-1-line-height);
   text-align: center;
-  color: #000;
-  padding-bottom: 10px;
-  padding-top: 50px;
+  color: var(--brand-dark-black);
+  /* Not sure where these hardcoded values came from. Might remove them later. */
+  padding-bottom: 8px;
+  padding-top: 48px;
 }
 
 
@@ -209,7 +206,7 @@ body {
 } */
 
 #container-map{
-  border: 2px, solid, black;
+  border: 2px, solid, var(--brand-dark-black);
 }
 
 #closed-door {
@@ -218,8 +215,9 @@ body {
 }
 
 #map{
-width: 20em;
-height: 20em;
+width: var(--mobile-total-width);
+height: 30rem;
+margin: var(--mobile-margin);
 }
 
 
