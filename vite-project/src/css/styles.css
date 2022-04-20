@@ -135,11 +135,13 @@ table {
 
 body {
     flex-grow: 0;
+    /* background-color: var(--brand-cyan); */
     background-color: #8ccbc7;
   }
 
   /************CLASS*********************/
 
+  /* @TODO OUTDATED! This section needs updating with values from variables.css */
 .BUTTON-TEXT {
     width: 304px;
     height: 32px;
@@ -161,6 +163,14 @@ body {
     justify-content: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: var(--mobile-margin);
+}
+
+/* @TODO (possibly) OUTDATED! This section (probably) needs updating with values from variables.css */
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -170,6 +180,7 @@ body {
     margin: auto;
 }
 
+/* @TODO OUTDATED! This section needs updating with values from variables.css */
 .Rectangle-81 {
     margin-top: 16px;
     width: 320px;
@@ -189,7 +200,7 @@ body {
   line-height: var(--heading-1-line-height);
   text-align: center;
   color: var(--brand-dark-black);
-  /* Not sure where these hardcoded values came from. Might remove them later. */
+  /* Not sure where these hardcoded values came from. Will remove them later. */
   padding-bottom: 8px;
   padding-top: 48px;
 }
