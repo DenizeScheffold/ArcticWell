@@ -1,7 +1,6 @@
 /* Currently not used, but as soon as the React/Vite refactor we will store as many values here as is practical */
+@import url('https://fonts.googleapis.com/css2?family=Armata&family=K2D:wght@700&display=swap');
 
-
-/* @TODO: add variables for margins and paddings for both mobile and desktop view */
 /* @TODO: add spacing and other font-related styling here */
 :root {
     --brand-white: #FFFFFF;
@@ -20,4 +19,44 @@
     --desktop-screen-width: 1440px;
     --desktop-total-width: 1312px;
     --desktop-margin: 64px;
+
+    --mobile-heading-root-font-size: 13px;
+    --desktop-heading-root-font-size: 16px;
+    
+    /* should possibly only be K2D */
+    --heading-1-font-family: 'Armata', sans-serif, 'K2D', sans-serif;
+    --heading-1-font-weight: bold;
+    /* ~48px / 3rem */
+    --heading-1-font-size: 3rem; 
+    /* ~56px / 3.5rem */
+    --heading-1-line-height: 3.5rem;
+
+    /* should possibly only be K2D */
+    --heading-2-font-family: 'Armata', sans-serif, 'K2D', sans-serif;
+    --heading-2-font-weight: bold;
+    --heading-2-font-size: 2.5rem; 
+    --heading-2-line-height: 3rem;
+
+    /* should possibly only be K2D */
+    --heading-3-font-family: 'Armata', sans-serif, 'K2D', sans-serif;
+    --heading-3-font-weight: bold;
+    --heading-3-font-size: 2rem; 
+    --heading-3-line-height: 2.5rem;
+
+    /* should possibly only be K2D */
+    --heading-4-font-family: 'Armata', sans-serif, 'K2D', sans-serif;
+    --heading-4-font-weight: bold;
+    --heading-4-font-size: 1.5rem; 
+    --heading-4-line-height: 2rem;
+
+    /* @TODO unsure if the font weight applies properly: please test it */
+    --sub-heading-3-font-family: 'K2D', sans-serif;
+    --sub-heading-3-font-weight: lighter;
+    --sub-heading-3-font-size: 2rem;
+    --sub-heading-3-line-height: 2.5rem;
+
+    --sub-heading-4-font-family: 'K2D', sans-serif;
+    --sub-heading-4-font-weight: lighter;
+    --sub-heading-4-font-size: 1.5rem;
+    --sub-heading-4-line-height: 2rem;
 }
