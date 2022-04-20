@@ -199,17 +199,16 @@ body {
 
 
 /****************** ID*****************************/
-
+/* 
 .frame {
-  width: 520px;
-  height: 520px;
+  width: 21rem;
+  height: 21rem;
   background: rgb(0, 0, 0);
   margin: auto;
   padding: 10px 10px;
-}
+} */
 
 #container-map{
-  color: red;
   border: 2px, solid, black;
 }
 
@@ -219,9 +218,8 @@ body {
 }
 
 #map{
-border: 2px, solid, black;
-width: 500px;
-height: 500px;
+width: 20rem;
+height: 20rem;
 
 }
 
