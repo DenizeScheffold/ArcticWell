@@ -12,4 +12,12 @@
     --brand-orange: #EA732E;
     --brand-cyan: #4BDAF0;
     --brand-middle-blue: #00ADE4;
+
+    --mobile-screen-width: 376px;
+    --mobile-total-width: 344px;
+    --mobile-margin: 16px;
+
+    --desktop-screen-width: 1440px;
+    --desktop-total-width: 1312px;
+    --desktop-margin: 64px;
 }
