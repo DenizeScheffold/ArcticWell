@@ -26,49 +26,71 @@ function initMap(lat, lng) {
       map: map,
    });
   
-  const iconSnowflake = "../src/images/SNOWFLAKE.png";
+  const boxMarker = "../src/images/newmark.png";
   const biggestIconSnowflake = "../src/images/SNOWFLAKE@3x.png";
 
    var markerA = new google.maps.Marker({
     position: {lat: 59.31659359085035, lng: 18.041815542691243},
     map: map,
     title: "Artic Well",
-    icon: iconSnowflake,
+    icon: boxMarker,
   });
 
   var markerB = new google.maps.Marker({
     position: { lat: 59.31686639105647, lng: 18.033475947597925 },
     map: map,
     title: "Artic Well",
-    icon: iconSnowflake,
+    icon: boxMarker,
   });
 
   var markerC = new google.maps.Marker({
     position: { lat: 59.31828843784773, lng: 18.064145515875364 },
     map: map,
     title: "Artic Well",
-    icon: iconSnowflake,
+    icon: boxMarker,
   });
 
   var markerD = new google.maps.Marker({
     position: { lat: 59.32271988404267, lng: 18.072194830717475 },
     map: map,
     title: "Artic Well",
-    icon: iconSnowflake,
+    icon: boxMarker,
   });
 
   var markerE = new google.maps.Marker({
     position: { lat: 59.33153683040702, lng: 18.07071805585366 },
     map: map,
     title: "Artic Well",
-    icon: iconSnowflake,
+    icon: boxMarker,
   });
 
   var markerF = new google.maps.Marker({
     position: { lat: 59.33501439604125, lng: 18.064538246389937 },
     map: map,
     title: "Artic Well",
-    icon: iconSnowflake,
+    icon: boxMarker,
+  });
+
+  var markerG = new google.maps.Marker({
+    position: { lat: 59.34101095207125, lng: 18.07229127643133 },
+    map: map,
+    title: "Artic Well",
+    icon: boxMarker,
+  });
+
+  var markerH = new google.maps.Marker({
+    position: { lat: 59.34033021608915, lng: 18.042788762900678 },
+    map: map,
+    title: "Artic Well",
+    icon: boxMarker,
+  });
+
+
+  var markerI = new google.maps.Marker({
+    position: { lat: 59.32890562453, lng: 18.02405488563151 },
+    map: map,
+    title: "Artic Well",
+    icon: boxMarker,
   });
 
   calculateNearestBooth(myLatLng);
@@ -137,11 +159,44 @@ function calculateNearestBooth(myLatLng){
   {
     name: "Sergels torg",
 
-    position: new google.maps.LatLng(  59.33501439604125, 18.064538246389937),
+    position: new google.maps.LatLng(59.33501439604125, 18.064538246389937),
 
     distance: google.maps.geometry.spherical.computeDistanceBetween(
       myLatLng,
-      new google.maps.LatLng(  59.33501439604125, 18.064538246389937)
+      new google.maps.LatLng(59.33501439604125, 18.064538246389937)
+    ),
+  },
+
+  {
+    name: "Karlavägen 32",
+
+    position: new google.maps.LatLng(59.34101095207125, 18.07229127643133),
+
+    distance: google.maps.geometry.spherical.computeDistanceBetween(
+      myLatLng,
+      new google.maps.LatLng(59.34101095207125, 18.07229127643133)
+    ),
+  },
+
+  {
+    name: "Dalagatan 11C",
+
+    position: new google.maps.LatLng( 59.34033021608915, 18.042788762900678),
+
+    distance: google.maps.geometry.spherical.computeDistanceBetween(
+      myLatLng,
+      new google.maps.LatLng( 59.34033021608915, 18.042788762900678)
+    ),
+  },
+
+  {
+    name: "Smedsuddsvägen 6",
+
+    position: new google.maps.LatLng( 59.32901508188088, 18.02371156289466),
+
+    distance: google.maps.geometry.spherical.computeDistanceBetween(
+      myLatLng,
+      new google.maps.LatLng( 59.32901508188088, 18.02371156289466)
     ),
   },
   ];
@@ -169,7 +224,12 @@ function calculateNearestBooth(myLatLng){
 
   console.log("closest marker is: ", closestMarker, "the name of the marker is: ", closestMarker.marker.name);
 
-  //document.write(closestMarker.marker.name);
+
+  //code that prints out the nearest booth
+  var nearest = document.createElement("nearest");                                            // Creates a new <div> node
+  nearest.textContent = "Your nearest booth is on:" + " " + (closestMarker.marker.name);  // Sets the text content
+  document.body.appendChild(nearest);                                              // Adds to the document
+
 
  //   //not working - should place new icon for closest marker...:
    var setIcon = new google.maps.Marker({
@@ -178,6 +238,6 @@ function calculateNearestBooth(myLatLng){
      title: "Nearest Artic Well",
      icon: biggestIconSnowflake,
    });
-   setIcon.setMap(map);
 
+   setIcon.setMap(map);
 }

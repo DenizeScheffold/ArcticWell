@@ -136,6 +136,16 @@ table {
 body {
     flex-grow: 0;
     background-color: #8ccbc7;
+    font-family: 'Armata', sans-serif;
+    font-family: 'K2D', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
   }
 
   /************CLASS*********************/
@@ -171,16 +181,15 @@ body {
 }
 
 .Rectangle-81 {
-    margin-top: 16px;
-    width: 320px;
-    height: 64px;
-    padding: 14px 8px 18px;
-    border-radius: 14px;
-    border: solid 4px #000;
-    background-color: #feaa5d;
-    text-align: center;
-  }
-
+  margin-top: 16px;
+  width: 320px;
+  height: 64px;
+  padding: 14px 8px 18px;
+  border-radius: 14px;
+  border: solid 4px #000;
+  background-color: #feaa5d;
+  text-align: center;
+}
 
 .header-map {
   font-family: 'Armata', sans-serif;
@@ -218,19 +227,10 @@ body {
 }
 
 #map{
-width: 20rem;
-height: 20rem;
-
+width: 30rem;
+height: 30rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+#nearest{
+  padding-top: 15px;
+}
