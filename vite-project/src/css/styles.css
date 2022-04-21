@@ -137,16 +137,6 @@ body {
     flex-grow: 0;
     /* background-color: var(--brand-cyan); */
     background-color: #8ccbc7;
-    font-family: 'Armata', sans-serif;
-    font-family: 'K2D', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
   }
 
   /************CLASS*********************/
@@ -240,6 +230,12 @@ height: 30rem;
 margin: var(--mobile-margin);
 }
 
-#nearest{
-  padding-top: 15px;
+#nearest {
+  font-family: var(--sub-heading-4-font-family);
+  font-size: var(--sub-heading-4-font-size);
+  font-weight: var(--sub-heading-4-font-weight);
+  line-height: var(--sub-heading-4-line-height);
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--brand-dark-black);
 }
