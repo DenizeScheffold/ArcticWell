@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Armata&family=K2D:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@300;700&family=Karla:wght@400;700&display=swap');
 /* START OF RESET-CODE */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -135,6 +135,7 @@ table {
 
 body {
     flex-grow: 0;
+    /* background-color: var(--brand-cyan); */
     background-color: #8ccbc7;
     font-family: 'Armata', sans-serif;
     font-family: 'K2D', sans-serif;
@@ -150,6 +151,7 @@ body {
 
   /************CLASS*********************/
 
+  /* @TODO OUTDATED! This section needs updating with values from variables.css */
 .BUTTON-TEXT {
     width: 304px;
     height: 32px;
@@ -171,6 +173,14 @@ body {
     justify-content: center;
 }
 
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: var(--mobile-margin);
+} */
+
+/* @TODO (possibly) OUTDATED! This section (probably) needs updating with values from variables.css */
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -180,6 +190,7 @@ body {
     margin: auto;
 }
 
+/* @TODO OUTDATED! This section needs updating with values from variables.css */
 .Rectangle-81 {
   margin-top: 16px;
   width: 320px;
@@ -192,18 +203,15 @@ body {
 }
 
 .header-map {
-  font-family: 'Armata', sans-serif;
-  font-family: 'K2D', sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
+  font-family: var(--heading-1-font-family);
+  font-size: var(--heading-1-font-size);
+  font-weight: var(--heading-1-font-weight);
+  line-height: var(--heading-1-line-height);
   text-align: center;
-  color: #000;
-  padding-bottom: 10px;
-  padding-top: 50px;
+  color: var(--brand-dark-black);
+  /* Not sure where these hardcoded values came from. Will remove them later. */
+  padding-bottom: 8px;
+  padding-top: 48px;
 }
 
 
@@ -218,7 +226,7 @@ body {
 } */
 
 #container-map{
-  border: 2px, solid, black;
+  border: 2px, solid, var(--brand-dark-black);
 }
 
 #closed-door {
@@ -227,8 +235,9 @@ body {
 }
 
 #map{
-width: 30rem;
+width: var(--mobile-total-width);
 height: 30rem;
+margin: var(--mobile-margin);
 }
 
 #nearest{
