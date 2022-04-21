@@ -225,7 +225,7 @@ function calculateNearestBooth(myLatLng){
 
 
   //code that prints out the nearest booth
-  var nearest = document.createElement("nearest");                                            // Creates a new <div> node
+  var nearest = document.getElementById("nearest");                                            // Creates a new <div> node
   nearest.textContent = "Your nearest booth is on:" + " " + (closestMarker.marker.name);  // Sets the text content
   document.body.appendChild(nearest);                                              // Adds to the document
 
