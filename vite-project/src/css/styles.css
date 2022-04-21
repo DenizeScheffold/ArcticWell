@@ -135,8 +135,10 @@ table {
 
 body {
     flex-grow: 0;
+    /* background-color: var(--brand-middle-blue); */
+    background-color: var(--brand-baby-blue);
     /* background-color: var(--brand-cyan); */
-    background-color: #8ccbc7;
+    /* background-color: #8ccbc7; */
   }
 
   /************CLASS*********************/
