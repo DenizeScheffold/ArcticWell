@@ -26,8 +26,7 @@ function initMap(lat, lng) {
       map: map,
    });
   
-  const boxMarker = "../src/images/newmark.png";
-  const biggestIconSnowflake = "../src/images/SNOWFLAKE@3x.png";
+  const boxMarker = "./src/images/newmark.png";
 
    var markerA = new google.maps.Marker({
     position: {lat: 59.31659359085035, lng: 18.041815542691243},
