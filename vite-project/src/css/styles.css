@@ -163,12 +163,12 @@ body {
     justify-content: center;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: var(--mobile-margin);
-}
+} */
 
 /* @TODO (possibly) OUTDATED! This section (probably) needs updating with values from variables.css */
 .flex-container {
