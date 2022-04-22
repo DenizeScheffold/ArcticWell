@@ -135,10 +135,7 @@ table {
 
 body {
     flex-grow: 0;
-    /* background-color: var(--brand-middle-blue); */
     background-color: var(--brand-baby-blue);
-    /* background-color: var(--brand-cyan); */
-    /* background-color: #8ccbc7; */
   }
 
   /************CLASS*********************/
@@ -164,13 +161,6 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-
-/* .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: var(--mobile-margin);
-} */
 
 /* @TODO (possibly) OUTDATED! This section (probably) needs updating with values from variables.css */
 .flex-container {
@@ -208,14 +198,6 @@ body {
 
 
 /****************** ID*****************************/
-/* 
-.frame {
-  width: 21rem;
-  height: 21rem;
-  background: rgb(0, 0, 0);
-  margin: auto;
-  padding: 10px 10px;
-} */
 
 #container-map{
   border: 2px, solid, var(--brand-dark-black);
