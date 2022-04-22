@@ -195,10 +195,10 @@ body {
 }
 
 .header-map {
-  font-family: var(--heading-2-font-family);
-  font-size: var(--heading-2-font-size);
-  font-weight: var(--heading-2-font-weight);
-  line-height: var(--heading-2-line-height);
+  font-family: var(--heading-3-font-family);
+  font-size: var(--heading-3-font-size);
+  font-weight: var(--heading-3-font-weight);
+  line-height: var(--heading-3-line-height);
   text-align: center;
   color: var(--brand-dark-black);
   /* Not sure where these hardcoded values came from. Will remove them later. */
@@ -228,7 +228,7 @@ body {
 
 #map{
 width: var(--mobile-total-width);
-height: 30rem;
+height: 34rem;
 margin: var(--mobile-margin);
 }
 
