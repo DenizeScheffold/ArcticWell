@@ -195,10 +195,10 @@ body {
 }
 
 .header-map {
-  font-family: var(--heading-1-font-family);
-  font-size: var(--heading-1-font-size);
-  font-weight: var(--heading-1-font-weight);
-  line-height: var(--heading-1-line-height);
+  font-family: var(--heading-2-font-family);
+  font-size: var(--heading-2-font-size);
+  font-weight: var(--heading-2-font-weight);
+  line-height: var(--heading-2-line-height);
   text-align: center;
   color: var(--brand-dark-black);
   /* Not sure where these hardcoded values came from. Will remove them later. */

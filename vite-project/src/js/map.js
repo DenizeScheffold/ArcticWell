@@ -226,17 +226,17 @@ function calculateNearestBooth(myLatLng){
 
   //code that prints out the nearest booth
   var nearest = document.getElementById("nearest");                                            // Creates a new <div> node
-  nearest.textContent = "Your nearest booth is on:" + " " + (closestMarker.marker.name);  // Sets the text content
+  nearest.textContent = "Your nearest box is:" + " " + (closestMarker.marker.name);  // Sets the text content
   document.body.appendChild(nearest);                                              // Adds to the document
 
 
  //   //not working - should place new icon for closest marker...:
-   var setIcon = new google.maps.Marker({
-     position: closestMarker,
-     map: map,
-     title: "Nearest Artic Well",
-     icon: biggestIconSnowflake,
-   });
+  //  var setIcon = new google.maps.Marker({
+  //    position: closestMarker,
+  //    map: map,
+  //    title: "Nearest Artic Well",
+  //    icon: biggestIconSnowflake,
+  //  });
 
-   setIcon.setMap(map);
+  //  setIcon.setMap(map);
 }
