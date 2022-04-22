@@ -4,7 +4,7 @@ Alternatively the fonts could be imported in the <head> of every relevant html f
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=K2D:wght@300;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">  */
 
-@import url('https://fonts.googleapis.com/css2?family=K2D:wght@300;700&family=Karla:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=K2D:wght@300;700&family=Karla:wght@400;700&display=swap'); */
 
 :root {
     --brand-white: #FFFFFF;
