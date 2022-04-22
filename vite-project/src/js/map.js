@@ -223,7 +223,7 @@ function calculateNearestBooth(myLatLng){
 
   console.log("closest marker is: ", closestMarker, "the name of the marker is: ", closestMarker.marker.name);
 
-
+// @TODO: make closestMarker.marker.name conform with the prototype on Zeppelin (https://app.zeplin.io/project/624c03d6da586717f903281c/screen/625ffb0a944e0116ba080b97)
   //code that prints out the nearest booth
   var nearest = document.getElementById("nearest");                                            // Creates a new <div> node
   nearest.textContent = "Your nearest box is:" + " " + (closestMarker.marker.name);  // Sets the text content

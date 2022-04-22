@@ -233,10 +233,10 @@ margin: var(--mobile-margin);
 }
 
 #nearest {
-  font-family: var(--sub-heading-4-font-family);
-  font-size: var(--sub-heading-4-font-size);
-  font-weight: var(--sub-heading-4-font-weight);
-  line-height: var(--sub-heading-4-line-height);
+  font-family: var(--body-1-font-family);
+  font-size: var(--body-1-font-size);
+  font-weight: var(--body-1-font-weight);
+  line-height: var(--body-1-line-height);
   letter-spacing: normal;
   text-align: center;
   color: var(--brand-dark-black);
