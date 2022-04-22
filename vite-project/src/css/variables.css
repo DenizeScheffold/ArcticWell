@@ -20,6 +20,7 @@ Alternatively the fonts could be imported in the <head> of every relevant html f
     --brand-yellow-snow: #FAFC95;
 
     --mobile-screen-width: 376px;
+    --mobile-screen-height: 810px;
     --mobile-total-width: 344px;
     --mobile-margin: 16px;
 
