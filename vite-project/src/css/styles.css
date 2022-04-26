@@ -196,6 +196,8 @@ body {
   padding-top: 48px;
 }
 
+
+/*to be made into post-css */
 .banner-container {
   align-self: stretch;
   flex-grow: 1;
@@ -205,6 +207,13 @@ body {
   align-items: center;
   padding: 17px;
   background-color: var(--brand-cyan);
+}
+/*to be made into post-css */
+.arctic_well_logo {
+  width: 122px;
+  height: 32px;
+  flex-grow: 0;
+  background-color: var(--brand-dark-black);
 }
 
 
