@@ -1,4 +1,4 @@
-export default function Map({}) {
+const Map = () => {
   return (
     <div class="container">
       <div class="col-sm col-sm-12">
@@ -19,4 +19,6 @@ export default function Map({}) {
       </div>
     </div>
   );
-}
+};
+
+export default Map;
