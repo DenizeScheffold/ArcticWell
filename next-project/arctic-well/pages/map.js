@@ -1,30 +1,31 @@
-import {useEffect, useRef} from 'react';
-import {Loader} from '@googlemaps/js-api-loader';
+import { useEffect, useRef } from "react";
+import { Loader } from "@googlemaps/js-api-loader";
+
+
+// @TODO: make geolocation work
 
 const Map = () => {
   const googlemap = useRef(null);
 
   useEffect(() => {
     const loader = new Loader({
-      apiKey: 'AIzaSyAX7mdZbBYLkHDuDERyWCxBju2EpZGJ3Ac',
-      version: 'weekly'
+      apiKey: "AIzaSyAX7mdZbBYLkHDuDERyWCxBju2EpZGJ3Ac",
+      version: "weekly",
     });
     let map;
     loader.load().then(() => {
+      const google = window.google;
       map = new google.maps.Map(googlemap.current, {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8,
+        center: { lat: 59.3095651, lng: 18.0194099 },
+        zoom: 15,
       });
     });
   });
 
-  return (
-    <div id="map" ref={googlemap} />
-  );
-}
+  return <div id="map" ref={googlemap} />;
+};
 
 export default Map;
-
 
 // ***********************************
 // Old code that doesn't work anymore
