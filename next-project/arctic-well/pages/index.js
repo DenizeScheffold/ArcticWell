@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Banner from "../components/banner"
+import Background from './background'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
   <div>hej</div>
       <Banner />
+      <Background />
      
  
      
