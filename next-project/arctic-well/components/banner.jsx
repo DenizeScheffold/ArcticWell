@@ -7,7 +7,7 @@ const Banner = () => {
     <div className="banner-container">
       <div className="line">
         <div className="BANNER">
-          <img src="Denize.jpeg" className="arctic_well_logo"/>
+          <img src="/arctic_well_logo.svg" alt="logo" className="arctic_well_logo"/>
           <div className="weather_subcontainer">
             <span className="Stockholm">Stockholm </span>
             <span className="-C">+31 °C</span>
