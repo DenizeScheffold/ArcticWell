@@ -6,14 +6,14 @@ import { Loader } from "@googlemaps/js-api-loader";
 const Map = () => {
   const googlemap = useRef(null);
 
+  // all calls to navigator.geolocation has to happen inside of useEffect
   useEffect(() => {
-    // all calls to navigator.geolocation has to happen inside of useEffect
     const loader = new Loader({
       apiKey: "AIzaSyAX7mdZbBYLkHDuDERyWCxBju2EpZGJ3Ac",
       version: "weekly",
     });
+    //for testing purposes only
     if ("geolocation" in navigator) {
-      //for testing purposes only
       // console.log("geolocation available");
       navigator.geolocation.getCurrentPosition(function (position) {
         console.log("Latitude is :", position.coords.latitude);
