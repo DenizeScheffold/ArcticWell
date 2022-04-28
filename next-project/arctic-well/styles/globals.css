@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=K2D:wght@300;700&family=Karla:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@300;700&family=Karla:wght@400;700&display=swap");
 /* START OF RESET-CODE */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -152,12 +152,11 @@ body {
   align-self: stretch;
   flex-grow: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
-  height: 5em;
+  height: 4em;
   background-color: #4bdaf0;
   position: relative;
+  border-bottom: solid black;
 }
 
 .arctic_well_logo {
@@ -167,11 +166,11 @@ body {
   display: flex;
   flex-direction: row;
   position: absolute;
+  justify-content: flex-start;
+  margin-left: 1em;
 }
 
-/* 
-
-.BANNER {
+/* .BANNER {
   height: 100%;
   max-height:5em;
   width: 100%;
@@ -182,7 +181,7 @@ body {
   align-items: stretch;
   position: absolute;
   background-color:  red;
-} */
+}  */
 
 .Stockholm {
   width: 81px;
@@ -195,8 +194,13 @@ body {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  text-align: left;
   color: black;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  right: 0;
+  margin-right: 1.5em;
+  justify-content: flex-end;
 }
 
 .-C {
@@ -211,7 +215,14 @@ body {
   line-height: 1.5;
   letter-spacing: normal;
   text-align: left;
-  color:  black;
+  color: black;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  right: 0;
+  margin-right: 3.5em;
+  margin-top: 2em;
+  justify-content: flex-start;
 }
 
 .weather_subcontainer {
@@ -223,19 +234,24 @@ body {
   justify-content: center;
   align-items: flex-end;
   padding: 0;
-  color: green;
+
 }
 
+/* vector is not showing. */
 .Vector {
   width: 24px;
   height: 24px;
   margin: 0 0 0 10px;
-  background-color: black;
-}
-
-.line {
-  height: 2px;
-  align-self: stretch;
+   
+  right: 0;
+  margin-right: 1em;
   flex-grow: 0;
-  background-color: black;
+  position: absolute;
+  display: flex;
+
+  right: 0;
+  margin-right: 1.5em;
+
+  align-items: flex-end;
+ 
 }
