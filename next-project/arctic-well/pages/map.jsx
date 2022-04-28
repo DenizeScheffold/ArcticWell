@@ -1,7 +1,10 @@
 import { useEffect, useRef } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
+import { Wrapper, Status } from "@googlemaps/react-wrapper";
+
 
 // @TODO: make geolocation work
+// See https://developers.google.com/maps/documentation/javascript/react-map
 
 const Map = () => {
   const googlemap = useRef(null);
