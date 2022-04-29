@@ -7,8 +7,9 @@ const Background = () => (
       <Image
         alt="background"
         src="/landing-page-background.png"
-        layout="fill"
-        objectFit="cover"
+        layout="responsive"
+        width={500}
+        height={743}
         quality={100}
       />
     </div>

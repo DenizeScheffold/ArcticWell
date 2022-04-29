@@ -110,6 +110,7 @@ section {
 }
 body {
   line-height: 1;
+  background-color: #001E4E;
 }
 ol,
 ul {
@@ -248,10 +249,8 @@ body {
   flex-grow: 0;
   position: absolute;
   display: flex;
-
   right: 0;
   margin-right: 1.5em;
-
   align-items: flex-end;
  
 }
@@ -266,6 +265,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #374146;
  color: white;
 }
 
@@ -276,4 +276,5 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  
 }
