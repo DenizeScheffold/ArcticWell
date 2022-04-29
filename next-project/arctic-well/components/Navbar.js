@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 function MenuLink({ text, href }) {
   return (
@@ -10,15 +11,16 @@ function MenuLink({ text, href }) {
 
 export default function Navbar({ children }) {
   return (
-    <div className="navbar-container">
-      <nav className="nav-links">
+    <div className={styles.container}>
+  
+      <nav className={styles.navlinks}>
         <MenuLink text="Home" href="/" />
         <MenuLink text="Map" href="/map" />
         <MenuLink text="More" href="/more" />
       </nav>
-  
+     
         <div>{children}</div>
-    
-    </div>
+     </div>
+ 
   );
 }
