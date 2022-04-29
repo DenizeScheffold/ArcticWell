@@ -15,7 +15,7 @@ const Banner = () => {
       <div className="weather_subcontainer">
         <span className="Stockholm">Stockholm </span>
         <span className="-C">+31 °C</span>
-        <div img src="/bi_sun.svg" alt="sunny" className="Vector"></div>
+        <img src="/bi_sun.svg" alt="sunny" className="Vector"/>
       </div>
     </div>
   );
