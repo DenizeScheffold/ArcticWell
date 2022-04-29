@@ -13,7 +13,7 @@ export default function Navbar({ children }) {
     <div className="navbar-container">
       <footer className="nav-links">
         <MenuLink text="Home" href="/" />
-        <MenuLink text="Box" href="/map" />
+        <MenuLink text="Map" href="/map" />
         <MenuLink text="More" href="/more" />
       </footer>
   
