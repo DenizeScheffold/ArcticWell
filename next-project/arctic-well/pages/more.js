@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Banner from "../components/banner";
 import Background from "./background";
+import Navbar from "../components/Navbar";
 
 const More = () => {
   return (
@@ -14,6 +15,7 @@ const More = () => {
       </Head>
       <Background />
       <Banner />
+      <Navbar />
       <div>
         <h1>About us</h1>
         <h1>FAQ</h1>
