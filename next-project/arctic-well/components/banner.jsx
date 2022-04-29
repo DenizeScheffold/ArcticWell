@@ -1,21 +1,21 @@
-import styles from "../styles/Home.module.css";
 import React from "react";
 import ReactDOM from "react-dom";
+import styles from "../styles/Banner.module.css";
 
 const Banner = () => {
   return (
-    <div className="banner-container">
-      <div className="BANNER">
+    <div className={styles.banner_container}>
+      <div>
         <img
           src="/arctic_well_logo.svg"
           alt="logo"
-          className="arctic_well_logo"
+          className={styles.arctic_well_logo}
         />
       </div>
-      <div className="weather_subcontainer">
-        <span className="Stockholm">Stockholm </span>
-        <span className="-C">+31 °C</span>
-        <img src="/bi_sun.svg" alt="sunny" className="Vector"/>
+      <div className={styles.weather_subcontainer}>
+        <span className={styles.Stockholm}>Stockholm </span>
+        <span className={styles.C}>+31 °C</span>
+        <img src="/bi_sun.svg" alt="sunny" className={styles.Vector}/>
       </div>
     </div>
   );
