@@ -11,11 +11,11 @@ function MenuLink({ text, href }) {
 export default function Navbar({ children }) {
   return (
     <div className="navbar-container">
-      <footer className="nav-links">
+      <nav className="nav-links">
         <MenuLink text="Home" href="/" />
         <MenuLink text="Map" href="/map" />
         <MenuLink text="More" href="/more" />
-      </footer>
+      </nav>
   
         <div>{children}</div>
     
