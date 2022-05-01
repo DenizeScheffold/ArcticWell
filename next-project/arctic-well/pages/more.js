@@ -14,8 +14,6 @@ const More = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Background />
-      <Banner />
-      <Navbar />
       <div>
         <h1>About us</h1>
         <h1>FAQ</h1>
