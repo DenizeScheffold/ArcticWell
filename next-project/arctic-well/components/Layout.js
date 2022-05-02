@@ -4,7 +4,7 @@ import Background from "../pages/background";
 
 const Layout = ({ children }) => {
   return (
-    <div id="layout-div">
+    <div>
    
       <Banner />
       {children}
