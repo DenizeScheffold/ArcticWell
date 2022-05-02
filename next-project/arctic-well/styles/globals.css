@@ -134,6 +134,8 @@ table {
 
 /* END OF RESET-CODE */
 
+/* @TODO: move these to their own styles module */
+
 html,
 body {
   height: 100%;
@@ -146,5 +148,9 @@ body {
 }
 
 #map {
+  height: 100%;
+}
+
+#layout-div {
   height: 100%;
 }
