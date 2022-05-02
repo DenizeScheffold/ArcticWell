@@ -149,6 +149,7 @@ body {
   height: 100%;
 }
 
+/* @TODO: this should be moved out of globals.css */
 #layout-div {
   height: 100%;
 }

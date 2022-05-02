@@ -5,6 +5,7 @@ import Banner from "../components/banner";
 import Background from "./background";
 import Navbar from "../components/Navbar";
 
+// @TODO: fix links and apply styles correctly
 const More = () => {
   return (
     <div>
