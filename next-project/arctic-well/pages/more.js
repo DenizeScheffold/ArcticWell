@@ -1,9 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Banner from "../components/banner";
-import Background from "./background";
-import Navbar from "../components/Navbar";
+
 
 // @TODO: fix links and apply styles correctly
 const More = () => {
