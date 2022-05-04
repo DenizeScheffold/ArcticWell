@@ -4,6 +4,7 @@ import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
 const Map = () => {
   const googlemap = useRef(null);
+  let map;
   // dummy values that point to STI in Liljeholmen
   const [pos, setPos] = useState({
     lat: 59.3095651,
@@ -14,25 +15,18 @@ const Map = () => {
   // The issue is getting useEffect to automatically run again when pos is updated
   // Attempts to use setPos or to change [pos] at the end of useEffect to [pos.lat] have so far not yielded any results
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      pos.lat = position.coords.latitude;
-      pos.lng = position.coords.longitude;
-    });
-    console.log("after call to getCurrentPosition");
-    console.log("pos.lat=" + pos.lat + ", pos.lng=" + pos.lng);
     const loader = new Loader({
       apiKey: "AIzaSyAX7mdZbBYLkHDuDERyWCxBju2EpZGJ3Ac",
       version: "weekly",
     });
     loader.load().then(() => {
       const google = window.google;
-      let map;
       map = new google.maps.Map(googlemap.current, {
         center: pos,
         zoom: 15,
       });
     });
-  }, [pos.lat, pos.lng]);
+  }, []);
 
   return <div id="map" ref={googlemap} />;
 };
