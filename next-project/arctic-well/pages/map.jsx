@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
-//
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+
 const Map = () => {
   const googlemap = useRef(null);
   let map;
