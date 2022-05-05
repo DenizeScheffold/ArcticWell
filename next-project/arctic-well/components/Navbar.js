@@ -34,7 +34,7 @@ export default function Navbar({ children }) {
         src="/navbar_map.svg"
         layout="responsive"
         width={15}
-        height={11}
+        height={10}
         quality={100}
       />
        <a className={router.pathname == "/map" ? "active" : ""}>
@@ -51,7 +51,7 @@ export default function Navbar({ children }) {
         src="/navbar_more.svg"
         layout="responsive"
         width={24}
-        height={19}
+        height={18}
         quality={100}
       />
     <a className={router.pathname == "/" ? "active" : ""}>
