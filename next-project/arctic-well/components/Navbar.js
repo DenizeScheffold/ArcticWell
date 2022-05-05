@@ -19,7 +19,7 @@ export default function Navbar({ children }) {
         quality={100}
       />
       <p>Home</p>
-      </div>ç
+      </div>
       </Link>
 
         <Link href="/map">
