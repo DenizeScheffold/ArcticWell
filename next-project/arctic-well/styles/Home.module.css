@@ -13,7 +13,6 @@
    color: white;
   }
   
-  
   .navlinks {
     width: 80%;
     height: 100%;
@@ -22,7 +21,8 @@
     align-items: center;
   }
 
-  .navbarIcons{
-    justify-content: space-evenly;
+  .link-styles{
+    padding: 50em;
+    justify-content: space-around;
+
   }
-  
