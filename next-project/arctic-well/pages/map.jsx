@@ -1,40 +1,65 @@
-import { useState, useEffect, useRef } from "react";
-import { Loader } from "@googlemaps/js-api-loader";
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
+import { memo, useState, useEffect, useRef, useCallback } from "react";
+import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+
+// @TODO: containerStyle sucks and should be moved elsewhere
+
+const containerStyle = {
+  width: "100%",
+  height: "82%"
+};
 
 const Map = () => {
-  const googlemap = useRef(null);
-  // dummy values that point to STI in Liljeholmen
+
   const [pos, setPos] = useState({
     lat: 59.3095651,
     lng: 18.0194099,
   });
 
-  // Amusingly enough, this implementation "works" if this file is updated while on localhost:3000/map
-  // The issue is getting useEffect to automatically run again when pos is updated
-  // Attempts to use setPos or to change [pos] at the end of useEffect to [pos.lat] have so far not yielded any results
-  useEffect(() => {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      pos.lat = position.coords.latitude;
-      pos.lng = position.coords.longitude;
-    });
-    console.log("after call to getCurrentPosition");
-    console.log("pos.lat=" + pos.lat + ", pos.lng=" + pos.lng);
-    const loader = new Loader({
-      apiKey: "AIzaSyAX7mdZbBYLkHDuDERyWCxBju2EpZGJ3Ac",
-      version: "weekly",
-    });
-    loader.load().then(() => {
-      const google = window.google;
-      let map;
-      map = new google.maps.Map(googlemap.current, {
-        center: pos,
-        zoom: 15,
-      });
-    });
-  }, [pos.lat, pos.lng]); // Unsure if this works; [pos] on it's own likely doesn't though
+  const { isLoaded } = useJsApiLoader({
+    id: "google-map-script",
+    googleMapsApiKey: "AIzaSyAX7mdZbBYLkHDuDERyWCxBju2EpZGJ3Ac"
+  });
 
-  return <div id="map" ref={googlemap} />;
+  const [map, setMap] = useState(null);
+
+  const onLoad = useCallback(function callback(map){
+    // bounds seem to be what's causing the zoom bug -- unclear whether we need it's functionality either way
+    // const bounds = new window.google.maps.LatLngBounds(pos);
+    // map.fitBounds(bounds);
+    setMap(map);
+  }, []);
+
+  const onUnmount = useCallback(function callback(map){
+    setMap(null);
+  }, []);
+
+  // Geolocate the user via getCurrentPosition
+  // Working, but might need additional functionality to cover all our needs
+  useEffect(() => {
+    if("geolocation" in navigator){
+      console.log("geolocation available");
+      navigator.geolocation.getCurrentPosition(function (position) {
+        setPos({lat: position.coords.latitude, lng: position.coords.longitude})
+        console.log("setPos called");
+      });
+    }
+    else{
+      console.log("geolocation unavailable");
+    }
+    // @TODO: Currently only set to run once; in the future it should probably run continuously (possibly via watchCurrentPosition???)
+  }, []);
+
+  // @TODO: figure out why the initial zoom is so ridiculous
+  return isLoaded ? (
+    <GoogleMap
+      mapContainerStyle={containerStyle}
+      center={pos}
+      zoom={15}
+      onLoad={onLoad}
+      onUnmount={onUnmount}
+    >{ /* Child components, such as markers and info windows go here */ }
+    <></></GoogleMap>
+  ) : <></>
 };
 
-export default Map;
+export default memo(Map);

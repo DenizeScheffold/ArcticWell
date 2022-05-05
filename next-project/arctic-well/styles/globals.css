@@ -145,8 +145,9 @@ body {
   height: 100%;
 }
 
+/* @TODO: this workaround can probably be solved another way */
 #map {
-  height: 100%;
+  height: 82%;
 }
 
 /* @TODO: this should be moved out of globals.css */
