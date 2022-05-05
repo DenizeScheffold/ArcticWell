@@ -1,28 +1,33 @@
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import Image from 'next/image'
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 export default function Navbar({ children }) {
+  const router = useRouter();
   return (
     <div className={styles.container}>
   
       <nav className={styles.navlinks}>
 
-       <Link href="/" className={"link-styles"}>
+     
+      <Link href="/" className={styles.link-styles}>
          <div >
         <Image
-        alt="background"
+        alt="home"
         src="/navbar_home.svg"
         layout="responsive"
         width={16}
         height={10}
         quality={100}
       />
-      <p>Home</p>
+        <a className={router.pathname == "/" ? "active" : ""}>
+           Home
+        </a>
       </div>
       </Link>
 
-        <Link href="/map" className={"link-styles"}>
+        <Link href="/map" className={styles.link-styles}>
         <div >
         <Image
         alt="background"
@@ -32,11 +37,13 @@ export default function Navbar({ children }) {
         height={11}
         quality={100}
       />
-      <p>Map</p>
+       <a className={router.pathname == "/map" ? "active" : ""}>
+           Map
+        </a>
       </div>
       </Link>
 
-        <Link href="/more" className={"link-styles"}>
+        <Link href="/more" className={styles.link-styles}>
 
         <div>
         <Image
@@ -47,7 +54,9 @@ export default function Navbar({ children }) {
         height={15}
         quality={100}
       />
-      <p>More</p>
+    <a className={router.pathname == "/" ? "active" : ""}>
+           More
+        </a>
       </div>
       </Link>
 
