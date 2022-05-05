@@ -8,6 +8,10 @@
     background-color: #4bdaf0;
     position: relative;
     border-bottom: 2px solid black;
+    font-family: var(--body-1-font-family);
+    font-weight: var(--body-1-font-weight);
+    font-size: var(--body-1-font-size);
+    line-height: var(--body-1-line-height);
   }
   
   .arctic_well_logo {
