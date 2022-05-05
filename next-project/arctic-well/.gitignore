@@ -30,3 +30,16 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+/cache
+cache/**
+*.pack
+.next/**
+*.pack
+*.pack.old
+*.old
+next-project/arctic-well/.next/cache/webpack/client-development/*
+next-project/arctic-well/.next/cache/*
+next-project/arctic-well/.next/cache/
+next-project/arctic-well/.next/trace
+next-project/arctic-well/.next/cache/webpack/client-development-fallback/*

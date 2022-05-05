@@ -1,0 +1,116 @@
+
+.banner_container {
+    align-self: stretch;
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    height: 4em;
+    background-color: #4bdaf0;
+    position: relative;
+    border-bottom: 2px solid black;
+  }
+  
+  .arctic_well_logo {
+    width: 122px;
+    height: 4em;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: flex-start;
+    margin-left: 1.3em;
+  }
+  
+  /* .BANNER {
+    height: 100%;
+    max-height:5em;
+    width: 100%;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    position: absolute;
+    background-color:  red;
+  }  */
+  
+  .Stockholm {
+    width: 81px;
+    height: 24px;
+    flex-grow: 0;
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    margin-right: 1.3em;
+    justify-content: flex-end;
+  }
+  
+  .C {
+    width: 44px;
+    height: 24px;
+    flex-grow: 0;
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    margin-right: 3.4em;
+    margin-top: 2em;
+    justify-content: flex-start;
+  }
+  
+  .weather_subcontainer  {
+    width: 160px;
+    height: 48px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+    
+    
+    
+  }
+
+  .vector {
+    
+    height: 18px ;
+    margin: 0 0 0 10px;
+     
+    right: 0;
+    margin-right: 2em !important;
+    margin-top: 2em !important;
+    flex-grow: 0;
+    position: absolute;
+    display: block;
+    right: 0;
+    margin-right: 1.5em;
+    align-items: flex-end;
+    overflow: visible !important;
+    
+    
+    
+   }
+
+  
+ 
+  
+  

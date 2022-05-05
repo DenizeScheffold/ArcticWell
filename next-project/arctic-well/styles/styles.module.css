@@ -2,6 +2,7 @@
 
 .container {
     padding: 4rem 1rem;
+ 
   }
   
   .container p {
@@ -40,6 +41,7 @@
     width: 100vw;
     overflow: hidden;
     z-index: -1;
+    background-color: #001E4E;
   }
   
   .bgText {

@@ -1,24 +1,69 @@
 import Link from "next/link";
-
-function MenuLink({ text, href }) {
-  return (
-    <Link href={href} passHref>
-      <a className="px-8 py-2 hover:underline">{text}</a>
-    </Link>
-  );
-}
+import styles from "../styles/Home.module.css";
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 export default function Navbar({ children }) {
+  const router = useRouter();
   return (
-    <div className="navbar-container">
-      <footer className="nav-links">
-        <MenuLink text="Home" href="/" />
-        <MenuLink text="Map" href="/map" />
-        <MenuLink text="More" href="/more" />
-      </footer>
+    <div className={styles.container}>
   
+      <nav className={styles.navlinks}>
+
+     
+      <Link href="/" className={styles.link-styles}>
+         <div >
+        <Image
+        alt="home"
+        src="/navbar_home.svg"
+        layout="responsive"
+        width={16}
+        height={10}
+        quality={100}
+      />
+        <a className={router.pathname == "/" ? "active" : ""}>
+           Home
+        </a>
+      </div>
+      </Link>
+
+        <Link href="/map" className={styles.link-styles}>
+        <div >
+        <Image
+        alt="background"
+        src="/navbar_map.svg"
+        layout="responsive"
+        width={15}
+        height={11}
+        quality={100}
+      />
+       <a className={router.pathname == "/map" ? "active" : ""}>
+           Map
+        </a>
+      </div>
+      </Link>
+
+        <Link href="/more" className={styles.link-styles}>
+
+        <div>
+        <Image
+        alt="background"
+        src="/navbar_more.svg"
+        layout="responsive"
+        width={24}
+        height={15}
+        quality={100}
+      />
+    <a className={router.pathname == "/" ? "active" : ""}>
+           More
+        </a>
+      </div>
+      </Link>
+
+      </nav>
+     
         <div>{children}</div>
-    
-    </div>
+     </div>
+ 
   );
 }
