@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     background-color: #374146;
-    color: white;
+    color: var(--brand-white);
   }
   
   .navlinks {
