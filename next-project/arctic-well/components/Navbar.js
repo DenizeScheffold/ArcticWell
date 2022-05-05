@@ -12,7 +12,7 @@ export default function Navbar({ children }) {
 
      
       <Link href="/" className={styles.link-styles}>
-         <div >
+         <div className={styles.home_nav}>
         <Image
         alt="home"
         src="/navbar_home.svg"
@@ -28,7 +28,7 @@ export default function Navbar({ children }) {
       </Link>
 
         <Link href="/map" className={styles.link-styles}>
-        <div >
+        <div className={styles.map_nav}>
         <Image
         alt="background"
         src="/navbar_map.svg"
@@ -38,20 +38,20 @@ export default function Navbar({ children }) {
         quality={100}
       />
        <a className={router.pathname == "/map" ? "active" : ""}>
-           Map
+           Arctic
         </a>
       </div>
       </Link>
 
         <Link href="/more" className={styles.link-styles}>
 
-        <div>
+        <div className={styles.more_nav}>
         <Image
         alt="background"
         src="/navbar_more.svg"
         layout="responsive"
         width={24}
-        height={15}
+        height={19}
         quality={100}
       />
     <a className={router.pathname == "/" ? "active" : ""}>
