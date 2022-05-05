@@ -1,5 +1,7 @@
 import { memo, useState, useEffect, useRef, useCallback } from "react";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
+import * as markerData from "../db/markers.json";
+import Image from 'next/image'
 
 // @TODO: containerStyle should be moved elsewhere, this is a hacky solution
 
@@ -43,6 +45,8 @@ const Map = () => {
     {setPos({lat, lng})});
   }, []);
 
+  // @TODO: import and map the markers from markers.json instead of using hardcoded values
+  // they may need to be parsed into arrays using JSON.parse() before map() can be used
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
@@ -51,7 +55,28 @@ const Map = () => {
       onLoad={onLoad}
       onClick={onClick}
       onUnmount={onUnmount}
-    >{ /* Child components, such as markers and info windows go here */ }
+    >
+      <Marker
+      position={{lat: 59.31659359085035, lng: 18.041815542691243}}
+      icon={"/boxMarker.png"}
+      />
+      <Marker
+      position={{lat: 59.31686639105647, lng: 18.033475947597925}}
+      icon={"/boxMarker.png"}
+      />
+      <Marker
+      position={{lat: 59.318299387018456, lng: 18.064070414021298}}
+      icon={"/boxMarker.png"}
+      />
+      <Marker
+      position={{lat: 59.32271988404267, lng: 18.072194830717475}}
+      icon={"/boxMarker.png"}
+      />
+      <Marker
+      position={{lat: 59.331531357954, lng: 18.070782428871436}}
+      icon={"/boxMarker.png"}
+      />
+      { /* Child components, such as markers and info windows go here */ }
     <></></GoogleMap>
   ) : <></>
 };
