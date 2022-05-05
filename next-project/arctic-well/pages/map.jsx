@@ -5,7 +5,7 @@ import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "100%",
-  height: "82%"
+  height: "80%"
 };
 
 const Map = () => {
@@ -36,16 +36,21 @@ const Map = () => {
   // Geolocate the user via getCurrentPosition
   // Working, but might need additional functionality to cover all our needs
   useEffect(() => {
-    if("geolocation" in navigator){
-      console.log("geolocation available");
-      navigator.geolocation.getCurrentPosition(function (position) {
-        setPos({lat: position.coords.latitude, lng: position.coords.longitude})
-        console.log("setPos called");
-      });
-    }
-    else{
-      console.log("geolocation unavailable");
-    }
+    navigator?.geolocation.getCurrentPosition(({coords: {latitude: lat, longitude: lng}}) => 
+    {setPos({lat, lng})});
+    // The code below does the same thing (with a couple of console.log() as the 2 lines above)
+    // Kept for testing purposes right now
+    // @TODO: remove unused code when this function works as intended
+    // if("geolocation" in navigator){
+    //   console.log("geolocation available");
+    //   navigator.geolocation.getCurrentPosition(function (position) {
+    //     setPos({lat: position.coords.latitude, lng: position.coords.longitude})
+    //     console.log("setPos called");
+    //   });
+    // }
+    // else{
+    //   console.log("geolocation unavailable");
+    // }
     // @TODO: Currently only set to run once; in the future it should probably run continuously (possibly via watchCurrentPosition???)
   }, []);
 
