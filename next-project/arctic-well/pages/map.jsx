@@ -23,8 +23,9 @@ const Map = () => {
   const [map, setMap] = useState(null);
 
   const onLoad = useCallback(function callback(map){
-    const bounds = new window.google.maps.LatLngBounds(pos);
-    map.fitBounds(bounds);
+    // bounds seem to be what's causing the zoom bug -- unclear whether we need it's functionality either way
+    // const bounds = new window.google.maps.LatLngBounds(pos);
+    // map.fitBounds(bounds);
     setMap(map);
   }, []);
 
