@@ -1,22 +1,56 @@
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-
-function MenuLink({ text, href }) {
-  return (
-    <Link href={href} passHref>
-      <a className="px-8 py-2 hover:underline">{text}</a>
-    </Link>
-  );
-}
+import Image from 'next/image'
 
 export default function Navbar({ children }) {
   return (
     <div className={styles.container}>
   
       <nav className={styles.navlinks}>
-        <MenuLink text="Home" href="/" />
-        <MenuLink text="Map" href="/map" />
-        <MenuLink text="More" href="/more" />
+
+       <Link href="/">
+         <div className="navbarIcons">
+        <Image
+        alt="background"
+        src="/navbar_home.svg"
+        layout="responsive"
+        width={16}
+        height={12}
+        quality={100}
+      />
+      <p>Home</p>
+      </div>ç
+      </Link>
+
+        <Link href="/map">
+        <div className="navbarIcons">
+        <Image
+        alt="background"
+        src="/navbar_map.svg"
+        layout="responsive"
+        width={15}
+        height={15}
+        quality={100}
+      />
+      <p>Map</p>
+      </div>
+      </Link>
+
+        <Link href="/more">
+
+        <div className="navbarIcons">
+        <Image
+        alt="background"
+        src="/navbar_more.svg"
+        layout="responsive"
+        width={24}
+        height={19}
+        quality={100}
+      />
+      <p>More</p>
+      </div>
+      </Link>
+
       </nav>
      
         <div>{children}</div>
