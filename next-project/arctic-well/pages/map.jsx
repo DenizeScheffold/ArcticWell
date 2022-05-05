@@ -1,7 +1,7 @@
 import { memo, useState, useEffect, useRef, useCallback } from "react";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 
-// @TODO: containerStyle sucks and should be moved elsewhere
+// @TODO: containerStyle should be moved elsewhere, this is a hacky solution
 
 const containerStyle = {
   width: "100%",
@@ -23,6 +23,7 @@ const Map = () => {
   const [map, setMap] = useState(null);
 
   const onLoad = useCallback(function callback(map){
+    // @TODO: clean this up when functional
     // bounds seem to be what's causing the zoom bug -- unclear whether we need it's functionality either way
     // const bounds = new window.google.maps.LatLngBounds(pos);
     // map.fitBounds(bounds);
@@ -35,10 +36,11 @@ const Map = () => {
 
   // Geolocate the user via getCurrentPosition
   // Working, but might need additional functionality to cover all our needs
+  // @TODO: tie this useEffect to a user action (like clicking a button) instead of running it on page load 
   useEffect(() => {
     navigator?.geolocation.getCurrentPosition(({coords: {latitude: lat, longitude: lng}}) => 
     {setPos({lat, lng})});
-    // The code below does the same thing (with a couple of console.log() as the 2 lines above)
+    // The code below does the same thing (with a couple of console.log()) as the 2 lines above
     // Kept for testing purposes right now
     // @TODO: remove unused code when this function works as intended
     // if("geolocation" in navigator){
@@ -51,10 +53,8 @@ const Map = () => {
     // else{
     //   console.log("geolocation unavailable");
     // }
-    // @TODO: Currently only set to run once; in the future it should probably run continuously (possibly via watchCurrentPosition???)
   }, []);
 
-  // @TODO: figure out why the initial zoom is so ridiculous
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
