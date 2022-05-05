@@ -11,9 +11,16 @@ const More = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <h1>About us</h1>
-        <h1>FAQ</h1>
-      </div>
+        <h1>More</h1>
+      <div>
+      <p>Event booking <br></br>
+        Our boxes <br></br>
+        About us <br></br>
+        Support/FAQ 
+      </p>
+  
+    </div>
+    </div>
     </div>
   );
 };

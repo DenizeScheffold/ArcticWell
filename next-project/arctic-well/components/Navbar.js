@@ -8,43 +8,43 @@ export default function Navbar({ children }) {
   
       <nav className={styles.navlinks}>
 
-       <Link href="/">
-         <div className="navbarIcons">
+       <Link href="/" className={"link-styles"}>
+         <div >
         <Image
         alt="background"
         src="/navbar_home.svg"
         layout="responsive"
         width={16}
-        height={12}
+        height={10}
         quality={100}
       />
       <p>Home</p>
       </div>
       </Link>
 
-        <Link href="/map">
-        <div className="navbarIcons">
+        <Link href="/map" className={"link-styles"}>
+        <div >
         <Image
         alt="background"
         src="/navbar_map.svg"
         layout="responsive"
         width={15}
-        height={15}
+        height={11}
         quality={100}
       />
       <p>Map</p>
       </div>
       </Link>
 
-        <Link href="/more">
+        <Link href="/more" className={"link-styles"}>
 
-        <div className="navbarIcons">
+        <div>
         <Image
         alt="background"
         src="/navbar_more.svg"
         layout="responsive"
         width={24}
-        height={19}
+        height={15}
         quality={100}
       />
       <p>More</p>
