@@ -34,25 +34,13 @@ const Map = () => {
     setMap(null);
   }, []);
 
-  // Geolocate the user via getCurrentPosition
-  // Working, but might need additional functionality to cover all our needs
-  // @TODO: tie this useEffect to a user action (like clicking a button) instead of running it on page load 
-  useEffect(() => {
+  // Super hacky way of tying geolocation to a user action
+  // Works by centering the map on the user when/if they left click the map
+  // Does it work on mobile devices?? No idea. A better solution should be found
+  // @TODO: make a non-hacky implementation of this, preferably tied to a button 
+  const onClick = useCallback(function callback(map){
     navigator?.geolocation.getCurrentPosition(({coords: {latitude: lat, longitude: lng}}) => 
     {setPos({lat, lng})});
-    // The code below does the same thing (with a couple of console.log()) as the 2 lines above
-    // Kept for testing purposes right now
-    // @TODO: remove unused code when this function works as intended
-    // if("geolocation" in navigator){
-    //   console.log("geolocation available");
-    //   navigator.geolocation.getCurrentPosition(function (position) {
-    //     setPos({lat: position.coords.latitude, lng: position.coords.longitude})
-    //     console.log("setPos called");
-    //   });
-    // }
-    // else{
-    //   console.log("geolocation unavailable");
-    // }
   }, []);
 
   return isLoaded ? (
@@ -61,6 +49,7 @@ const Map = () => {
       center={pos}
       zoom={15}
       onLoad={onLoad}
+      onClick={onClick}
       onUnmount={onUnmount}
     >{ /* Child components, such as markers and info windows go here */ }
     <></></GoogleMap>
