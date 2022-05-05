@@ -38,7 +38,10 @@
     width: 81px;
     height: 24px;
     flex-grow: 0;
-    font-family: Karla;
+    font-family: var(--body-1-bold-font-family);
+    font-weight: var(--body-1-bold-font-weight);
+    font-size: var(--body-1-bold-font-size);
+    line-height: var(--body-1-bold-line-height);
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -58,7 +61,10 @@
     width: 44px;
     height: 24px;
     flex-grow: 0;
-    font-family: Karla;
+    font-family: var(--body-1-bold-font-family);
+    font-weight: var(--body-1-bold-font-weight);
+    font-size: var(--body-1-bold-font-size);
+    line-height: var(--body-1-bold-line-height);
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
