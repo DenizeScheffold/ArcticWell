@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #374146;
+    background-color: var(--brand-navy-dark);
     color: var(--brand-white);
   }
   
