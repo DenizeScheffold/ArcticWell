@@ -36,7 +36,7 @@
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
-    color: black;
+    color: var(--brand-dark-black);
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -57,7 +57,7 @@
     font-style: normal;
     letter-spacing: normal;
     text-align: left;
-    color: black;
+    color: var(--brand-dark-black);
     position: absolute;
     display: flex;
     flex-direction: row;
