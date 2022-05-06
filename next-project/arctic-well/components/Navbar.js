@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 
 export default function Navbar({ children }) {
   const router = useRouter();
+  console.log("pathname check: " , router.asPath);
   return (
     <div className={styles.container}>
   
@@ -21,9 +22,9 @@ export default function Navbar({ children }) {
         height={10}
         quality={100}
       />
-        <a className={router.pathname == "/" ? "active" : ""}>
+        <p className={router.asPath === "/" ? styles.underline : styles.link-styles }>
            Home
-        </a>
+        </p>
       </div>
       </Link>
 
@@ -37,7 +38,7 @@ export default function Navbar({ children }) {
         height={11}
         quality={100}
       />
-       <a className={router.pathname == "/map" ? "active" : ""}>
+       <a className={router.asPath === "/map" ? styles.underline :styles.link-styles}>
            Arctic
         </a>
       </div>
@@ -54,7 +55,7 @@ export default function Navbar({ children }) {
         height={19}
         quality={100}
       />
-    <a className={router.pathname == "/" ? "active" : ""}>
+    <a className={router.asPath === "/more" ? styles.underline : styles.link-styles}>
            More
         </a>
       </div>
