@@ -19,13 +19,13 @@ export default function Navbar({ children }) {
               height={10}
               quality={100}
             />
-            <p
+            <a
               className={
                 router.asPath === "/" ? styles.underline : styles.link - styles
               }
             >
               Home
-            </p>
+            </a>
           </div>
         </Link>
 
