@@ -28,7 +28,7 @@ const Map = () => {
 
   const [map, setMap] = useState(null);
 
-  // @TODO: to complete https://github.com/DenizeScheffold/ArcticWell/issues/16 LatLngBounds can be used
+  // @TODO: to complete https://github.com/DenizeScheffold/ArcticWell/issues/16 LatLngBounds could be used
   // the idea would be to use LatLngBounds.extends to increase the size of the viewport to include the marker closest to the user
   // the code that has been commented out below can be used as a base template for this
   // see also https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLngBounds
@@ -47,8 +47,7 @@ const Map = () => {
 
   // Super hacky way of tying geolocation to a user action
   // Works by centering the map on the user when/if they left click the map
-  // Does it work on mobile devices?? No idea. A better solution should be found
-  // @TODO: make a non-hacky implementation of this, preferably tied to a button
+  // @TODO: tie this to a button instead
   const onClick = useCallback(function callback(map) {
     navigator?.geolocation.getCurrentPosition(
       ({ coords: { latitude: lat, longitude: lng } }) => {
@@ -63,13 +62,13 @@ const Map = () => {
   const geoError = (error) => {
     console.log("Error code=" + error.code);
   };
+  // Theoretically this cuts down on API requests by using cached values, provided they exist and are younger than maximumAge
+  // @TODO: test if it actually works as intended
   const geoOptions = {
     maximumAge: 5 * 60 * 1000,
   };
 
-  // @TODO: import and map the markers from markers.json instead of using hardcoded values
-  // they may need to be parsed into arrays using JSON.parse() before map() can be used
-  // The first Marker is the user's position, and should not be removed or changed for now
+  // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
   return isLoaded ? (
     <GoogleMap
       id={"arctic-map"}
@@ -81,26 +80,13 @@ const Map = () => {
       onUnmount={onUnmount}
     >
       <Marker position={pos} />
-      <Marker
-        position={{ lat: 59.31659359085035, lng: 18.041815542691243 }}
-        icon={"/boxMarker.png"}
-      />
-      <Marker
-        position={{ lat: 59.31686639105647, lng: 18.033475947597925 }}
-        icon={"/boxMarker.png"}
-      />
-      <Marker
-        position={{ lat: 59.318299387018456, lng: 18.064070414021298 }}
-        icon={"/boxMarker.png"}
-      />
-      <Marker
-        position={{ lat: 59.32271988404267, lng: 18.072194830717475 }}
-        icon={"/boxMarker.png"}
-      />
-      <Marker
-        position={{ lat: 59.331531357954, lng: 18.070782428871436 }}
-        icon={"/boxMarker.png"}
-      />
+      {markerData.map((arcticWellMarker) => (
+        <Marker
+          key={arcticWellMarker.name}
+          position={{ lat: arcticWellMarker.lat, lng: arcticWellMarker.lng }}
+          icon={arcticWellMarker.icon}
+        />
+      ))}
       {/* Child components, such as markers and info windows go here */}
       <></>
     </GoogleMap>
