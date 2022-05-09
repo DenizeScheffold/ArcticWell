@@ -49,19 +49,22 @@ const Map = () => {
       ({ coords: { latitude: lat, longitude: lng } }) => {
         setPos({ lat, lng });
         console.log("geoSuccess, lat=" + lat + ", lng=" + lng);
-      }, geoError, geoOptions
+      },
+      geoError,
+      geoOptions
     );
   }, []);
 
   const geoError = (error) => {
     console.log("Error code=" + error.code);
-  }
+  };
   const geoOptions = {
     maximumAge: 5 * 60 * 1000,
   };
 
   // @TODO: import and map the markers from markers.json instead of using hardcoded values
   // they may need to be parsed into arrays using JSON.parse() before map() can be used
+  // The first Marker is the user's position, and should not be removed or changed for now
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
@@ -71,6 +74,7 @@ const Map = () => {
       onClick={onClick}
       onUnmount={onUnmount}
     >
+      <Marker position={pos} />
       <Marker
         position={{ lat: 59.31659359085035, lng: 18.041815542691243 }}
         icon={"/boxMarker.png"}
