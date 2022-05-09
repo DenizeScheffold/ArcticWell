@@ -23,11 +23,11 @@ const Banner = () => {
         <span className={styles.Stockholm}>Stockholm </span>
         <span className={styles.C}>+31 °C</span>
         <img 
-        src="/bi_sun.svg" 
+        src="/bi_sun_new.svg" 
         alt="sunny" 
         className={styles.vector}
-        width={20}
-        height={20}
+        width={12}
+        height={12}
         quality={100}
         
         
