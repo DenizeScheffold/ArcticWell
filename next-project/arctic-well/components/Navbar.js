@@ -35,7 +35,7 @@ export default function Navbar({ children }) {
               alt="background"
               src="/navbar_box_icon.svg"
               layout="responsive"
-              width={24}
+              width={25}
               height={11}
               quality={100}
             />
