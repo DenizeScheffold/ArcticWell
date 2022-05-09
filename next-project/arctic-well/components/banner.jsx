@@ -15,8 +15,6 @@ const Banner = () => {
           height={64}
           quality={100}
           
-          
-        
         />
       </div>
       <div className={styles.weather_subcontainer}>
@@ -29,10 +27,6 @@ const Banner = () => {
         width={12}
         height={12}
         quality={100}
-        
-        
-      
-        
         
         
         />
