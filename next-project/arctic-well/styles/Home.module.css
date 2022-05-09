@@ -22,13 +22,9 @@
 }
 
 .button{
+  margin-left: 10em;
   font-family: var(--label-button-regular-font-family);
   font-weight: var(--label-button-regular-font-weight);
   font-size: var(--label-button-regular-font-weight);
   line-height: var(--lable-button-regular-line-heigt);
 }
-
-.background{
-}
-
-
