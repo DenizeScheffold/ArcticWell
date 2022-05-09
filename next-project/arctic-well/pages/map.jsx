@@ -1,6 +1,11 @@
 import Head from "next/head";
 import { memo, useState, useEffect, useRef, useCallback } from "react";
-import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  useJsApiLoader,
+  Marker,
+  InfoWindow,
+} from "@react-google-maps/api";
 import * as markerData from "../db/markers.json";
 import Image from "next/image";
 
@@ -48,7 +53,7 @@ const Map = () => {
   // Super hacky way of tying geolocation to a user action
   // Works by centering the map on the user when/if they left click the map
   // @TODO: tie this to a button instead
-  const onClick = useCallback(function callback(map) {
+  const centerMap = useCallback(function callback(map) {
     navigator?.geolocation.getCurrentPosition(
       ({ coords: { latitude: lat, longitude: lng } }) => {
         setPos({ lat, lng });
@@ -69,6 +74,7 @@ const Map = () => {
   };
 
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
+  // @TODO: make the infoWindow only pop up for boxes the user has clicked on
   return isLoaded ? (
     <GoogleMap
       id={"arctic-map"}
@@ -76,16 +82,21 @@ const Map = () => {
       center={pos}
       zoom={15}
       onLoad={onLoad}
-      onClick={onClick}
+      onClick={centerMap}
       onUnmount={onUnmount}
     >
       <Marker position={pos} />
       {markerData.map((arcticWellMarker) => (
         <Marker
           key={arcticWellMarker.name}
+          title={arcticWellMarker.name}
           position={{ lat: arcticWellMarker.lat, lng: arcticWellMarker.lng }}
           icon={arcticWellMarker.icon}
-        />
+        >
+          <InfoWindow anchor={arcticWellMarker}>
+            <div>{arcticWellMarker.name}</div>
+          </InfoWindow>
+        </Marker>
       ))}
       {/* Child components, such as markers and info windows go here */}
       <></>
