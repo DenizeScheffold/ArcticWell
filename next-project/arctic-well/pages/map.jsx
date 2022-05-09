@@ -72,6 +72,7 @@ const Map = () => {
   // The first Marker is the user's position, and should not be removed or changed for now
   return isLoaded ? (
     <GoogleMap
+      id={"arctic-map"}
       mapContainerStyle={containerStyle}
       center={pos}
       zoom={15}
