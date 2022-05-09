@@ -5,7 +5,6 @@
     display: flex;
     position: relative;
     height: 4em;
-    background-color: var(--brand-cyan);
     position: relative;
     border-bottom: 2px solid var(--brand-dark-black);
     font-family: var(--body-1-font-family);
