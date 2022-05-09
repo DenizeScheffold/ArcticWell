@@ -48,9 +48,17 @@ const Map = () => {
     navigator?.geolocation.getCurrentPosition(
       ({ coords: { latitude: lat, longitude: lng } }) => {
         setPos({ lat, lng });
-      }
+        console.log("geoSuccess, lat=" + lat + ", lng=" + lng);
+      }, geoError, geoOptions
     );
   }, []);
+
+  const geoError = (error) => {
+    console.log("Error code=" + error.code);
+  }
+  const geoOptions = {
+    maximumAge: 5 * 60 * 1000,
+  };
 
   // @TODO: import and map the markers from markers.json instead of using hardcoded values
   // they may need to be parsed into arrays using JSON.parse() before map() can be used
