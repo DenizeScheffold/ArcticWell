@@ -21,8 +21,12 @@
   margin-top: 0.2em;
 }
 
-.button{
-  margin-left: 10em;
+.rectangle{
+  margin-left: 9em;
+}
+
+.buttonText{
+  margin-left: 9em;
   font-family: var(--label-button-regular-font-family);
   font-weight: var(--label-button-regular-font-weight);
   font-size: var(--label-button-regular-font-weight);

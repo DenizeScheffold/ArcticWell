@@ -18,9 +18,14 @@ export default function Home() {
         <p>breezy!</p>
         </div>
 
-        <div className={styles.button}>
-        <button>Discover how it works!</button>
+        <div className={styles.rectangle}>
+        <img src="./Rectangle.png" height={39} width={184} />
         </div>
+
+        <div className={styles.buttonText}>
+        <a>Discover how it works!</a> 
+        </div>
+
     </div>
   );
 }
