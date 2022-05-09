@@ -92,12 +92,11 @@ const Map = () => {
           title={arcticWellMarker.name}
           position={{ lat: arcticWellMarker.lat, lng: arcticWellMarker.lng }}
           icon={arcticWellMarker.icon}
-        ><InfoWindow
-          anchor={arcticWellMarker}
-          >
+        >
+          <InfoWindow anchor={arcticWellMarker}>
             <div>{arcticWellMarker.name}</div>
-            </InfoWindow>
-          </Marker>
+          </InfoWindow>
+        </Marker>
       ))}
       {/* Child components, such as markers and info windows go here */}
       <></>
