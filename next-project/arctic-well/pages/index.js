@@ -11,10 +11,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />      
       </Head>
 
-      <div style={{backgroundImage: "url(/public/artic_background.jpg)"}}>
-  
-      </div>
-
       <div className={styles.text}>   
        <p>Now it's easy to stay</p> 
         </div>

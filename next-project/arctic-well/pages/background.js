@@ -7,10 +7,10 @@ const Background = () => (
     <div className={bgWrap}>
       <Image
         alt="background"
-        src="/landing-page-background.png"
+        src="/arctic_background_new.png"
         layout="responsive"
-        width={500}
-        height={743}
+        width={375}
+        height={700}
         quality={100}
       />
     </div>
