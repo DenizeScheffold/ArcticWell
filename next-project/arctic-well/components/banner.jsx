@@ -8,7 +8,7 @@ const Banner = () => {
     <div className={styles.banner_container}>
       <div>
         <img
-          src="/arctic_well_logo.svg"
+          src="/arctic_well_logo_new.svg"
           alt="logo"
           className={styles.arctic_well_logo}
           width={122}
