@@ -28,9 +28,14 @@ const Map = () => {
 
   const [map, setMap] = useState(null);
 
+  // @TODO: to complete https://github.com/DenizeScheffold/ArcticWell/issues/16 LatLngBounds can be used
+  // the idea would be to use LatLngBounds.extends to increase the size of the viewport to include the marker closest to the user
+  // the code that has been commented out below can be used as a base template for this
+  // see also https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLngBounds
+  // be careful to not re-introduce the zoom-in bug when implementing
   const onLoad = useCallback(function callback(map) {
-    // @TODO: clean this up when functional
-    // bounds seem to be what's causing the zoom bug -- unclear whether we need it's functionality either way
+    // bounds seem to be what's causing the zoom bug
+    // most likely fitBounds should be called differently
     // const bounds = new window.google.maps.LatLngBounds(pos);
     // map.fitBounds(bounds);
     setMap(map);
