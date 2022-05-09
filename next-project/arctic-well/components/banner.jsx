@@ -8,31 +8,25 @@ const Banner = () => {
     <div className={styles.banner_container}>
       <div>
         <img
-          src="/arctic_well_logo.svg"
+          src="/arctic_well_logo_new.svg"
           alt="logo"
           className={styles.arctic_well_logo}
           width={122}
           height={64}
           quality={100}
           
-          
-        
         />
       </div>
       <div className={styles.weather_subcontainer}>
         <span className={styles.Stockholm}>Stockholm </span>
         <span className={styles.C}>+31 °C</span>
         <img 
-        src="/bi_sun.svg" 
+        src="/bi_sun_new.svg" 
         alt="sunny" 
         className={styles.vector}
-        width={20}
-        height={20}
+        width={12}
+        height={12}
         quality={100}
-        
-        
-      
-        
         
         
         />

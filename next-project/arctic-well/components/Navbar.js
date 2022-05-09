@@ -33,9 +33,9 @@ export default function Navbar({ children }) {
           <div className={styles.map_nav}>
             <Image
               alt="background"
-              src="/navbar_map.svg"
+              src="/navbar_box_icon.svg"
               layout="responsive"
-              width={15}
+              width={25}
               height={11}
               quality={100}
             />
@@ -46,7 +46,7 @@ export default function Navbar({ children }) {
                   : styles.link - styles
               }
             >
-              Arctic
+              Find Box
             </a>
           </div>
         </Link>

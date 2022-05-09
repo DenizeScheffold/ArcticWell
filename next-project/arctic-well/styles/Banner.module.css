@@ -1,17 +1,17 @@
 
 .banner_container {
+    padding-top: 0.5em;
     align-self: stretch;
-    flex-grow: 1;
+    flex-grow: 2;
     display: flex;
     position: relative;
-    height: 4em;
-    background-color: var(--brand-cyan);
+    height: 5.5em;
     position: relative;
-    border-bottom: 2px solid var(--brand-dark-black);
     font-family: var(--body-1-font-family);
     font-weight: var(--body-1-font-weight);
     font-size: var(--body-1-font-size);
-    line-height: var(--body-1-line-height);
+    /*border-bottom: 2px solid var(--brand-dark-black);
+    line-height: var(--body-1-line-height);*/
   }
   
   .arctic_well_logo {
@@ -29,10 +29,10 @@
     width: 81px;
     height: 24px;
     flex-grow: 0;
-    font-family: var(--body-1-font-family);
-    font-weight: var(--body-1-font-weight);
-    font-size: var(--body-1-font-size);
-    line-height: var(--body-1-line-height);
+    font-family: var(--body-2-font-family);
+    font-weight: var(--body-2-font-weight);
+    font-size: var(--body-2-font-size);
+    line-height: var(--body-2-line-height);
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
@@ -49,10 +49,10 @@
     width: 44px;
     height: 24px;
     flex-grow: 0;
-    font-family: var(--body-1-font-family);
-    font-weight: var(--body-1-font-weight);
-    font-size: var(--body-1-font-size);
-    line-height: var(--body-1-line-height);
+    font-family: var(--body-2-font-family);
+    font-weight: var(--body-2-font-weight);
+    font-size: var(--body-2-font-size);
+    line-height: var(--body-2-line-height);
     font-stretch: normal;
     font-style: normal;
     letter-spacing: normal;
