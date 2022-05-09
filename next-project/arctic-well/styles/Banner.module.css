@@ -6,11 +6,11 @@
     position: relative;
     height: 4em;
     position: relative;
-    border-bottom: 2px solid var(--brand-dark-black);
     font-family: var(--body-1-font-family);
     font-weight: var(--body-1-font-weight);
     font-size: var(--body-1-font-size);
-    line-height: var(--body-1-line-height);
+    /*border-bottom: 2px solid var(--brand-dark-black);
+    line-height: var(--body-1-line-height);*/
   }
   
   .arctic_well_logo {
