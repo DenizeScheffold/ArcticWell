@@ -10,8 +10,8 @@
     font-family: var(--body-1-font-family);
     font-weight: var(--body-1-font-weight);
     font-size: var(--body-1-font-size);
-    /* border-bottom: 2px solid var(--brand-dark-black);
-    line-height: var(--body-1-line-height); */
+    line-height: var(--body-1-line-height);
+    /* border-bottom: 2px solid var(--brand-dark-black); */
   }
   
   .arctic_well_logo {
