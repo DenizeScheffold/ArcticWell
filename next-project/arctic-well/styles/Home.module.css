@@ -29,6 +29,6 @@
   margin-left: 9em;
   font-family: var(--label-button-regular-font-family);
   font-weight: var(--label-button-regular-font-weight);
-  font-size: var(--label-button-regular-font-weight);
+  font-size: var(--label-button-regular-font-size);
   line-height: var(--lable-button-regular-line-height);
 }
