@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.text}>   
-       <p>Now it's easy to stay</p> 
+       <p>Now it&apos;s easy to stay</p> 
         </div>
         <div className={styles.text}> 
         <p>breezy!</p>
