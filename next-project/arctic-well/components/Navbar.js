@@ -9,7 +9,7 @@ export default function Navbar({ children }) {
   return (
     <div className={styles.container}>
       <nav className={styles.navlinks}>
-        <Link href="/" className={styles.link - styles}>
+        <Link href="/" className={styles.link_styles}>
           <div className={styles.home_nav}>
             <Image
               alt="home"
@@ -21,7 +21,7 @@ export default function Navbar({ children }) {
             />
             <a
               className={
-                router.asPath === "/" ? styles.underline : styles.link - styles
+                router.asPath === "/" ? styles.underline : styles.link_styles
               }
             >
               Home
@@ -29,7 +29,7 @@ export default function Navbar({ children }) {
           </div>
         </Link>
 
-        <Link href="/map" className={styles.link - styles}>
+        <Link href="/map" className={styles.link_styles}>
           <div className={styles.map_nav}>
             <Image
               alt="background"
@@ -41,9 +41,7 @@ export default function Navbar({ children }) {
             />
             <a
               className={
-                router.asPath === "/map"
-                  ? styles.underline
-                  : styles.link - styles
+                router.asPath === "/map" ? styles.underline : styles.link_styles
               }
             >
               Find Box
@@ -51,7 +49,7 @@ export default function Navbar({ children }) {
           </div>
         </Link>
 
-        <Link href="/more" className={styles.link - styles}>
+        <Link href="/more" className={styles.link_styles}>
           <div className={styles.more_nav}>
             <Image
               alt="background"
@@ -65,7 +63,7 @@ export default function Navbar({ children }) {
               className={
                 router.asPath === "/more"
                   ? styles.underline
-                  : styles.link - styles
+                  : styles.link_styles
               }
             >
               More
