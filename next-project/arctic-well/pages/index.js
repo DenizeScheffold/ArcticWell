@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
 
 export default function Home() {
   <Head>
@@ -16,7 +17,14 @@ export default function Home() {
       </div>
 
       <div className={styles.rectangle}>
-        <img src="./Rectangle.png" height={39} width={184} />
+        <Image
+          alt="rectangle"
+          layout="responsive"
+          src="/Rectangle.png"
+          height={39}
+          width={184}
+          quality={100}
+        />
       </div>
 
       <div className={styles.buttonText}>
