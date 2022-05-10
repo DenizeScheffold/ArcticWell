@@ -89,7 +89,6 @@ const Map = () => {
       {markerData.map((arcticWellMarker) => (
         <Marker
           key={arcticWellMarker.name}
-          title={arcticWellMarker.name}
           position={{ lat: arcticWellMarker.lat, lng: arcticWellMarker.lng }}
           icon={arcticWellMarker.icon}
         >
