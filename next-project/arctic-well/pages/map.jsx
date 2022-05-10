@@ -6,7 +6,7 @@ import {
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import * as markerData from "../db/markers.json";
+import markerData from "../db/markers.json";
 import Image from "next/image";
 
 // @TODO: containerStyle should be moved elsewhere, this is a hacky solution
@@ -89,7 +89,6 @@ const Map = () => {
       {markerData.map((arcticWellMarker) => (
         <Marker
           key={arcticWellMarker.name}
-          title={arcticWellMarker.name}
           position={{ lat: arcticWellMarker.lat, lng: arcticWellMarker.lng }}
           icon={arcticWellMarker.icon}
         >

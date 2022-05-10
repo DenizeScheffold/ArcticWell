@@ -10,8 +10,8 @@
     font-family: var(--body-1-font-family);
     font-weight: var(--body-1-font-weight);
     font-size: var(--body-1-font-size);
-    /*border-bottom: 2px solid var(--brand-dark-black);
-    line-height: var(--body-1-line-height);*/
+    line-height: var(--body-1-line-height);
+    /* border-bottom: 2px solid var(--brand-dark-black); */
   }
   
   .arctic_well_logo {
@@ -33,9 +33,6 @@
     font-weight: var(--body-2-font-weight);
     font-size: var(--body-2-font-size);
     line-height: var(--body-2-line-height);
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: normal;
     color: var(--brand-dark-black);
     position: absolute;
     display: flex;
@@ -45,7 +42,7 @@
     justify-content: flex-end;
   }
   
-  .C {
+  .celsius {
     width: 44px;
     height: 24px;
     flex-grow: 0;
@@ -53,10 +50,6 @@
     font-weight: var(--body-2-font-weight);
     font-size: var(--body-2-font-size);
     line-height: var(--body-2-line-height);
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: normal;
-    text-align: left;
     color: var(--brand-dark-black);
     position: absolute;
     display: flex;
@@ -85,7 +78,7 @@
     margin-top: 2em !important;
     flex-grow: 0;
     position: absolute;
-    display: block;
+    display: flex;
     right: 0;
     margin-right: 1.5em;
     align-items: flex-end;
