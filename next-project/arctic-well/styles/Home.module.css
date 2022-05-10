@@ -13,7 +13,7 @@
 
 .text{
   color: var(--brand-dark-blue);
-  font-family: var(--heading-3-font-family) ;
+  font-family: var(--heading-3-font-family);
   font-weight: var(--heading-3-font-weight);
   font-size: var(--heading-3-font-size);
   font-style: var(--heading-3-line-height);
@@ -30,5 +30,5 @@
   font-family: var(--label-button-regular-font-family);
   font-weight: var(--label-button-regular-font-weight);
   font-size: var(--label-button-regular-font-weight);
-  line-height: var(--lable-button-regular-line-heigt);
+  line-height: var(--lable-button-regular-line-height);
 }
