@@ -6,7 +6,7 @@ import {
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import markerData from "../db/markers.json";
+import * as markerData from "../db/markers.json";
 import Image from "next/image";
 
 // @TODO: containerStyle should be moved elsewhere, this is a hacky solution
@@ -27,8 +27,8 @@ const Map = () => {
   });
 
   const { isLoaded } = useJsApiLoader({
-    id: "google-map-script",
-    googleMapsApiKey: "AIzaSyAX7mdZbBYLkHDuDERyWCxBju2EpZGJ3Ac",
+    id: process.env.ID,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   });
 
   const [map, setMap] = useState(null);
@@ -89,6 +89,7 @@ const Map = () => {
       {markerData.map((arcticWellMarker) => (
         <Marker
           key={arcticWellMarker.name}
+          title={arcticWellMarker.name}
           position={{ lat: arcticWellMarker.lat, lng: arcticWellMarker.lng }}
           icon={arcticWellMarker.icon}
         >
