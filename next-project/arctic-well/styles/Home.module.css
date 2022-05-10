@@ -1,4 +1,4 @@
-/*.container {
+.container {
   width: 100%;
   height: 4.125em;
   position: fixed;
@@ -9,7 +9,7 @@
   background-color: var(--brand-navy-dark);
   color: var(--brand-white);
   text-underline-offset: 0.3em;
-}*/
+}
 
 .text{
   color: var(--brand-dark-blue);

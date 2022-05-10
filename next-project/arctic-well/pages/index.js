@@ -9,7 +9,7 @@ export default function Home() {
     <link rel="icon" href="/favicon.ico" />
   </Head>;
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.text}>
         <p>Now it&apos;s easy to stay</p>
       </div>
