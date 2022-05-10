@@ -9,8 +9,8 @@ const Background = () => (
         alt="background"
         src="/arctic_background_new.png"
         layout="responsive"
-        width={375}
-        height={700}
+        width={376}
+        height={752}
         quality={100}
       />
     </div>
