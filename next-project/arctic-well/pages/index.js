@@ -8,8 +8,8 @@ export default function Home() {
     <title>Welcome to Arctic Well</title>
   </Head>;
   return (
-    <div className={styles.container}>
-     
+    
+    <div>
       <div className={styles.text}>
         <p>Now it&apos;s easy to stay</p>
       </div>
@@ -31,7 +31,6 @@ export default function Home() {
           Discover how it works!
           </a>
       </div>
-      
-     </div>
+    </div>
   );
 }
