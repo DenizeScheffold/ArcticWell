@@ -9,27 +9,29 @@ export default function Home() {
   </Head>;
   return (
     <div className={styles.container}>
+     
       <div className={styles.text}>
         <p>Now it&apos;s easy to stay</p>
       </div>
+      
       <div className={styles.text}>
         <p>breezy!</p>
       </div>
 
-      <div className={styles.rectangle}>
-        <Image
+      <div className={styles.button}>
+        <Image className={styles.rectangle}
           alt="rectangle"
           layout="responsive"
           src="/Rectangle.png"
           height={39}
           width={184}
-          quality={100}
-        />
+          quality={100} 
+           />
+          <a className={styles.buttonText} href="./onBoard1" >
+          Discover how it works!
+          </a>
       </div>
-
-      <div className={styles.buttonText}>
-        <a>Discover how it works!</a>
-      </div>
-    </div>
+      
+     </div>
   );
 }
