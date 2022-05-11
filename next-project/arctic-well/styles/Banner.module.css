@@ -6,11 +6,17 @@
     display: flex;
     position: absolute;
     height: 4em;
-    position: relative;
+    position: absolute; /*relative*/
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+
     font-family: var(--body-1-font-family);
     font-weight: var(--body-1-font-weight);
     font-size: var(--body-1-font-size);
     line-height: var(--body-1-line-height);
+    z-index: 1;
     /* border-bottom: 2px solid var(--brand-dark-black); */
   }
   
@@ -61,7 +67,7 @@
   }
   
   .weather_subcontainer  {
-    width: 160px;
+    width: 360px;
     height: 2.14em;
     flex-grow: 0;
     display: flex;

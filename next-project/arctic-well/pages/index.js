@@ -8,15 +8,19 @@ export default function Home() {
     <title>Welcome to Arctic Well</title>
   </Head>;
   return (
-    
-    <div>
-      <div className={styles.text}>
+
+<div>
+ 
+
+
+     <div className={styles.text}>
         <p>Now it&apos;s easy to stay</p>
       </div>
       
-      <div className={styles.text}>
+      <div className={styles.textBreezy}>
         <p>breezy!</p>
       </div>
+   
 
       <div className={styles.button}>
         <Image className={styles.rectangle}

@@ -9,9 +9,10 @@ const Background = () => (
         alt="background"
         src="/background_landingpage.png"
         layout="responsive"
-        width={376}
+        width={379.3}
         height={702}
         quality={100}
+
       />
     </div>
   </div>
