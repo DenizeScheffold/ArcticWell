@@ -155,3 +155,22 @@ body {
   height: 100%;
 }
 
+.more-div {
+  font-size: large;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.more-links {
+  margin-top: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  
+}
+
+hr {
+ border: 1px solid black;
+ background-color: black;
+ margin: 20px;
+}
+
