@@ -174,3 +174,11 @@ hr {
  margin: 20px;
 }
 
+.more-footer {
+  position:absolute;
+  width:100%;
+  bottom: 70px;
+  text-align:center;
+  font-weight: bold;
+}
+

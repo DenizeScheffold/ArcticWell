@@ -23,6 +23,8 @@ const More = () => {
       <hr className=".more-hr"></hr>
       <Link href="/contact"><h1 className="more-links">Contact us</h1></Link>
       <hr className=".more-hr"></hr>
+
+      <p className="more-footer">Designed by Arctic Well in Sweden.</p>
       </div>
     </div>
   );
