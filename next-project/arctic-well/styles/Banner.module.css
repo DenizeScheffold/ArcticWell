@@ -4,13 +4,8 @@
     align-self: stretch;
     flex-grow: 2;
     display: flex;
-<<<<<<< HEAD
     position: absolute;
     height: 4em;
-=======
-    position: relative;
-    height: 5.5em;
->>>>>>> 2f84bc520996a5341af03e7fa5c96ee7d8ccb67a
     position: relative;
     font-family: var(--body-1-font-family);
     font-weight: var(--body-1-font-weight);
