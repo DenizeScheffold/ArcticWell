@@ -156,22 +156,24 @@ body {
 }
 
 .more-div {
-  font-size: large;
-  text-align: left;
-  margin-top: 20px;
+  
+  
 }
 
 .more-links {
   margin-top: 20px;
   font-weight: bold;
   margin-left: 20px;
+  font-size: large;
+  text-align: left;
   
 }
 
 hr {
- border: 1px solid black;
+ border: 1px solid black !important;
  background-color: black;
  margin: 20px;
+ 
 }
 
 .more-footer {
@@ -180,5 +182,6 @@ hr {
   bottom: 70px;
   text-align:center;
   font-weight: bold;
+  font-size: smaller;
 }
 
