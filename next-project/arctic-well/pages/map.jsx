@@ -77,7 +77,7 @@ const Map = () => {
       onClick={centerMap}
       onUnmount={onUnmount}
     >
-      <Location />
+      {/* <Location /> */}
       <Marker position={pos} />
       {markerData.map((arcticWellMarker) => (
         <Marker
