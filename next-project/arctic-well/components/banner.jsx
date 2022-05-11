@@ -4,7 +4,6 @@ import styles from "../styles/Banner.module.css";
 const Banner = () => {
   return (
     <div className={styles.banner_container}>
-
       <div>
         <img
           src="/arctic_well_logo_new.svg"

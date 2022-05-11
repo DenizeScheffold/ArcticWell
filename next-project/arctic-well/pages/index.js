@@ -2,17 +2,14 @@ import React from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import Background from "./background";
 
 export default function Home() {
   <Head>
     <title>Welcome to Arctic Well</title>
   </Head>;
-
   return (
     
     <div>
-    <Background/>
       <div className={styles.text}>
         <p>Now it&apos;s easy to stay</p>
       </div>

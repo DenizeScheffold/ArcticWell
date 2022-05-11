@@ -5,7 +5,6 @@ export default function Home() {
     <Head>
       <title>Welcome to Arctic Well</title>
     </Head>;
-
     return 
     }
     
