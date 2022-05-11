@@ -14,9 +14,9 @@ export default function onBoard() {
 
       <div className={styles.backgoundOnBord1}>
       <Image
-        alt="boxPicture"
+        alt="card"
         layout="responsive"
-        src="/our_boxes.png"
+        src="/reyn.png"
         width={377}
         height={815}
         quality={100}
@@ -32,24 +32,15 @@ export default function onBoard() {
         width={140}
         quality={100} 
          />
-        <a className={styles.buttonText2} href="./onBoard2" >
+        <a className={styles.buttonText2} href="./map" >
         Next
         </a>
         </div>
         
-        <div className={styles.text2}>
-           <h1>Cooling, evolved</h1>
+        <div className={styles.textReady}>
+           <h1>Are you ready?</h1>
            </div>
-        
-        <div className={styles.text3}>
-        <p>Say hello to the fastest and easiest way to reach a comfortable body temperature. The experince will leave you feeling fresh and ready for your next adventure.</p>
-       </div>
-
-       <div className={styles.textskip}>
-         <a href="./map" >skip</a>
-       </div>
     
       </div>
-
     )
     }

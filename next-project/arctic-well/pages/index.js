@@ -11,8 +11,6 @@ export default function Home() {
 
 <div>
  
-
-
      <div className={styles.text}>
         <p>Now it&apos;s easy to stay</p>
       </div>

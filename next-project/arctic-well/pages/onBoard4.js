@@ -14,9 +14,9 @@ export default function onBoard() {
 
       <div className={styles.backgoundOnBord1}>
       <Image
-        alt="boxPicture"
+        alt="card"
         layout="responsive"
-        src="/our_boxes.png"
+        src="/open_box.png"
         width={377}
         height={815}
         quality={100}
@@ -32,24 +32,23 @@ export default function onBoard() {
         width={140}
         quality={100} 
          />
-        <a className={styles.buttonText2} href="./onBoard2" >
+        <a className={styles.buttonText2} href="./onBoard5" >
         Next
         </a>
         </div>
         
-        <div className={styles.text2}>
-           <h1>Cooling, evolved</h1>
+        <div className={styles.textOpenBox}>
+           <h1>Open Box</h1>
            </div>
         
-        <div className={styles.text3}>
-        <p>Say hello to the fastest and easiest way to reach a comfortable body temperature. The experince will leave you feeling fresh and ready for your next adventure.</p>
+        <div className={styles.textOpenBox2}>
+        <p>When your payment is completed, the door will unlock. As soon as you entered the box and closed the door your 90 seconds starts.</p>
        </div>
 
        <div className={styles.textskip}>
-         <a href="./map" >skip</a>
+        <a href="./map" >skip</a>
        </div>
     
       </div>
-
     )
     }
