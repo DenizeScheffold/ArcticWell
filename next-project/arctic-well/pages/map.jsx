@@ -61,20 +61,9 @@ const Map = () => {
       ({ coords: { latitude: lat, longitude: lng } }) => {
         setPos({ lat, lng });
         console.log("geoSuccess, lat=" + lat + ", lng=" + lng);
-      },
-      geoError,
-      geoOptions
+      }
     );
   }, []);
-
-  const geoError = (error) => {
-    console.log("Error code=" + error.code);
-  };
-  // Theoretically this cuts down on API requests by using cached values, provided they exist and are younger than maximumAge
-  // @TODO: test if it actually works as intended
-  const geoOptions = {
-    maximumAge: 5 * 60 * 1000,
-  };
 
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
   // @TODO: make the infoWindow only pop up for boxes the user has clicked on

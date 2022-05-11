@@ -4,8 +4,8 @@
     align-self: stretch;
     flex-grow: 2;
     display: flex;
-    position: relative;
-    height: 5.5em;
+    position: absolute;
+    height: 4em;
     position: relative;
     font-family: var(--body-1-font-family);
     font-weight: var(--body-1-font-weight);
