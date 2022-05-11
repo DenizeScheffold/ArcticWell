@@ -8,6 +8,7 @@ import {
 } from "@react-google-maps/api";
 import markerData from "../db/markers.json";
 import Image from "next/image";
+import Location from "../components/Location";
 
 // @TODO: containerStyle should be moved elsewhere, this is a hacky solution
 
@@ -20,7 +21,7 @@ const Map = () => {
   <Head>
     <title>Find your Arctic Well</title>
   </Head>;
-
+  
   const [pos, setPos] = useState({
     lat: 59.3095651,
     lng: 18.0194099,
@@ -49,6 +50,8 @@ const Map = () => {
   const onUnmount = useCallback(function callback(map) {
     setMap(null);
   }, []);
+
+
 
   // Super hacky way of tying geolocation to a user action
   // Works by centering the map on the user when/if they left click the map
@@ -85,6 +88,7 @@ const Map = () => {
       onClick={centerMap}
       onUnmount={onUnmount}
     >
+      <Location />
       <Marker position={pos} />
       {markerData.map((arcticWellMarker) => (
         <Marker
@@ -96,10 +100,12 @@ const Map = () => {
             <div>{arcticWellMarker.name}</div>
           </InfoWindow>
         </Marker>
+         
       ))}
       {/* Child components, such as markers and info windows go here */}
       <></>
     </GoogleMap>
+    
   ) : (
     <></>
   );
