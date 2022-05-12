@@ -35,25 +35,19 @@ const Map = () => {
   };
 
   function Locate({ centerMap }) {
-    return (
-      <button className={styles.location_container} onClick={centerMap}>
-        {" "}
-        <Image
-          className={styles.centerBtn}
-          alt="locateBtn"
-          src="/find_location_vector.png"
-          layout="responsive"
-          width={4}
-          height={4}
-          quality={100}
-        />
-      </button>
-    );
+    <button className={styles.location_container} onClick={centerMap}>
+      {" "}
+      <Image
+        className={styles.centerBtn}
+        alt="locateBtn"
+        src="/find_location_vector.png"
+        layout="responsive"
+        width={4}
+        height={4}
+        quality={100}
+      />
+    </button>;
   }
-
-  const infoWindowOptions = {
-    disableAutoPan: true,
-  };
 
   const centerMap = useCallback(function callback(map) {
     navigator?.geolocation.getCurrentPosition(
@@ -71,14 +65,9 @@ const Map = () => {
 
   const [map, setMap] = useState(null);
 
-  // @TODO: to complete https://github.com/DenizeScheffold/ArcticWell/issues/16 LatLngBounds could be used
-  // the idea would be to use LatLngBounds.extends to increase the size of the viewport to include the marker closest to the user
-  // the code that has been commented out below can be used as a base template for this
-  // see also https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLngBounds
-  // be careful to not re-introduce the zoom-in bug when implementing
   const onLoad = useCallback(function callback(map) {
-    // bounds seem to be what's causing the zoom bug
-    // most likely fitBounds should be called differently
+    // bounds is causing the zoom bug
+    // most likely fitBounds should be called differently, though I'm not sure we need to use it at all
     // const bounds = new window.google.maps.LatLngBounds(pos);
     // map.fitBounds(bounds);
     setMap(map);
@@ -91,7 +80,7 @@ const Map = () => {
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
   return isLoaded ? (
     <div className={styles.map_container}>
-      <Locate centerMap={centerMap}></Locate>
+      {/* <Locate centerMap={centerMap}></Locate> */}
       <GoogleMap
         id={"arctic-map"}
         mapContainerStyle={containerStyle}
@@ -110,10 +99,15 @@ const Map = () => {
             onClick={() => {
               setSelected(arcticWellMarker);
             }}
-          ></Marker>
+          />
         ))}
         {selected ? (
-          <InfoWindow position={{ lat: selected.lat, lng: selected.lng }}>
+          <InfoWindow
+            position={{ lat: selected.lat, lng: selected.lng }}
+            onCloseClick={() => {
+              setSelected(null);
+            }}
+          >
             <div>{selected.name}</div>
           </InfoWindow>
         ) : null}
