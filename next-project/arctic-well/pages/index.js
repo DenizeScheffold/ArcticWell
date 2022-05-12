@@ -20,9 +20,8 @@ export default function Home() {
           quality={100}
         />
       </div>
-      <Link href="./onBoard1" className={styles.button}>
+      <Link href="./onBoard1" className={styles.button} passHref>
         <div className={styles.button}>
-      
           <Image
             alt="Rectangel"
             layout="responsive"
@@ -31,9 +30,8 @@ export default function Home() {
             width={184}
             quality={100}
           />
-           <a className={styles.buttonText}  >
-    Discover how it works!
-      </a>  </div>
+          <a className={styles.buttonText}>Discover how it works!</a>{" "}
+        </div>
       </Link>
       <div className={styles.text}>
         <h1>Now it&apos;s easy to stay</h1>

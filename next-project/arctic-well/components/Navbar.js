@@ -9,7 +9,7 @@ export default function Navbar({ children }) {
   return (
     <div className={styles.container}>
       <nav className={styles.navlinks}>
-        <Link href="/" className={styles.link_styles}>
+        <Link href="/" className={styles.link_styles} passHref>
           <div className={styles.home_nav}>
             <Image
               alt="home"
@@ -29,7 +29,7 @@ export default function Navbar({ children }) {
           </div>
         </Link>
 
-        <Link href="/map" className={styles.link_styles}>
+        <Link href="/map" className={styles.link_styles} passHref>
           <div className={styles.map_nav}>
             <Image
               alt="background"
@@ -49,7 +49,7 @@ export default function Navbar({ children }) {
           </div>
         </Link>
 
-        <Link href="/more" className={styles.link_styles}>
+        <Link href="/more" className={styles.link_styles} passHref>
           <div className={styles.more_nav}>
             <Image
               alt="background"
