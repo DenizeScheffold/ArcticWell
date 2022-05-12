@@ -1,3 +1,7 @@
+.backgoundLandingPage{
+  z-index: -1;
+}
+
 .text{
   color: var(--brand-dark-blue);
   font-family: var(--heading-3-font-family);
@@ -5,7 +9,7 @@
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
   margin-left: 0.6em;
-  margin-top: 3em;
+  margin-top: -20em;
 }
 .textBreezy{
   color: var(--brand-dark-blue);
@@ -14,7 +18,7 @@
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
   margin-left: 0.6em;
-  margin-top: 0.1em;
+  margin-top: -0.1em;
 }
 
 .button {
@@ -43,10 +47,6 @@
   right: 0;
   height: fit-content;
   margin: auto;
-}
-
-.backgound{
-  z-index: -1;
 }
 
 .rectangel2{
@@ -192,5 +192,3 @@
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
 }
-
-

@@ -10,6 +10,17 @@ export default function Home() {
   return (
 
 <div>
+
+<div className={styles.backgoundLandingPage}>
+      <Image
+        alt="articgang"
+        layout="responsive"
+        src="/background_landingpage.png"
+        width={377}
+        height={706}
+        quality={100}
+         />
+        </div>
  
      <div className={styles.text}>
         <p>Now it&apos;s easy to stay</p>

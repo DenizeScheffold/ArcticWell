@@ -18,7 +18,7 @@ export default function onBoard() {
         layout="responsive"
         src="/our_boxes.png"
         width={377}
-        height={815}
+        height={706}
         quality={100}
          />
         </div>
