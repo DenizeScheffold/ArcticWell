@@ -7,6 +7,7 @@ import {
   InfoWindow,
 } from "@react-google-maps/api";
 import markerData from "../db/markers.json";
+import styles from "../styles/Map.module.css";
 import Image from "next/image";
 import Location from "../components/Location";
 
@@ -14,14 +15,14 @@ import Location from "../components/Location";
 
 const containerStyle = {
   width: "100%",
-  height: "80%",
+  height: "100%",
 };
 
 const Map = () => {
   <Head>
     <title>Find your Arctic Well</title>
   </Head>;
-  
+
   const [pos, setPos] = useState({
     lat: 59.3095651,
     lng: 18.0194099,
@@ -51,8 +52,6 @@ const Map = () => {
     setMap(null);
   }, []);
 
-
-
   // Super hacky way of tying geolocation to a user action
   // Works by centering the map on the user when/if they left click the map
   // @TODO: tie this to a button instead
@@ -68,33 +67,33 @@ const Map = () => {
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
   // @TODO: make the infoWindow only pop up for boxes the user has clicked on
   return isLoaded ? (
-    <GoogleMap
-      id={"arctic-map"}
-      mapContainerStyle={containerStyle}
-      center={pos}
-      zoom={15}
-      onLoad={onLoad}
-      onClick={centerMap}
-      onUnmount={onUnmount}
-    >
-      {/* <Location /> */}
-      <Marker position={pos} />
-      {markerData.map((arcticWellMarker) => (
-        <Marker
-          key={arcticWellMarker.name}
-          position={{ lat: arcticWellMarker.lat, lng: arcticWellMarker.lng }}
-          icon={arcticWellMarker.icon}
-        >
-          <InfoWindow anchor={arcticWellMarker}>
-            <div>{arcticWellMarker.name}</div>
-          </InfoWindow>
-        </Marker>
-         
-      ))}
-      {/* Child components, such as markers and info windows go here */}
-      <></>
-    </GoogleMap>
-    
+    <div className={styles.map_container}>
+      <GoogleMap
+        id={"arctic-map"}
+        mapContainerStyle={containerStyle}
+        center={pos}
+        zoom={15}
+        onLoad={onLoad}
+        onClick={centerMap}
+        onUnmount={onUnmount}
+      >
+        {/* <Location /> */}
+        <Marker position={pos} />
+        {markerData.map((arcticWellMarker) => (
+          <Marker
+            key={arcticWellMarker.name}
+            position={{ lat: arcticWellMarker.lat, lng: arcticWellMarker.lng }}
+            icon={arcticWellMarker.icon}
+          >
+            <InfoWindow anchor={arcticWellMarker}>
+              <div>{arcticWellMarker.name}</div>
+            </InfoWindow>
+          </Marker>
+        ))}
+        {/* Child components, such as markers and info windows go here */}
+        <></>
+      </GoogleMap>
+    </div>
   ) : (
     <></>
   );
