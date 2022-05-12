@@ -33,8 +33,10 @@ next-project/arctic-well/.next/cache/
 next-project/arctic-well/.next/cache/webpack
 next-project/arctic-well/.next/trace
 next-project/arctic-well/.next/build-manifest.json
+next-project/arctic-well/.next/server/
 next-project/arctic-well/.next/server/pages/_document.js
 next-project/arctic-well/.next/server/pages/_error.js
 next-project/arctic-well/.next/cache/webpack/server-development/
 next-project/arctic-well/.next/cache/webpack/server-development/0.pack
 next-project/arctic-well/.next/cache/webpack/server-development/7.pack
+next-project/arctic-well/.next/server/middleware-react-loadable-manifest.js
