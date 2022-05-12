@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/More.module.css";
-import Background from "../pages/background";
 import React from "react";
 
 export default function More() {
@@ -33,7 +32,6 @@ export default function More() {
       <hr className={styles.more_hr}></hr>
 
       <p className={styles.more_footer}>Designed by Arctic Well in Sweden.</p>
-      <Background />
     </div>
   );
 }
