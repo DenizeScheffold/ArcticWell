@@ -35,7 +35,6 @@ const Map = () => {
   };
 
   function Locate({ centerMap }) {
-    return (
       <button className={styles.location_container} onClick={centerMap}>
         {" "}
         <Image
@@ -48,7 +47,6 @@ const Map = () => {
           quality={100}
         />
       </button>
-    );
   }
 
   const infoWindowOptions = {
