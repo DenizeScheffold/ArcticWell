@@ -35,18 +35,18 @@ const Map = () => {
   };
 
   function Locate({ centerMap }) {
-      <button className={styles.location_container} onClick={centerMap}>
-        {" "}
-        <Image
-          className={styles.centerBtn}
-          alt="locateBtn"
-          src="/find_location_vector.png"
-          layout="responsive"
-          width={4}
-          height={4}
-          quality={100}
-        />
-      </button>
+    <button className={styles.location_container} onClick={centerMap}>
+      {" "}
+      <Image
+        className={styles.centerBtn}
+        alt="locateBtn"
+        src="/find_location_vector.png"
+        layout="responsive"
+        width={4}
+        height={4}
+        quality={100}
+      />
+    </button>;
   }
 
   const infoWindowOptions = {
@@ -89,7 +89,7 @@ const Map = () => {
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
   return isLoaded ? (
     <div className={styles.map_container}>
-      <Locate centerMap={centerMap}></Locate>
+      {/* <Locate centerMap={centerMap}></Locate> */}
       <GoogleMap
         id={"arctic-map"}
         mapContainerStyle={containerStyle}
@@ -111,7 +111,12 @@ const Map = () => {
           ></Marker>
         ))}
         {selected ? (
-          <InfoWindow position={{ lat: selected.lat, lng: selected.lng }}>
+          <InfoWindow
+            position={{ lat: selected.lat, lng: selected.lng }}
+            onCloseClick={() => {
+              setSelected(null);
+            }}
+          >
             <div>{selected.name}</div>
           </InfoWindow>
         ) : null}
