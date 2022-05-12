@@ -121,7 +121,7 @@ const Map = () => {
             </InfoWindow>
           </Marker>
         ))}
-        /* Child components, such as markers and info windows go here
+        {/* /* Child components, such as markers and info windows go here */}
         <></>
       </GoogleMap>
     </div>
