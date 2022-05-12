@@ -49,6 +49,10 @@ const Map = () => {
     </button>;
   }
 
+  const infoWindowOptions = {
+    pixelOffset: new google.maps.Size(0, -37),
+  };
+
   const centerMap = useCallback(function callback(map) {
     navigator?.geolocation.getCurrentPosition(
       ({ coords: { latitude: lat, longitude: lng } }) => {
@@ -107,6 +111,7 @@ const Map = () => {
             onCloseClick={() => {
               setSelected(null);
             }}
+            options={infoWindowOptions}
           >
             <div>{selected.name}</div>
           </InfoWindow>
