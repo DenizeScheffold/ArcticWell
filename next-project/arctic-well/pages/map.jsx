@@ -53,7 +53,12 @@ const Map = () => {
         />
       </button>
     );
-  }
+  };
+  
+
+  const infoWindowOptions = {
+    disableAutoPan: true,
+  };
 
   const centerMap = useCallback(function callback(map) {
     navigator?.geolocation.getCurrentPosition(
@@ -63,6 +68,7 @@ const Map = () => {
       }
     );
   }, []);
+
 
   const { isLoaded } = useJsApiLoader({
     id: process.env.ID,
@@ -110,7 +116,7 @@ const Map = () => {
             position={{ lat: arcticWellMarker.lat, lng: arcticWellMarker.lng }}
             icon={arcticWellMarker.icon}
           >
-            <InfoWindow anchor={arcticWellMarker}>
+            <InfoWindow anchor={arcticWellMarker} options={infoWindowOptions}>
               <div>{arcticWellMarker.name}</div>
             </InfoWindow>
           </Marker>
@@ -122,6 +128,7 @@ const Map = () => {
   ) : (
     <></>
   );
-};
+  };
+
 
 export default memo(Map);
