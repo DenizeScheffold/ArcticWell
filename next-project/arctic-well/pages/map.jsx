@@ -60,20 +60,20 @@ const Map = () => {
     setMap(null);
   }, []);
 
-  function Locate({ centerMap }) {
-    <button className={styles.location_container} onClick={centerMap}>
-      {" "}
-      <Image
-        className={styles.centerBtn}
-        alt="locateBtn"
-        src="/find_location_vector.png"
-        layout="responsive"
-        width={4}
-        height={4}
-        quality={100}
-      />
-    </button>;
-  }
+  // function Locate({ centerMap }) {
+  //   <button className={styles.location_container} onClick={centerMap}>
+  //     {" "}
+  //     <Image
+  //       className={styles.centerBtn}
+  //       alt="locateBtn"
+  //       src="/find_location_vector.png"
+  //       layout="responsive"
+  //       width={4}
+  //       height={4}
+  //       quality={100}
+  //     />
+  //   </button>
+  // }
 
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
   return isLoaded ? (
@@ -110,6 +110,17 @@ const Map = () => {
             <div>{selected.name}</div>
           </InfoWindow>
         ) : null}
+        <button className={styles.location_container} onClick={centerMap}>
+          <Image
+            className={styles.centerBtn}
+            alt="locateBtn"
+            src="/find_location_vector.png"
+            layout="responsive"
+            width={4}
+            height={4}
+            quality={100}
+          />
+        </button>
         {/* Child components, such as markers and info windows go here */}
         <></>
       </GoogleMap>
