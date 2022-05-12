@@ -7,9 +7,9 @@
   overflow: hidden;
 }
 
-.buttonText{
+.buttonText {
   font-family: var(--label-button-regular-font-family);
-  font-weight: var( --label-button-regular-font-weight);
+  font-weight: var(--label-button-regular-font-weight);
   font-size: var(--label-button-regular-font-size);
   line-height: var(--label-button-regular-line-height);
   text-decoration: none;
@@ -24,7 +24,7 @@
   margin: auto;
 }
 
-.text{
+.text {
   margin-top: -2.9em;
   margin-left: 0.6em;
   color: var(--brand-dark-blue);
@@ -33,9 +33,10 @@
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
   position: relative;
-  
+  width: fit-content;
 }
-.textBreezy{
+
+.textBreezy {
   margin-top: 0.03em;
   margin-left: 0.6em;
   color: var(--brand-dark-blue);
@@ -44,9 +45,10 @@
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
   position: relative;
+  width: fit-content;
 }
 
-.rectangel2{
+.rectangel2 {
   margin-left: 9em;
   width: 184px;
   height: 39px;
@@ -54,7 +56,7 @@
   overflow: hidden;
 }
 
-.button2{
+.button2 {
   margin-left: 2.7em;
   margin-top: -10.5em;
   width: 272px;
@@ -63,9 +65,9 @@
   overflow: hidden;
 }
 
-.buttonText2{
+.buttonText2 {
   font-family: var(--label-button-regular-font-family);
-  font-weight: var( --label-button-regular-font-weight);
+  font-weight: var(--label-button-regular-font-weight);
   font-size: var(--label-button-regular-font-size);
   line-height: var(--label-button-regular-line-height);
   text-decoration: none;
@@ -80,29 +82,29 @@
   margin: auto;
 }
 
-.text2{
+.text2 {
   position: absolute;
   margin-top: -6.3em;
   margin-left: 2em;
-  color: var( --brand-white);
+  color: var(--brand-white);
   font-family: var(--heading-3-font-family);
   font-weight: var(--heading-3-font-weight);
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
 }
 
-.text3{
+.text3 {
   position: absolute;
   margin-top: -9.8em;
   margin-left: 2em;
-  color: var( --brand-white);
+  color: var(--brand-white);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
 }
 
-.textskip{
+.textskip {
   position: absolute;
   margin-top: -0.3em;
   margin-left: 10.5em;
@@ -110,78 +112,77 @@
   text-decoration: none;
 }
 
-.textMap{
+.textMap {
   position: absolute;
   margin-top: -6.3em;
   margin-left: 4.6em;
-  color: var( --brand-white);
+  color: var(--brand-white);
   font-family: var(--heading-3-font-family);
   font-weight: var(--heading-3-font-weight);
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
 }
 
-.textMap2{
+.textMap2 {
   position: absolute;
   margin-top: -9.3em;
   margin-left: 3.6em;
-  color: var( --brand-white);
+  color: var(--brand-white);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
 }
 
-.textCard{
+.textCard {
   position: absolute;
   margin-top: -6.3em;
   margin-left: 2.6em;
-  color: var( --brand-white);
+  color: var(--brand-white);
   font-family: var(--heading-3-font-family);
   font-weight: var(--heading-3-font-weight);
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
 }
 
-.textCard2{
+.textCard2 {
   position: absolute;
   margin-top: -9.3em;
   margin-left: 2.6em;
-  color: var( --brand-white);
+  color: var(--brand-white);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
 }
 
-.textOpenBox{
+.textOpenBox {
   position: absolute;
   margin-top: -6.3em;
   margin-left: 3.6em;
-  color: var( --brand-white);
+  color: var(--brand-white);
   font-family: var(--heading-3-font-family);
   font-weight: var(--heading-3-font-weight);
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
 }
 
-.textOpenBox2{
+.textOpenBox2 {
   position: absolute;
   margin-top: -9.3em;
   margin-left: 1.6em;
-  color: var( --brand-white);
+  color: var(--brand-white);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-
 }
 
-.textReady{
+.textReady {
   position: absolute;
   margin-top: -7.8em;
   margin-left: 2.5em;
-  color: var( --brand-white);
+  color: var(--brand-white);
   font-family: var(--heading-3-font-family);
   font-weight: var(--heading-3-font-weight);
   font-size: var(--heading-3-font-size);
