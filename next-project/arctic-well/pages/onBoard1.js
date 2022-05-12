@@ -24,7 +24,7 @@ export default function onBoard() {
         </div>
   
       <div className={styles.button2}>
-      <Image className={styles.rectangel2}
+      <Image 
         alt="Rectangel"
         layout="responsive"
         src="/Rectangle_blue.png"

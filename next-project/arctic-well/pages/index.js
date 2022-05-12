@@ -21,19 +21,10 @@ export default function Home() {
         quality={100}
          />
         </div>
- 
-     <div className={styles.text}>
-        <p>Now it&apos;s easy to stay</p>
-      </div>
-      
-      <div className={styles.textBreezy}>
-        <p>breezy!</p>
-      </div>
-   
 
-      <div className={styles.button}>
-        <Image className={styles.rectangle}
-          alt="rectangle"
+  <div className={styles.button}>
+        <Image
+          alt="Rectangel"
           layout="responsive"
           src="/Rectangle.png"
           height={39}
@@ -44,6 +35,15 @@ export default function Home() {
           Discover how it works!
           </a>
       </div>
+
+      <div className={styles.text}>
+      <h1>Now it&apos;s easy to stay</h1>
+      </div>
+      
+      <div className={styles.textBreezy}>
+      <p>breezy!</p>
+      </div>
+     
     </div>
-  );
+  )
 }
