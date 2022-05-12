@@ -10,8 +10,7 @@ export default function Home() {
   return (
 
 <div>
-
-<div className={styles.backgoundLandingPage}>
+<div >
       <Image
         alt="articgang"
         layout="responsive"
@@ -23,7 +22,7 @@ export default function Home() {
         </div>
 
   <div className={styles.button}>
-        <Image
+        <Image 
           alt="Rectangel"
           layout="responsive"
           src="/Rectangle.png"
@@ -31,7 +30,7 @@ export default function Home() {
           width={184}
           quality={100} 
            />
-          <a className={styles.buttonText} href="./onBoard1" >
+        <a className={styles.buttonText} href="./onBoard1" >
           Discover how it works!
           </a>
       </div>

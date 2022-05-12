@@ -12,7 +12,7 @@ export default function onBoard() {
 
       <div>
 
-      <div className={styles.backgoundOnBord1}>
+      <div>
       <Image
         alt="card"
         layout="responsive"
