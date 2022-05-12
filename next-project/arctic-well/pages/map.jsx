@@ -10,17 +10,12 @@ import markerData from "../db/markers.json";
 import styles from "../styles/Map.module.css";
 import Image from "next/image";
 
-// @TODO: containerStyle should be moved elsewhere, this is a hacky solution
-
-const containerStyle = {
-  width: "100%",
-  height: "100%",
-};
-
 const Map = () => {
   <Head>
     <title>Find your Arctic Well</title>
   </Head>;
+
+  const [map, setMap] = useState(null);
 
   const [pos, setPos] = useState({
     lat: 59.3095651,
@@ -33,6 +28,41 @@ const Map = () => {
     disableDefaultUI: true,
     // zoomControl: true,
   };
+
+  const infoWindowOptions = {
+    pixelOffset: new google.maps.Size(0, -37),
+  };
+
+  const containerStyle = {
+    width: "100%",
+    height: "100%",
+  };
+
+  const { isLoaded } = useJsApiLoader({
+    id: process.env.ID,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+  });
+
+  const centerMap = useCallback(function callback(map) {
+    navigator?.geolocation.getCurrentPosition(
+      ({ coords: { latitude: lat, longitude: lng } }) => {
+        setPos({ lat, lng });
+        console.log("geoSuccess, lat=" + lat + ", lng=" + lng);
+      }
+    );
+  }, []);
+
+  const onLoad = useCallback(function callback(map) {
+    // bounds is causing the zoom bug
+    // most likely fitBounds should be called differently, though I'm not sure we need to use it at all
+    // const bounds = new window.google.maps.LatLngBounds(pos);
+    // map.fitBounds(bounds);
+    setMap(map);
+  }, []);
+
+  const onUnmount = useCallback(function callback(map) {
+    setMap(null);
+  }, []);
 
   function Locate({ centerMap }) {
     <button className={styles.location_container} onClick={centerMap}>
@@ -48,38 +78,6 @@ const Map = () => {
       />
     </button>;
   }
-
-  const infoWindowOptions = {
-    pixelOffset: new google.maps.Size(0, -37),
-  };
-
-  const centerMap = useCallback(function callback(map) {
-    navigator?.geolocation.getCurrentPosition(
-      ({ coords: { latitude: lat, longitude: lng } }) => {
-        setPos({ lat, lng });
-        console.log("geoSuccess, lat=" + lat + ", lng=" + lng);
-      }
-    );
-  }, []);
-
-  const { isLoaded } = useJsApiLoader({
-    id: process.env.ID,
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-  });
-
-  const [map, setMap] = useState(null);
-
-  const onLoad = useCallback(function callback(map) {
-    // bounds is causing the zoom bug
-    // most likely fitBounds should be called differently, though I'm not sure we need to use it at all
-    // const bounds = new window.google.maps.LatLngBounds(pos);
-    // map.fitBounds(bounds);
-    setMap(map);
-  }, []);
-
-  const onUnmount = useCallback(function callback(map) {
-    setMap(null);
-  }, []);
 
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
   return isLoaded ? (
