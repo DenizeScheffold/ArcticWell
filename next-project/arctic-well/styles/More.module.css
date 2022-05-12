@@ -1,0 +1,26 @@
+.more_div {
+  padding: 0;
+}
+
+.more_links {
+  margin-top: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: large;
+  text-align: left;
+}
+
+.more_hr {
+  border: 1px solid black !important;
+  background-color: black;
+  margin: 20px;
+}
+
+.more_footer {
+  position: absolute;
+  width: 100%;
+  bottom: 70px;
+  text-align: center;
+  font-weight: bold;
+  font-size: smaller;
+}
