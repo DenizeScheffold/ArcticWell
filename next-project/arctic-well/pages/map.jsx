@@ -49,10 +49,6 @@ const Map = () => {
     </button>;
   }
 
-  const infoWindowOptions = {
-    disableAutoPan: true,
-  };
-
   const centerMap = useCallback(function callback(map) {
     navigator?.geolocation.getCurrentPosition(
       ({ coords: { latitude: lat, longitude: lng } }) => {
