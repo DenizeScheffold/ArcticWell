@@ -20,7 +20,7 @@ export default function Home() {
           quality={100}
         />
       </div>
-      <Link href="./onBoard1" className={styles.button}>
+      <Link href="./onBoard1" className={styles.button} passHref>
         <div className={styles.button}>
           <Image
             alt="Rectangel"
