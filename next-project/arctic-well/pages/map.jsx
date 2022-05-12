@@ -34,18 +34,12 @@ const Map = () => {
 
   function Locate({ centerMap }) {
     return (
-      <button
-        className={styles.location_container}
-        input
-        type="image"
-        src="/get_location_vector.svg"
-        onClick={centerMap}
-      >
+      <button className={styles.location_container} onClick={centerMap}>
         {" "}
         <Image
           className={styles.centerBtn}
           alt="locateBtn"
-          src="/get_location_vector.svg"
+          src="/find_location_vector.png"
           layout="responsive"
           width={4}
           height={4}
@@ -53,8 +47,7 @@ const Map = () => {
         />
       </button>
     );
-  };
-  
+  }
 
   const infoWindowOptions = {
     disableAutoPan: true,
@@ -68,7 +61,6 @@ const Map = () => {
       }
     );
   }, []);
-
 
   const { isLoaded } = useJsApiLoader({
     id: process.env.ID,
@@ -105,7 +97,6 @@ const Map = () => {
         center={pos}
         zoom={15}
         onLoad={onLoad}
-        // onClick={centerMap}
         onUnmount={onUnmount}
         options={options}
       >
@@ -128,7 +119,6 @@ const Map = () => {
   ) : (
     <></>
   );
-  };
-
+};
 
 export default memo(Map);
