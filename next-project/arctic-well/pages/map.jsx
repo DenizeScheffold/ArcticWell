@@ -28,6 +28,10 @@ const Map = () => {
     lng: 18.0194099,
   });
 
+  const options = {
+    disableDefaultUI: true
+  }
+
   const { isLoaded } = useJsApiLoader({
     id: process.env.ID,
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
@@ -76,6 +80,7 @@ const Map = () => {
         onLoad={onLoad}
         onClick={centerMap}
         onUnmount={onUnmount}
+        options={options}
       >
         {/* <Location /> */}
         <Marker position={pos} />
