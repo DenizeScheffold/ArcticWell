@@ -28,12 +28,10 @@ const Map = () => {
     lng: 18.0194099,
   });
 
+  const [selected, setSelected] = useState(null);
+
   const options = {
     disableDefaultUI: true,
-  };
-
-  const infoWindowOptions = {
-    disableAutoPan: true,
   };
 
   const { isLoaded } = useJsApiLoader({
@@ -73,7 +71,6 @@ const Map = () => {
   }, []);
 
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
-  // @TODO: make the infoWindow only pop up for boxes the user has clicked on
   return isLoaded ? (
     <div className={styles.map_container}>
       <GoogleMap
@@ -93,12 +90,16 @@ const Map = () => {
             key={arcticWellMarker.name}
             position={{ lat: arcticWellMarker.lat, lng: arcticWellMarker.lng }}
             icon={arcticWellMarker.icon}
-          >
-            <InfoWindow anchor={arcticWellMarker} options={infoWindowOptions}>
-              <div>{arcticWellMarker.name}</div>
-            </InfoWindow>
-          </Marker>
+            onClick={() => {
+              setSelected(arcticWellMarker);
+            }}
+          ></Marker>
         ))}
+        {selected ? (
+          <InfoWindow position={{ lat: selected.lat, lng: selected.lng }}>
+            <div>{selected.name}</div>
+          </InfoWindow>
+        ) : null}
         {/* Child components, such as markers and info windows go here */}
         <></>
       </GoogleMap>
