@@ -1,34 +1,10 @@
-.backgoundLandingPage{
-  z-index: -1;
-}
-
-.text{
-  color: var(--brand-dark-blue);
-  font-family: var(--heading-3-font-family);
-  font-weight: var(--heading-3-font-weight);
-  font-size: var(--heading-3-font-size);
-  line-height: var(--heading-3-line-height);
-  margin-left: 0.6em;
-  margin-top: -20em;
-}
-.textBreezy{
-  color: var(--brand-dark-blue);
-  font-family: var(--heading-3-font-family);
-  font-weight: var(--heading-3-font-weight);
-  font-size: var(--heading-3-font-size);
-  line-height: var(--heading-3-line-height);
-  margin-left: 0.6em;
-  margin-top: -0.1em;
-}
-
 .button {
   margin-left: 9em;
-  margin-top: -1.91em;
-  width: 184px;
-  height: 39px;
+  margin-top: -33em;
+  width: 190px;
+  height: 42px;
   position: relative;
   overflow: hidden;
-
 }
 
 .buttonText{
@@ -47,6 +23,30 @@
   right: 0;
   height: fit-content;
   margin: auto;
+}
+
+.text{
+  margin-top: -2.9em;
+  margin-left: 0.6em;
+  color: var(--brand-dark-blue);
+  font-family: var(--heading-3-font-family);
+  font-weight: var(--heading-3-font-weight);
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
+  position: relative;
+  
+  
+}
+.textBreezy{
+  margin-top: 0.03em;
+  margin-left: 0.6em;
+  color: var(--brand-dark-blue);
+  font-family: var(--heading-3-font-family);
+  font-weight: var(--heading-3-font-weight);
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
+  position: relative;
+ 
 }
 
 .rectangel2{
