@@ -9,7 +9,6 @@ import {
 import markerData from "../db/markers.json";
 import styles from "../styles/Map.module.css";
 import Image from "next/image";
-import Location from "../components/Location";
 
 // @TODO: containerStyle should be moved elsewhere, this is a hacky solution
 
@@ -32,7 +31,40 @@ const Map = () => {
 
   const options = {
     disableDefaultUI: true,
+    // zoomControl: true,
   };
+
+  function Locate({ centerMap }) {
+    return (
+      <button
+        className={styles.location_container}
+        input
+        type="image"
+        src="/get_location_vector.svg"
+        onClick={centerMap}
+      >
+        {" "}
+        <Image
+          className={styles.centerBtn}
+          alt="locateBtn"
+          src="/get_location_vector.svg"
+          layout="responsive"
+          width={4}
+          height={4}
+          quality={100}
+        />
+      </button>
+    );
+  }
+
+  const centerMap = useCallback(function callback(map) {
+    navigator?.geolocation.getCurrentPosition(
+      ({ coords: { latitude: lat, longitude: lng } }) => {
+        setPos({ lat, lng });
+        console.log("geoSuccess, lat=" + lat + ", lng=" + lng);
+      }
+    );
+  }, []);
 
   const { isLoaded } = useJsApiLoader({
     id: process.env.ID,
@@ -58,32 +90,20 @@ const Map = () => {
     setMap(null);
   }, []);
 
-  // Super hacky way of tying geolocation to a user action
-  // Works by centering the map on the user when/if they left click the map
-  // @TODO: tie this to a button instead
-  const centerMap = useCallback(function callback(map) {
-    navigator?.geolocation.getCurrentPosition(
-      ({ coords: { latitude: lat, longitude: lng } }) => {
-        setPos({ lat, lng });
-        console.log("geoSuccess, lat=" + lat + ", lng=" + lng);
-      }
-    );
-  }, []);
-
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
   return isLoaded ? (
     <div className={styles.map_container}>
+      <Locate centerMap={centerMap}></Locate>
       <GoogleMap
         id={"arctic-map"}
         mapContainerStyle={containerStyle}
         center={pos}
         zoom={15}
         onLoad={onLoad}
-        onClick={centerMap}
+        // onClick={centerMap}
         onUnmount={onUnmount}
         options={options}
       >
-        {/* <Location /> */}
         <Marker position={pos} />
         {markerData.map((arcticWellMarker) => (
           <Marker
