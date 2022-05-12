@@ -29,10 +29,6 @@ const Map = () => {
     // zoomControl: true,
   };
 
-  const infoWindowOptions = {
-    pixelOffset: new google.maps.Size(0, -37),
-  };
-
   const containerStyle = {
     width: "100%",
     height: "100%",
@@ -109,7 +105,7 @@ const Map = () => {
             onCloseClick={() => {
               setSelected(null);
             }}
-            options={infoWindowOptions}
+            options={{ pixelOffset: new google.maps.Size(0, -37) }}
           >
             <div>{selected.name}</div>
           </InfoWindow>
