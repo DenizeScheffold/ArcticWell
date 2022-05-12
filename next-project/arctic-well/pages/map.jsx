@@ -29,8 +29,12 @@ const Map = () => {
   });
 
   const options = {
-    disableDefaultUI: true
-  }
+    disableDefaultUI: true,
+  };
+
+  const infoWindowOptions = {
+    disableAutoPan: true,
+  };
 
   const { isLoaded } = useJsApiLoader({
     id: process.env.ID,
@@ -90,7 +94,7 @@ const Map = () => {
             position={{ lat: arcticWellMarker.lat, lng: arcticWellMarker.lng }}
             icon={arcticWellMarker.icon}
           >
-            <InfoWindow anchor={arcticWellMarker}>
+            <InfoWindow anchor={arcticWellMarker} options={infoWindowOptions}>
               <div>{arcticWellMarker.name}</div>
             </InfoWindow>
           </Marker>
