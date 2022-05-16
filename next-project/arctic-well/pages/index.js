@@ -9,14 +9,14 @@ export default function Home() {
     <title>Welcome to Arctic Well</title>
   </Head>;
   return (
-    <div>
+    <div className={styles.flexbox_container}>
       <div>
         <Image
           alt="articgang"
           layout="responsive"
           src="/background_landingpage.png"
-          width={377}
-          height={706}
+          width={376}
+          height={736}
           quality={100}
         />
       </div>
