@@ -9,6 +9,7 @@ import {
 import markerData from "../db/markers.json";
 import styles from "../styles/Map.module.css";
 import Image from "next/image";
+import mapStyles from "../components/mapStyles";
 
 const Map = () => {
   <Head>
@@ -27,7 +28,15 @@ const Map = () => {
   const options = {
     disableDefaultUI: true,
     // zoomControl: true,
-  };
+    // mapStyle.map(() => (
+    //   <POI
+    //     featureType={mapStyle.featureType}
+    //     elementType={mapStyle.elementType}
+    //     stylers={mapStyle.visibility}) />
+    
+  }
+  
+  
 
   const containerStyle = {
     width: "100%",
@@ -87,6 +96,7 @@ const Map = () => {
         onLoad={onLoad}
         onUnmount={onUnmount}
         options={options}
+        styles={mapStyles.styles}
       >
         <Marker position={pos} />
         {markerData.map((arcticWellMarker) => (
