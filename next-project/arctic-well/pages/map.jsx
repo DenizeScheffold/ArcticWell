@@ -27,6 +27,7 @@ const Map = () => {
 
   const options = {
     disableDefaultUI: true,
+    styles: mapStyles,
     // zoomControl: true,
     // mapStyle.map(() => (
     //   <POI
@@ -96,7 +97,7 @@ const Map = () => {
         onLoad={onLoad}
         onUnmount={onUnmount}
         options={options}
-        styles={mapStyles.styles}
+        
       >
         <Marker position={pos} />
         {markerData.map((arcticWellMarker) => (

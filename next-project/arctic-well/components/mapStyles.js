@@ -1,4 +1,4 @@
-let styles=[
+export default [
     {
       "featureType": "poi.business",
       "elementType": "labels",
@@ -64,4 +64,3 @@ let styles=[
     }
   ]
 
-export default {styles};
