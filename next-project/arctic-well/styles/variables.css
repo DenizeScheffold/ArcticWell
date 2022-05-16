@@ -16,6 +16,8 @@
 
   --mobile-screen-width: 376px;
   --mobile-screen-height: 736px;
+  /* 670px / 41.875em (assuming 1em = 16px) */
+  --mobile-screen-height-no-navbar: 670px;
   --mobile-total-width: 344px;
   --mobile-margin: 16px;
 
