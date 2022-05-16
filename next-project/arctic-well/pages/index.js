@@ -9,7 +9,7 @@ export default function Home() {
     <title>Welcome to Arctic Well</title>
   </Head>;
   return (
-    <div className={styles.flexbox_container}>
+    <div>
       <div>
         <Image
           alt="articgang"
@@ -20,25 +20,27 @@ export default function Home() {
           quality={100}
         />
       </div>
-      <Link href="./onBoard1" className={styles.button} passHref>
-        <div className={styles.button}>
-          <Image
-            alt="Rectangel"
-            layout="responsive"
-            src="/Rectangle_blue.png"
-            height={39}
-            width={184}
-            quality={100}
-          />
-          <a className={styles.buttonText}>Discover how it works!</a>{" "}
+      <div className={styles.flexbox_container}>
+        <Link href="./onBoard1" className={styles.button} passHref>
+          <div className={styles.button}>
+            <Image
+              alt="Rectangel"
+              layout="responsive"
+              src="/Rectangle_blue.png"
+              height={39}
+              width={184}
+              quality={100}
+            />
+            <a className={styles.buttonText}>Discover how it works!</a>{" "}
+          </div>
+        </Link>
+        <div className={styles.text}>
+          <h1>Now it&apos;s easy to stay</h1>
         </div>
-      </Link>
-      <div className={styles.text}>
-        <h1>Now it&apos;s easy to stay</h1>
-      </div>
 
-      <div className={styles.textBreezy}>
-        <p>breezy!</p>
+        <div className={styles.textBreezy}>
+          <p>breezy!</p>
+        </div>
       </div>
     </div>
   );
