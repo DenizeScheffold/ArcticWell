@@ -13,7 +13,7 @@ export default function onBoard() {
         <Image
           alt="card"
           layout="responsive"
-          src="/card.png"
+          src="/onboarding_bg_3.png"
           width={377}
           height={706}
           quality={100}
