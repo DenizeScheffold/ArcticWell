@@ -3,12 +3,13 @@
   height: 4.125em;
   position: fixed;
   bottom: 0;
-  border-top: 1px solid var(--grey-color);
+  border-top: 2px solid black;
   display: flex;
   justify-content: space-evenly;
   background-color: var(--brand-navy-dark);
   color: var(--brand-white);
   text-underline-offset: 0.3em;
+
 }
 
 .navlinks {
