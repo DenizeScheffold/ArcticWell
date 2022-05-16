@@ -1,0 +1,140 @@
+.rectangel2 {
+  margin-left: 9em;
+  width: 184px;
+  height: 39px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button2 {
+  margin-left: 2.7em;
+  margin-top: -6.5em;
+  width: 272px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonText2 {
+  font-family: var(--label-button-regular-font-family);
+  font-weight: var(--label-button-regular-font-weight);
+  font-size: var(--label-button-regular-font-size);
+  line-height: var(--label-button-regular-line-height);
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  margin: auto;
+}
+
+.text2 {
+  position: absolute;
+  margin-top: -6.3em;
+  margin-left: 2em;
+  color: var(--brand-white);
+  font-family: var(--heading-3-font-family);
+  font-weight: var(--heading-3-font-weight);
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
+}
+
+.text3 {
+  position: absolute;
+  margin-top: -9.8em;
+  margin-left: 2em;
+  color: var(--brand-white);
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+}
+
+.textskip {
+  position: absolute;
+  margin-top: -0.3em;
+  margin-left: 10.5em;
+  color: var(--brand-white);
+  text-decoration: none;
+}
+
+.textMap {
+  position: absolute;
+  margin-top: -6.3em;
+  margin-left: 4.6em;
+  color: var(--brand-white);
+  font-family: var(--heading-3-font-family);
+  font-weight: var(--heading-3-font-weight);
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
+}
+
+.textMap2 {
+  position: absolute;
+  margin-top: -9.3em;
+  margin-left: 3.6em;
+  color: var(--brand-white);
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+}
+
+.textCard {
+  position: absolute;
+  margin-top: -6.3em;
+  margin-left: 2.6em;
+  color: var(--brand-white);
+  font-family: var(--heading-3-font-family);
+  font-weight: var(--heading-3-font-weight);
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
+}
+
+.textCard2 {
+  position: absolute;
+  margin-top: -9.3em;
+  margin-left: 2.6em;
+  color: var(--brand-white);
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+}
+
+.textOpenBox {
+  position: absolute;
+  margin-top: -6.3em;
+  margin-left: 3.6em;
+  color: var(--brand-white);
+  font-family: var(--heading-3-font-family);
+  font-weight: var(--heading-3-font-weight);
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
+}
+
+.textOpenBox2 {
+  position: absolute;
+  margin-top: -9.3em;
+  margin-left: 1.6em;
+  color: var(--brand-white);
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+}
+
+.textReady {
+  position: absolute;
+  margin-top: -7.8em;
+  margin-left: 2.5em;
+  color: var(--brand-white);
+  font-family: var(--heading-3-font-family);
+  font-weight: var(--heading-3-font-weight);
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
+}
