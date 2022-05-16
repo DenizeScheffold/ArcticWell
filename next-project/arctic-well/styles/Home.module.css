@@ -43,15 +43,3 @@
   position: relative;
   width: fit-content;
 }
-
-.textBreezy {
-  margin-top: 0.03em;
-  margin-left: 0.6em;
-  color: var(--brand-dark-blue);
-  font-family: var(--heading-3-font-family);
-  font-weight: var(--heading-3-font-weight);
-  font-size: var(--heading-3-font-size);
-  line-height: var(--heading-3-line-height);
-  position: relative;
-  width: fit-content;
-}

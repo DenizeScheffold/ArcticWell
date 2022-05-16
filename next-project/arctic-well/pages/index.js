@@ -21,7 +21,7 @@ export default function Home() {
         />
       </div>
       <div className={styles.flexbox_container}>
-        <Link href="./onBoard1" className={styles.button} passHref>
+        <Link href="./onBoard1" passHref>
           <div className={styles.button}>
             <Image
               alt="Rectangel"
@@ -35,11 +35,7 @@ export default function Home() {
           </div>
         </Link>
         <div className={styles.text}>
-          <h1>Now it&apos;s easy to stay</h1>
-        </div>
-
-        <div className={styles.textBreezy}>
-          <p>breezy!</p>
+          <h1>Now it&apos;s easy to stay breezy!</h1>
         </div>
       </div>
     </div>
