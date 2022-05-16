@@ -25,7 +25,7 @@ export default function Home() {
           <Image
             alt="Rectangel"
             layout="responsive"
-            src="/Rectangle.png"
+            src="/Rectangle_blue.png"
             height={39}
             width={184}
             quality={100}

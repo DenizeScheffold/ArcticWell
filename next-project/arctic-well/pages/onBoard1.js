@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Onboarding.module.css";
 
 export default function onBoard() {
   <Head>
@@ -22,6 +22,7 @@ export default function onBoard() {
 
       <div className={styles.button2}>
         <Image
+          className={styles.rectangle_blue}
           alt="Rectangel"
           layout="responsive"
           src="/Rectangle_blue.png"
