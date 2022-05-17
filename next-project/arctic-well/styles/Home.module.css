@@ -12,6 +12,17 @@
   flex-flow: column nowrap;
 }
 
+.bg_wrap {
+  position: absolute;
+  /*  I have no idea why the values on height and width make the background work as intended, but they do 
+  *   don't change them unless you know what you're doing
+  */
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
 .button {
   display: flex;
   width: 190px;

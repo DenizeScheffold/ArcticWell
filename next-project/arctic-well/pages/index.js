@@ -11,15 +11,17 @@ export default function Home() {
   return (
     <div className={styles.landing_container}>
       <div>
-        <Image
-          alt="articgang"
-          layout="fixed"
-          src="/background_landingpage.png"
-          width={376}
-          height={736}
-          quality={100}
-          priority
-        />
+        <div className={styles.bg_wrap}>
+          <Image
+            alt="articgang"
+            layout="fixed"
+            src="/background_landingpage.png"
+            width={376}
+            height={736}
+            quality={100}
+            priority
+          />
+        </div>
       </div>
       <div className={styles.flexbox_container}>
         <Link href="./onBoard1" passHref>
