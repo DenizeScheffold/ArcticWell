@@ -9,7 +9,9 @@
   height: 100%;
   width: 100%;
   margin: 0px var(--mobile-margin) 0px var(--mobile-margin);
-  flex-flow: column nowrap;
+  flex-flow: column-reverse wrap;
+  /* @TODO: the code below this comment needs to be reworked and expanded to match the desired design */
+  justify-content: center;
 }
 
 .bg_wrap {
@@ -29,6 +31,7 @@
   height: 42px;
   position: relative;
   overflow: hidden;
+  align-self: center;
 }
 
 .buttonText {
