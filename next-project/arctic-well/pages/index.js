@@ -30,8 +30,8 @@ export default function Home() {
               alt="Rectangel"
               layout="fill"
               src="/Rectangle_blue.png"
-              height={39}
-              width={184}
+              height={48}
+              width={272}
               quality={100}
             />
             <a className={styles.buttonText}>Discover how it works!</a>{" "}
