@@ -9,11 +9,11 @@ export default function Home() {
     <title>Welcome to Arctic Well</title>
   </Head>;
   return (
-    <div>
+    <div className={styles.landing_container}>
       <div>
         <Image
           alt="articgang"
-          layout="responsive"
+          layout="fixed"
           src="/background_landingpage.png"
           width={376}
           height={736}
