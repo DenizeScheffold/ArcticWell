@@ -1,92 +1,91 @@
-
 .banner_container {
-    padding-top: 0.5em;
-    align-self: stretch;
-    flex-grow: 2;
-    display: flex;
-    position: absolute;
-    height: 4em;
-    position: absolute; /*relative*/
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
+  padding-top: 0.5em;
+  align-self: stretch;
+  flex-grow: 2;
+  display: flex;
+  position: absolute;
+  height: 4em;
+  position: absolute; /*relative*/
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
 
-    font-family: var(--body-1-font-family);
-    font-weight: var(--body-1-font-weight);
-    font-size: var(--body-1-font-size);
-    line-height: var(--body-1-line-height);
-    z-index: 1;
-    /* border-bottom: 2px solid var(--brand-dark-black); */
-  }
-  
-  .arctic_well_logo {
-    width: 122px;
-    height: 4em;
-    flex-grow: 0;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: flex-start;
-    margin-left: 1.3em;
-  }
-  
-  .Stockholm {
-    width: 81px;
-    height: 24px;
-    flex-grow: 0;
-    font-family: var(--body-2-font-family);
-    font-weight: var(--body-2-font-weight);
-    font-size: var(--body-2-font-size);
-    line-height: var(--body-2-line-height);
-    color: var(--brand-dark-black);
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    right: 0;
-    margin-right: 6.3em;
-    justify-content: flex-end;
-  }
-  
-  .celsius {
-    width: 44px;
-    height: 24px;
-    flex-grow: 0;
-    font-family: var(--body-2-font-family);
-    font-weight: var(--body-2-font-weight);
-    font-size: var(--body-2-font-size);
-    line-height: var(--body-2-line-height);
-    color: var(--brand-dark-black);
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    right: 0;
-    margin-right: 2.5em;
-    margin-top: 2em;
-    justify-content: flex-start;
-  }
-  
-  .weather_subcontainer  {
-    width: 360px;
-    height: 2.14em;
-    flex-grow: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-  }
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  z-index: 1;
+  /* border-bottom: 2px solid var(--brand-dark-black); */
+}
 
-  .vector {
-    height: 1.8em ;
-    margin: 0 0 0 10px;
-    right: 0;
-    margin-right: 1.5em !important;
-    margin-top: 2em !important;
-    flex-grow: 0;
-    position: absolute;
-    display: flex;
-    right: 0;
-    margin-right: 1.5em;
-    align-items: flex-end;
-    overflow: visible !important;
-   }
+.arctic_well_logo {
+  width: 122px;
+  height: 4em;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-content: flex-start;
+  margin-left: 1.3em;
+}
+
+.Stockholm {
+  width: 81px;
+  height: 24px;
+  flex-grow: 0;
+  font-family: var(--body-2-font-family);
+  font-weight: var(--body-2-font-weight);
+  font-size: var(--body-2-font-size);
+  line-height: var(--body-2-line-height);
+  color: var(--brand-dark-black);
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  right: 0;
+  margin-right: 6.3em;
+  justify-content: flex-end;
+}
+
+.celsius {
+  width: 44px;
+  height: 24px;
+  flex-grow: 0;
+  font-family: var(--body-2-font-family);
+  font-weight: var(--body-2-font-weight);
+  font-size: var(--body-2-font-size);
+  line-height: var(--body-2-line-height);
+  color: var(--brand-dark-black);
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  right: 0;
+  margin-right: 2.5em;
+  margin-top: 2em;
+  justify-content: flex-start;
+}
+
+.weather_subcontainer {
+  width: 360px;
+  height: 2.14em;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.vector {
+  height: 1.8em;
+  margin: 0 0 0 10px;
+  right: 0;
+  margin-right: 1.5em !important;
+  margin-top: 2em !important;
+  flex-grow: 0;
+  position: absolute;
+  display: flex;
+  right: 0;
+  margin-right: 1.5em;
+  align-items: flex-end;
+  overflow: visible !important;
+}
