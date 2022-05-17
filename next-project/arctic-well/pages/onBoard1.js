@@ -25,7 +25,7 @@ export default function onBoard() {
       <div className={styles.flexbox_container}>
         <div className={styles.button}>
           <Image
-            alt="Rectangel"
+            alt="Rectangle"
             layout="fill"
             src="/Rectangle_blue.png"
             height={48}

@@ -27,7 +27,7 @@ export default function Home() {
         <Link href="./onBoard1" passHref>
           <div className={styles.button}>
             <Image
-              alt="Rectangel"
+              alt="Rectangle"
               layout="fill"
               src="/Rectangle_blue.png"
               height={48}
