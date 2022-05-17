@@ -18,6 +18,7 @@ export default function Home() {
           width={376}
           height={736}
           quality={100}
+          priority
         />
       </div>
       <div className={styles.flexbox_container}>
@@ -25,7 +26,7 @@ export default function Home() {
           <div className={styles.button}>
             <Image
               alt="Rectangel"
-              layout="responsive"
+              layout="fill"
               src="/Rectangle_blue.png"
               height={39}
               width={184}
