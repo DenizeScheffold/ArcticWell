@@ -7,38 +7,42 @@ import Layout from "../components/Layout";
 
 export default function Home() {
   return (
-    <div className={styles.landing_container}>
+    <Layout>
+      <Head>
+        <title>Welcome to Arctic Well</title>
+      </Head>
       <div>
-        <div className={styles.bg_wrap}>
+        <div>
           <Image
             alt="articgang"
-            layout="fixed"
+            layout="responsive"
             src="/background_landingpage.png"
-            width={376}
-            height={736}
+            width={377}
+            height={706}
             quality={100}
-            priority
           />
         </div>
-      </div>
-      <div className={styles.flexbox_container}>
-        <Link href="./onBoard1" passHref>
+        <Link href="./onBoard1" className={styles.button} passHref>
           <div className={styles.button}>
             <Image
-              alt="Rectangle"
-              layout="fill"
-              src="/Rectangle_blue.png"
-              height={48}
-              width={272}
+              alt="Rectangel"
+              layout="responsive"
+              src="/Rectangle.png"
+              height={39}
+              width={184}
               quality={100}
             />
             <a className={styles.buttonText}>Discover how it works!</a>{" "}
           </div>
         </Link>
         <div className={styles.text}>
-          <h1>Now it&apos;s easy to stay breezy!</h1>
+          <h1>Now it&apos;s easy to stay</h1>
+        </div>
+
+        <div className={styles.textBreezy}>
+          <p>breezy!</p>
         </div>
       </div>
-      </div>
+    </Layout>
   );
 }
