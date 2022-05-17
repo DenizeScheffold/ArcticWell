@@ -10,9 +10,11 @@ import markerData from "../db/markers.json";
 import styles from "../styles/Map.module.css";
 import Image from "next/image";
 import mapStyles from "../components/mapStyles";
-import LayoutMap from "../components/LayoutMap";
 
 const Map = () => {
+  <Head>
+    <title>Find your Arctic Well</title>
+  </Head>;
 
   const [map, setMap] = useState(null);
 
@@ -85,10 +87,6 @@ const Map = () => {
 
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
   return isLoaded ? (
-  <LayoutMap>
-      <Head>
-    <title>Find your Arctic Well</title>
-  </Head>
     <div className={styles.map_container}>
       {/* <Locate centerMap={centerMap}></Locate> */}
       <GoogleMap
@@ -138,7 +136,6 @@ const Map = () => {
         <></>
       </GoogleMap>
     </div>
-    </LayoutMap>
   ) : (
     <></>
   );
