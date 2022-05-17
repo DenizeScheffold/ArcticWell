@@ -1,3 +1,30 @@
+.onboarding_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.bg_wrap {
+  position: absolute;
+  /*  I have no idea why the values on height and width make the background work as intended, but they do 
+  *   don't change them unless you know what you're doing
+  */
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.flexbox_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 0px var(--mobile-margin) 0px var(--mobile-margin);
+  flex-flow: column-reverse wrap;
+  /* @TODO: the code below this comment needs to be reworked and expanded to match the desired design */
+  justify-content: center;
+}
+
 .rectangle_blue {
   margin-left: 9em;
   width: 184px;
@@ -6,13 +33,32 @@
   overflow: hidden;
 }
 
+/* .button is a copy-paste from the css for the landing page button */
+/* unsure if we should use these values here */
+
+.button {
+  display: flex;
+  width: 190px;
+  height: 42px;
+  position: relative;
+  overflow: hidden;
+  align-self: center;
+}
+
 .button2 {
-  margin-left: 2.7em;
+  /* Original values commented out below */
+  /* margin-left: 2.7em;
   margin-top: -6.5em;
   width: 272px;
   height: 48px;
   position: relative;
+  overflow: hidden; */
+  display: flex;
+  width: 272px;
+  height: 48px;
+  position: relative;
   overflow: hidden;
+  align-self: center;
 }
 
 .buttonText2 {
