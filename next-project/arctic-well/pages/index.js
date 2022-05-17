@@ -9,37 +9,36 @@ export default function Home() {
     <title>Welcome to Arctic Well</title>
   </Head>;
   return (
-    <div className={styles.landing_container}>
+    <div>
       <div>
-        <div className={styles.bg_wrap}>
-          <Image
-            alt="articgang"
-            layout="fixed"
-            src="/background_landingpage.png"
-            width={376}
-            height={736}
-            quality={100}
-            priority
-          />
-        </div>
+        <Image
+          alt="articgang"
+          layout="responsive"
+          src="/background_landingpage.png"
+          width={377}
+          height={706}
+          quality={100}
+        />
       </div>
-      <div className={styles.flexbox_container}>
-        <Link href="./onBoard1" passHref>
-          <div className={styles.button}>
-            <Image
-              alt="Rectangle"
-              layout="fill"
-              src="/Rectangle_blue.png"
-              height={48}
-              width={272}
-              quality={100}
-            />
-            <a className={styles.buttonText}>Discover how it works!</a>{" "}
-          </div>
-        </Link>
-        <div className={styles.text}>
-          <h1>Now it&apos;s easy to stay breezy!</h1>
+      <Link href="./onBoard1" className={styles.button} passHref>
+        <div className={styles.button}>
+          <Image
+            alt="Rectangel"
+            layout="responsive"
+            src="/Rectangle.png"
+            height={39}
+            width={184}
+            quality={100}
+          />
+          <a className={styles.buttonText}>Discover how it works!</a>{" "}
         </div>
+      </Link>
+      <div className={styles.text}>
+        <h1>Now it&apos;s easy to stay</h1>
+      </div>
+
+      <div className={styles.textBreezy}>
+        <p>breezy!</p>
       </div>
     </div>
   );
