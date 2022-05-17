@@ -33,7 +33,7 @@ export default function onBoard() {
             quality={100}
           />
           <a className={styles.buttonText} href="./map">
-            Next
+            Lets go!!
           </a>
         </div>
         <div className={styles.textReady}>
