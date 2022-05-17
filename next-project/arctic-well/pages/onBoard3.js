@@ -8,45 +8,45 @@ export default function onBoard() {
     <title>Welcome to Arctic Well</title>
   </Head>;
   return (
-    <div>
+    <div className={styles.onboarding_container}>
       <div>
-        <Image
-          alt="card"
-          layout="responsive"
-          src="/onboarding_bg_3.png"
-          width={377}
-          height={706}
-          quality={100}
-        />
+        <div className={styles.bg_wrap}>
+          <Image
+            alt="card"
+            layout="fixed"
+            src="/onboarding_bg_3.png"
+            width={376}
+            height={736}
+            quality={100}
+            priority
+          />
+        </div>
       </div>
-
-      <div className={styles.button2}>
-        <Image
-          className={styles.rectangle_blue}
-          alt="Rectangel"
-          layout="responsive"
-          src="/Rectangle_blue.png"
-          height={20}
-          width={140}
-          quality={100}
-        />
-        <a className={styles.buttonText2} href="./onBoard4">
-          Next
-        </a>
-      </div>
-
-      <div className={styles.textCard}>
-        <h1>Easy Payment</h1>
-      </div>
-
-      <div className={styles.textCard2}>
-        <p>
-          Scan your card at the box to start your experience. Simple as that!
-        </p>
-      </div>
-
-      <div className={styles.textskip}>
-        <a href="./map">skip</a>
+      <div className={styles.flexbox_container}>
+        <div className={styles.button}>
+          <Image
+            alt="Rectangle"
+            layout="fill"
+            src="/Rectangle_blue.png"
+            height={48}
+            width={272}
+            quality={100}
+          />
+          <a className={styles.buttonText} href="./onBoard4">
+            Next
+          </a>
+        </div>
+        <div className={styles.text1}>
+          <h1>Easy Payment</h1>
+        </div>
+        <div className={styles.text2}>
+          <p>
+            Scan your card at the box to start your experience. Simple as that!
+          </p>
+        </div>
+        <div className={styles.textskip}>
+          <a href="./map">skip</a>
+        </div>
       </div>
     </div>
   );
