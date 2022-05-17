@@ -16,7 +16,7 @@ export default function More() {
           <Image
             alt="background"
             layout="fixed"
-            src="/background_landingpage.png"
+            src="/more_background.png"
             width={376}
             height={736}
             quality={100}

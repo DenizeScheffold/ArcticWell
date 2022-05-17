@@ -1,7 +1,10 @@
+
+
 .more_container {
   display: flex;
   height: 100%;
   width: 100%;
+  
 }
 
 .flexbox_container {
@@ -12,6 +15,8 @@
   flex-flow: column wrap;
   /* @TODO: the code below this comment needs to be reworked and expanded to match the desired design */
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .bg_wrap {
@@ -20,9 +25,10 @@
   *   don't change them unless you know what you're doing
   */
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   z-index: -1;
+  
 }
 
 .more_div {
@@ -34,13 +40,20 @@
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
+  margin: 15px;
 }
 
 .more_hr {
   border: 2px solid black !important;
+  margin: 15px;
+  background-color: black;
 }
 
 .more_footer {
   position: absolute;
   width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  font-weight: bold;
 }
+
