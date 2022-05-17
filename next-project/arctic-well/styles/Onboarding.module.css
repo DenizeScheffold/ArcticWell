@@ -1,17 +1,7 @@
-.landing_container {
+.onboarding_container {
   display: flex;
   height: 100%;
   width: 100%;
-}
-
-.flexbox_container {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  margin: 0px var(--mobile-margin) 0px var(--mobile-margin);
-  flex-flow: column-reverse wrap;
-  /* @TODO: the code below this comment needs to be reworked and expanded to match the desired design */
-  justify-content: center;
 }
 
 .bg_wrap {
@@ -23,6 +13,16 @@
   width: 100vw;
   overflow: hidden;
   z-index: -1;
+}
+
+.flexbox_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 0px var(--mobile-margin) 0px var(--mobile-margin);
+  flex-flow: column-reverse wrap;
+  /* @TODO: the code below this comment needs to be reworked and expanded to match the desired design */
+  justify-content: center;
 }
 
 .button {
@@ -40,6 +40,7 @@
   font-size: var(--label-button-regular-font-size);
   line-height: var(--label-button-regular-line-height);
   color: var(--brand-dark-black);
+  text-decoration: none;
   text-align: center;
   position: absolute;
   top: 0;
@@ -50,12 +51,35 @@
   margin: auto;
 }
 
-.text {
-  color: var(--brand-dark-blue);
+.text1 {
+  position: absolute;
+  color: var(--brand-white);
   font-family: var(--heading-3-font-family);
   font-weight: var(--heading-3-font-weight);
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
-  position: relative;
-  width: fit-content;
+}
+
+.text2 {
+  position: absolute;
+  color: var(--brand-white);
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+}
+
+.textskip {
+  position: absolute;
+  color: var(--brand-white);
+  text-decoration: none;
+}
+
+.textReady {
+  position: absolute;
+  color: var(--brand-white);
+  font-family: var(--heading-3-font-family);
+  font-weight: var(--heading-3-font-weight);
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
 }
