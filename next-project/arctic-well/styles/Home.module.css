@@ -30,8 +30,8 @@
   width: 272px;
   height: 48px;
   overflow: hidden;
-  top: 43.7em;
-  left: 4em;
+  top: 35.5em;
+  left: 3.3em;
   right: 0;
   bottom: 0;
 }
@@ -54,14 +54,14 @@
 
 .text {
   color: var(--brand-dark-black);
-  font-family: var(--heading-2-font-family);
-  font-weight: var(--heading-2-font-weight);
-  font-size: var(--heading-2-font-size);
-  line-height: var(--heading-2-line-height);
+  font-family: var(--heading-3-font-family);
+  font-weight: var(--heading-3-font-weight);
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
   position: relative;
   width: fit-content;
   text-align: center;
-  top: -7.7em;
+  top: -8em;
   left: 2em;
   right: 0;
   bottom: 0;

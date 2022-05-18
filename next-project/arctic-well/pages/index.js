@@ -41,7 +41,7 @@ export default function Home() {
             </div>
           </Link>
           <div className={styles.text}>
-            <h1>Now it&apos;s easy {<br></br>}to stay breezy!</h1>
+            <h1>Now it’s easy {<br></br>}to stay breezy!</h1>
           </div>
         </div>
       </div>
