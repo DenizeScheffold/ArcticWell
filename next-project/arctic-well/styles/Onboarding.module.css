@@ -27,18 +27,17 @@
 
 .text1 {
   position: absolute;
+  height: fit-content;
   color: var(--brand-dark-black);
   font-family: var(--heading-3-font-family);
   font-weight: var(--heading-3-font-weight);
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
-  text-align: center;
   top: 12.5em;
-  left: 1.9em;
+  left: 0;
   right: 0;
   bottom: 0;
-  width: fit-content;
-  height: fit-content;
+  text-align: center;
 }
 
 .text2 {
@@ -52,8 +51,8 @@
   width: fit-content;
   height: fit-content;
   top: 28em;
-  left: 16px;
-  right: 16px;
+  left: 0;
+  right: 0;
   bottom: 0;
 }
 
