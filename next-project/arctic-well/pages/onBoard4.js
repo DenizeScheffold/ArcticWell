@@ -25,7 +25,8 @@ export default function onBoard() {
         </div>
       </div>
       <div className={styles.flexbox_container}>
-        <div className={styles.button}>
+        <Link href="./onBoard5" passHref>
+          <div className={styles.button}>
           <Image
             alt="Rectangle"
             layout="fill"
@@ -34,10 +35,9 @@ export default function onBoard() {
             width={272}
             quality={100}
           />
-          <a className={styles.buttonText} href="./onBoard5">
-            Next
-          </a>
+               <a className={styles.buttonText}>Next</a>{" "}
         </div>
+        </Link>
         <div className={styles.text1}>
           <h1>Open Box</h1>
         </div>

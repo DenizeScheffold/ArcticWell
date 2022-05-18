@@ -26,6 +26,7 @@ export default function Home() {
           />
         </div>
       </div>
+      
       <div className={styles.flexbox_container}>
         <Link href="./onBoard1" passHref>
           <div className={styles.button}>
