@@ -12,7 +12,6 @@ export default function More() {
       <Head>
         <title>Arctic Well</title>
       </Head>
-      ;
       <div className={styles.more_container}>
         <div>
           <div className={styles.bg_wrap}>
