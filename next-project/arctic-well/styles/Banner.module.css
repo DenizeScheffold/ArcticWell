@@ -16,9 +16,8 @@
 }
 
 .arctic_well_logo {
-  width: 122px;
-  height: 4em;
-  flex-grow: 0;
+  width: 93px;
+  height: 32px;
   display: flex;
   flex-direction: row;
   position: absolute;
