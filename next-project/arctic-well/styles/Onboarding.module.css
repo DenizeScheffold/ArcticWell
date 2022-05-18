@@ -29,16 +29,17 @@
   position: absolute;
   height: fit-content;
   color: var(--brand-dark-black);
-  font-family: var(--heading-3-font-family);
-  font-weight: var(--heading-3-font-weight);
-  font-size: var(--heading-3-font-size);
-  line-height: var(--heading-3-line-height);
-  top: 15em;
+  font-family: var(--heading-mobile-3-font-family);
+  font-weight: var(--heading-mobile-3-font-weight);
+  font-size: var(--heading-mobile-3-font-size);
+  line-height: var(--heading-mobile-3-line-height);
+  top: 15.5em;
   left: 0;
   right: 0;
   bottom: 0;
   text-align: center;
 }
+
 
 .text2 {
   position: absolute;
@@ -48,11 +49,10 @@
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   text-align: center;
-  width: fit-content;
   height: fit-content;
-  top: 33em;
-  left: 0;
-  right: 0;
+  top: 28em;
+  left: 16px;
+  right: 16px;
   bottom: 0;
 }
 
@@ -100,11 +100,11 @@
 
 .textReady {
   position: absolute;
-  color: var(--brand-dark-blue);
-  font-family: var(--heading-2-font-family);
-  font-weight: var(--heading-2-font-weight);
-  font-size: var(--heading-2-font-size);
-  line-height: var(--heading-2-line-height);
+  color: var(--brand-dark-black);
+  font-family: var(--heading-mobile-2-font-family);
+  font-weight: var(--heading-mobile-2-font-weight);
+  font-size: var(--heading-mobile-2-font-size);
+  line-height: var(--heading-mobile-2-line-height);
   align-self: center;
-  margin-top: -13em;
+  margin-top: -18em;
 }

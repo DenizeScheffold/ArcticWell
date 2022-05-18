@@ -47,9 +47,9 @@ export default function onBoard() {
               When you have found a box the transaction takes place on site.
             </p>
           </div>
-          <div className={styles.textskip}>
-            <a href="./map">skip</a>
-          </div>
+          <Link href="./map" passHref>
+            <a className={styles.textskip}>Skip</a>
+          </Link>
         </div>
       </div>
     </Layout>

@@ -44,13 +44,13 @@ export default function onBoard() {
           </div>
           <div className={styles.text2}>
             <p>
-              When your payment is completed, the door will unlock. As soon as
+              When your payment is completed, the door {<br></br>}will unlock. As soon as
               you close the door your 90 seconds cooling starts.
             </p>
           </div>
-          <div className={styles.textskip}>
-            <a href="./map">skip</a>
-          </div>
+          <Link href="./map" passHref>
+            <a className={styles.textskip}>Skip</a>
+          </Link>
         </div>
       </div>
     </Layout>

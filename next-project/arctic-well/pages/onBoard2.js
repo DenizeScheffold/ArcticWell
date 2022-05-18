@@ -51,9 +51,9 @@ export default function onBoard() {
             </p>
           </div>
 
-          <div className={styles.textskip}>
-            <a href="./map">skip</a>
-          </div>
+          <Link href="./map" passHref>
+            <a className={styles.textskip}>Skip</a>
+          </Link>
         </div>
       </div>
     </Layout>

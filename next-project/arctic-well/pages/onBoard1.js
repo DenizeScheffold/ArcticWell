@@ -52,7 +52,7 @@ export default function onBoard() {
             </p>
           </div>
           <Link href="./map" passHref>
-            <a className={styles.textskip}>skip</a>
+            <a className={styles.textskip}>Skip</a>
           </Link>
         </div>
       </div>
