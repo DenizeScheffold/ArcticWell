@@ -12,6 +12,7 @@
   flex-flow: column-reverse wrap;
   /* @TODO: the code below this comment needs to be reworked and expanded to match the desired design */
   justify-content: center;
+  align-content: center;
 }
 
 .bg_wrap {
@@ -62,7 +63,7 @@
   width: fit-content;
   text-align: center;
   top: -8em;
-  left: 2em;
+  left: 0;
   right: 0;
   bottom: 0;
 }
