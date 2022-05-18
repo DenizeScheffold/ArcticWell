@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { memo, useState, useEffect, useRef, useCallback } from "react";
 import {
   GoogleMap,
@@ -25,12 +24,6 @@ const Map = () => {
   const options = {
     disableDefaultUI: true,
     styles: mapStyles,
-    // zoomControl: true,
-    // mapStyle.map(() => (
-    //   <POI
-    //     featureType={mapStyle.featureType}
-    //     elementType={mapStyle.elementType}
-    //     stylers={mapStyle.visibility}) />
   };
 
   const containerStyle = {
@@ -64,25 +57,9 @@ const Map = () => {
     setMap(null);
   }, []);
 
-  // function Locate({ centerMap }) {
-  //   <button className={styles.location_container} onClick={centerMap}>
-  //     {" "}
-  //     <Image
-  //       className={styles.centerBtn}
-  //       alt="locateBtn"
-  //       src="/find_location_vector.png"
-  //       layout="responsive"
-  //       width={4}
-  //       height={4}
-  //       quality={100}
-  //     />
-  //   </button>
-  // }
-
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
   return isLoaded ? (
     <div className={styles.map_container}>
-      {/* <Locate centerMap={centerMap}></Locate> */}
       <GoogleMap
         id={"arctic-map"}
         mapContainerStyle={containerStyle}
@@ -128,7 +105,7 @@ const Map = () => {
             quality={100}
           />
         </button>
-        {/* Child components, such as markers and info windows go here */}
+        {/* Child components, such as markers and info windows go above <Navbar /> */}
         <Navbar />
         <></>
       </GoogleMap>
