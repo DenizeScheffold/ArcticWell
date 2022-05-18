@@ -1,10 +1,12 @@
 import React from "react";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Onboarding.module.css";
+import Image from "next/image";
+import Link from "next/link";
 import Layout from "../components/Layout";
 
 export default function onBoard() {
+
   return (
     <Layout>
       <Head>
@@ -26,6 +28,7 @@ export default function onBoard() {
         </div>
 
         <div className={styles.flexbox_container}>
+        <Link href="./onBoard2" passHref>
           <div className={styles.button}>
             <Image
               alt="Rectangle"
@@ -35,15 +38,13 @@ export default function onBoard() {
               width={272}
               quality={100}
             />
-            <a className={styles.buttonText} href="./onBoard2">
-              Next
-            </a>
+              <a className={styles.buttonText}>Next</a>{" "}
           </div>
-
+          </Link>
           <div className={styles.text1}>
             <h1>This is Artic Well</h1>
           </div>
-
+          
           <div className={styles.text2}>
             <p>
               Say hello to the fastest way to go from overheated to refreshed.
