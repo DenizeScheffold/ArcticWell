@@ -3,12 +3,15 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import Layout from "../components/Layout";
 
 export default function Home() {
-  <Head>
-    <title>Welcome to Arctic Well</title>
-  </Head>;
+ 
   return (
+    <Layout>
+    <Head>
+    <title>Welcome to Arctic Well</title>
+  </Head>
     <div className={styles.landing_container}>
       <div>
         <div className={styles.bg_wrap}>
@@ -42,5 +45,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </Layout>
   );
 }

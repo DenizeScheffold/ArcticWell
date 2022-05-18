@@ -2,12 +2,14 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Onboarding.module.css";
+import Layout from "../components/Layout";
 
 export default function onBoard() {
-  <Head>
-    <title>Welcome to Arctic Well</title>
-  </Head>;
   return (
+    <Layout>
+    <Head>
+    <title>Welcome to Arctic Well</title>
+  </Head>
     <div className={styles.onboarding_container}>
       <div>
         <div className={styles.bg_wrap}>
@@ -50,5 +52,6 @@ export default function onBoard() {
         </div>
       </div>
     </div>
+    </Layout>
   );
 }
