@@ -26,35 +26,42 @@
 }
 
 .text1 {
+  position: absolute;
   color: var(--brand-dark-black);
   font-family: var(--heading-3-font-family);
   font-weight: var(--heading-3-font-weight);
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
   text-align: center;
-  margin-top: -19.8em;
+  top: 12.5em;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
 }
 
 .text2 {
-  position: relative;
+  position: absolute;
   color: var(--brand-dark-black);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   text-align: center;
-  margin-top: 9em;
-  margin-bottom: 30.7em;
+  top: 28em;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
 }
 
 .button {
-  display: flex;
+  position: absolute;
   width: 272px;
   height: 48px;
-  position: absolute;
   overflow: hidden;
-  margin-bottom: -28em;
-  margin-left: 2.3em;
+  top: 35em;
+  left: 3.21em;
+  right: 0;
+  bottom: 0;
 }
 
 .buttonText {
@@ -72,27 +79,32 @@
   height: fit-content;
   margin: auto;
   text-decoration: none;
+
 }
 
 
 .textskip {
   position: absolute;
-  color: var(--brand-white);
   text-decoration: none;
+  color: var(--brand-white);
   font-family: var(--body-1-bold-font-family);
   font-weight: var(--body-1-bold-font-weight);
   font-size: var(--body-1-bold-font-size);
   line-height: var(--body-1-bold-line-height);
-  align-self:center;
-  margin-bottom: -34em;
+  top: 39em;
+  left: 10.71em;
+  right: 0;
+  bottom: 0;
 }
 
 
-/*.textReady {
+.textReady {
   position: absolute;
-  color: var(--brand-white);
-  font-family: var(--heading-3-font-family);
-  font-weight: var(--heading-3-font-weight);
-  font-size: var(--heading-3-font-size);
-  line-height: var(--heading-3-line-height);
-}*/
+  color: var(--brand-dark-blue);
+  font-family: var(--heading-2-font-family);
+  font-weight: var(--heading-2-font-weight);
+  font-size: var(--heading-2-font-size);
+  line-height: var(--heading-2-line-height);
+  align-self: center;
+  margin-top: -13em;
+}

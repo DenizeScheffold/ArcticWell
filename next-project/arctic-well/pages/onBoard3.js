@@ -43,7 +43,7 @@ export default function onBoard() {
         </div>
         <div className={styles.text2}>
           <p>
-            Scan your card at the box to start your experience. Simple as that!
+            When you have found a box the transaction takes place on site.
           </p>
         </div>
         <div className={styles.textskip}>
