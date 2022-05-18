@@ -26,13 +26,14 @@
 }
 
 .button {
-  display: flex;
+  position: absolute;
   width: 272px;
   height: 48px;
-  position: relative;
   overflow: hidden;
-  align-self: center;
-  margin-top: 25em;
+  top: 35em;
+  left: 3.21em;
+  right: 0;
+  bottom: 0;
 }
 
 .buttonText {
@@ -59,6 +60,9 @@
   line-height: var(--heading-2-line-height);
   position: relative;
   width: fit-content;
-  margin-top: -1.2em;
-  text-align: center; 
+  text-align: center;
+  top: -6.3em;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
 }
