@@ -1,18 +1,20 @@
 .banner_container {
   display: flex;
-  padding-top: 0.5em;
-  align-self: stretch;
-  flex-grow: 2;
+  /* align-self: stretch;
+  flex-grow: 2; */
   position: absolute;
   height: 4em;
-  top: 0;
+  /* top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   z-index: 1;
+  align-items: flex-start;
+  justify-content: center;
+  width: var(--mobile-screen-width);
 }
 
 .arctic_well_logo {
