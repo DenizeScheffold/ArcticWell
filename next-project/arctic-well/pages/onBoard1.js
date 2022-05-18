@@ -17,7 +17,7 @@ export default function onBoard() {
             <Image
               alt="boxPicture"
               layout="fixed"
-              src="/onboarding_bg_1.png"
+              src="/onboarding_bg_1.jpg"
               width={376}
               height={736}
               quality={100}

@@ -17,7 +17,7 @@ export default function onBoard() {
             <Image
               alt="boxPicture"
               layout="fixed"
-              src="/onboarding_bg_2.png"
+              src="/onboarding_bg_2.jpg"
               width={376}
               height={736}
               quality={100}
@@ -27,18 +27,18 @@ export default function onBoard() {
         </div>
 
         <div className={styles.flexbox_container}>
-        <Link href="./onBoard3" passHref>
-          <div className={styles.button}>
-            <Image
-              alt="Rectangle"
-              layout="fill"
-              src="/Rectangle_blue.png"
-              height={48}
-              width={272}
-              quality={100}
-            />
-                 <a className={styles.buttonText}>Next</a>{" "}
-          </div>
+          <Link href="./onBoard3" passHref>
+            <div className={styles.button}>
+              <Image
+                alt="Rectangle"
+                layout="fill"
+                src="/Rectangle_blue.png"
+                height={48}
+                width={272}
+                quality={100}
+              />
+              <a className={styles.buttonText}>Next</a>{" "}
+            </div>
           </Link>
           <div className={styles.text1}>
             <h1>Find your box</h1>
