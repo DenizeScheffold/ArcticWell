@@ -17,7 +17,7 @@ export default function Home() {
             <Image
               alt="background"
               layout="fixed"
-              src="/more_background.png"
+              src="/more_bg.jpg"
               width={376}
               height={736}
               quality={100}

@@ -18,7 +18,7 @@ export default function More() {
             <Image
               alt="background"
               layout="fixed"
-              src="/more_background.png"
+              src="/more_bg.jpg"
               width={376}
               height={736}
               quality={100}
@@ -51,6 +51,8 @@ export default function More() {
             <p className={styles.more_footer}>
               Designed by Arctic Well in Sweden.
             </p>
+
+      
           </div>
         </div>
       </div>
