@@ -6,7 +6,6 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 
 export default function onBoard() {
-
   return (
     <Layout>
       <Head>
@@ -28,23 +27,23 @@ export default function onBoard() {
         </div>
 
         <div className={styles.flexbox_container}>
-        <Link href="./onBoard2" passHref>
-          <div className={styles.button}>
-            <Image
-              alt="Rectangle"
-              layout="fill"
-              src="/Rectangle_blue.png"
-              height={48}
-              width={272}
-              quality={100}
-            />
+          <Link href="./onBoard2" passHref>
+            <div className={styles.button}>
+              <Image
+                alt="Rectangle"
+                layout="fill"
+                src="/Rectangle_blue.png"
+                height={48}
+                width={272}
+                quality={100}
+              />
               <a className={styles.buttonText}>Next</a>{" "}
-          </div>
+            </div>
           </Link>
           <div className={styles.text1}>
             <h1>This is Artic Well</h1>
           </div>
-          
+
           <div className={styles.text2}>
             <p>
               Say hello to the fastest way to go from overheated to refreshed.
@@ -52,10 +51,9 @@ export default function onBoard() {
               you are.
             </p>
           </div>
-
-          <div className={styles.textskip}>
-            <a href="./map">skip</a>
-          </div>
+          <Link href="./map" passHref>
+            <a className={styles.textskip}>skip</a>
+          </Link>
         </div>
       </div>
     </Layout>
