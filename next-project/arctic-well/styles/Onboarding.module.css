@@ -33,7 +33,6 @@
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
   text-align: center;
- /* margin-top: -19.8em;*/
   top: 12.5em;
   left: 16px;
   right: 16px;
@@ -48,8 +47,6 @@
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   text-align: center;
-  /*margin-top: 9em;
-  margin-bottom: 30.7em;*/
   top: 28em;
   left: 16px;
   right: 16px;
@@ -58,12 +55,9 @@
 
 .button {
   position: absolute;
-  /*display: flex;*/
   width: 272px;
   height: 48px;
   overflow: hidden;
-  /*margin-bottom: -28em;
-  margin-left: 2.3em;*/
   top: 35em;
   left: 3.21em;
   right: 0;
@@ -97,7 +91,6 @@
   font-weight: var(--body-1-bold-font-weight);
   font-size: var(--body-1-bold-font-size);
   line-height: var(--body-1-bold-line-height);
-  /*margin-bottom: -34em;*/
   top: 39em;
   left: 10.71em;
   right: 0;
