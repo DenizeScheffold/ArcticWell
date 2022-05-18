@@ -17,8 +17,8 @@ export default function onBoard() {
               alt="boxPicture"
               layout="fixed"
               src="/onboarding_bg_2.png"
-              width={377}
-              height={706}
+              width={376}
+              height={736}
               quality={100}
               priority
             />
