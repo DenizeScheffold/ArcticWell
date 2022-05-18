@@ -22,6 +22,7 @@ export default function onBoard() {
           />
         </div>
       </div>
+      
       <div className={styles.flexbox_container}>
         <div className={styles.button}>
           <Image
@@ -36,15 +37,17 @@ export default function onBoard() {
             Next
           </a>
         </div>
+
         <div className={styles.text1}>
-          <h1>Map</h1>
+          <h1>Find your box</h1>
         </div>
+
         <div className={styles.text2}>
           <p>
-            On the mapview you can find all our boxes and your nearest Arctic
-            Box
+            On the map-view you can find all our boxes and see which is closest to you.
           </p>
         </div>
+
         <div className={styles.textskip}>
           <a href="./map">skip</a>
         </div>

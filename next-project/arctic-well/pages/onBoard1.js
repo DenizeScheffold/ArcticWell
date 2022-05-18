@@ -22,6 +22,7 @@ export default function onBoard() {
           />
         </div>
       </div>
+      
       <div className={styles.flexbox_container}>
         <div className={styles.button}>
           <Image
@@ -36,19 +37,21 @@ export default function onBoard() {
             Next
           </a>
         </div>
+
         <div className={styles.text1}>
-          <h1>Cooling, evolved</h1>
+          <h1>This is Artic Well</h1>
         </div>
+
         <div className={styles.text2}>
           <p>
-            Say hello to the fastest and easiest way to reach a comfortable body
-            temperature. The experince will leave you feeling fresh and ready
-            for your next adventure.
+            Say hello to the fastest way to go from overheated to refreshed. Our cooling technology will give you an arctic experience wherever you are.
           </p>
         </div>
+
         <div className={styles.textskip}>
           <a href="./map">skip</a>
         </div>
+
       </div>
     </div>
   );

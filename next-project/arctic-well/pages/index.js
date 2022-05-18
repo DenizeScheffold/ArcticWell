@@ -34,7 +34,7 @@ export default function Home() {
               width={272}
               quality={100}
             />
-            <a className={styles.buttonText}>Discover how it works!</a>{" "}
+            <a className={styles.buttonText}>Learn more</a>{" "}
           </div>
         </Link>
         <div className={styles.text}>

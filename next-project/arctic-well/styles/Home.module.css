@@ -32,13 +32,14 @@
   position: relative;
   overflow: hidden;
   align-self: center;
+  margin-top: 25em;
 }
 
 .buttonText {
-  font-family: var(--label-button-regular-font-family);
-  font-weight: var(--label-button-regular-font-weight);
-  font-size: var(--label-button-regular-font-size);
-  line-height: var(--label-button-regular-line-height);
+  font-family: var(--heading-4-font-family);
+  font-weight: var(--heading-4-font-weight);
+  font-size: var(--heading-4-font-size);
+  line-height: var(--heading-4-line-height);
   color: var(--brand-dark-black);
   text-align: center;
   position: absolute;
@@ -52,10 +53,12 @@
 
 .text {
   color: var(--brand-dark-blue);
-  font-family: var(--heading-3-font-family);
-  font-weight: var(--heading-3-font-weight);
-  font-size: var(--heading-3-font-size);
-  line-height: var(--heading-3-line-height);
+  font-family: var(--heading-2-font-family);
+  font-weight: var(--heading-2-font-weight);
+  font-size: var(--heading-2-font-size);
+  line-height: var(--heading-2-line-height);
   position: relative;
   width: fit-content;
+  margin-top: -1.2em;
+  text-align: center; 
 }
