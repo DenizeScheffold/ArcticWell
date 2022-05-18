@@ -37,6 +37,8 @@
   left: 16px;
   right: 16px;
   bottom: 0;
+  width: fit-content;
+  height: fit-content;
 }
 
 .text2 {
@@ -47,6 +49,8 @@
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   text-align: center;
+  width: fit-content;
+  height: fit-content;
   top: 28em;
   left: 16px;
   right: 16px;
@@ -79,9 +83,7 @@
   height: fit-content;
   margin: auto;
   text-decoration: none;
-
 }
-
 
 .textskip {
   position: absolute;
@@ -96,7 +98,6 @@
   right: 0;
   bottom: 0;
 }
-
 
 .textReady {
   position: absolute;
