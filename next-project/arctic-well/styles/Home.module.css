@@ -30,8 +30,8 @@
   width: 272px;
   height: 48px;
   overflow: hidden;
-  top: 35em;
-  left: 3.21em;
+  top: 43.7em;
+  left: 4em;
   right: 0;
   bottom: 0;
 }
@@ -53,7 +53,7 @@
 }
 
 .text {
-  color: var(--brand-dark-blue);
+  color: var(--brand-dark-black);
   font-family: var(--heading-2-font-family);
   font-weight: var(--heading-2-font-weight);
   font-size: var(--heading-2-font-size);
@@ -61,8 +61,8 @@
   position: relative;
   width: fit-content;
   text-align: center;
-  top: -6.3em;
-  left: 0;
+  top: -7.7em;
+  left: 2em;
   right: 0;
   bottom: 0;
 }
