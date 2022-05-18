@@ -32,7 +32,7 @@
   font-size: var(--heading-3-font-size);
   line-height: var(--heading-3-line-height);
   text-align: center;
-  margin-top: 0.2em;
+  margin-top: -19.8em;
 }
 
 .text2 {
@@ -43,8 +43,8 @@
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   text-align: center;
-  margin-top: 5em;
-  margin-bottom: 30em;
+  margin-top: 9em;
+  margin-bottom: 30.7em;
 }
 
 .button {
@@ -76,7 +76,7 @@
 
 
 .textskip {
-  /*position: absolute;*/
+  position: absolute;
   color: var(--brand-white);
   text-decoration: none;
   font-family: var(--body-1-bold-font-family);
@@ -84,6 +84,7 @@
   font-size: var(--body-1-bold-font-size);
   line-height: var(--body-1-bold-line-height);
   align-self:center;
+  margin-bottom: -34em;
 }
 
 
