@@ -32,7 +32,7 @@ export default function onBoard() {
               <Image
                 alt="Rectangle"
                 layout="fill"
-                src="/Rectangle_blue.png"
+                src="/Rectangle_blue.svg"
                 height={48}
                 width={272}
                 quality={100}
