@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=K2D:wght@300;700&family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@300;600;700&family=Karla:wght@400;700&display=swap");
+
 
 :root {
   --brand-white: #ffffff;
@@ -37,12 +38,12 @@
   --heading-2-line-height: 3rem;
 
   --heading-3-font-family: "K2D", sans-serif;
-  --heading-3-font-weight:700;
+  --heading-3-font-weight:600;
   --heading-3-font-size: 2rem;
   --heading-3-line-height: 2.5rem;
 
   --heading-4-font-family: "K2D", sans-serif;
-  --heading-4-font-weight: 700;
+  --heading-4-font-weight: 600;
   --heading-4-font-size: 1.5rem;
   --heading-4-line-height: 2rem;
 
@@ -62,12 +63,12 @@
   --heading-mobile-1-line-height: 2.875rem;
 
   --heading-mobile-2-font-family: "K2D", sans-serif;
-  --heading-mobile-2-font-weight: 700;
+  --heading-mobile-2-font-weight: 600;
   --heading-mobile-2-font-size: 2rem;
   --heading-mobile-2-line-height: 2.4375rem;
 
   --heading-mobile-3-font-family: "K2D", sans-serif;
-  --heading-mobile-3-font-weight: 700;
+  --heading-mobile-3-font-weight: 600;
   --heading-mobile-3-font-size: 1.625rem;
   --heading-mobile-3-line-height: 2rem;
 

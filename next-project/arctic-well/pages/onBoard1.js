@@ -41,7 +41,7 @@ export default function onBoard() {
             </div>
           </Link>
           <div className={styles.text1}>
-            <h1>This is Artic Well</h1>
+            <h1>This is Arctic Well</h1>
           </div>
 
           <div className={styles.text2}>

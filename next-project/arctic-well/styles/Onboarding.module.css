@@ -88,14 +88,15 @@
   position: absolute;
   text-decoration: none;
   color: var(--brand-white);
-  font-family: var(--body-1-bold-font-family);
-  font-weight: var(--body-1-bold-font-weight);
-  font-size: var(--body-1-bold-font-size);
-  line-height: var(--body-1-bold-line-height);
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
   top: 39em;
   left: 10.71em;
   right: 0;
   bottom: 0;
+  text-shadow:1px 1px 0px rgba(0, 0, 0, 0.6);
 }
 
 .textReady {
