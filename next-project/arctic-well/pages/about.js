@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+
 import styles from "../styles/More.module.css";
 import React from "react";
 import Image from "next/image";
@@ -13,7 +13,7 @@ export default function More() {
         <title>Arctic Well</title>
       </Head>
       <div className={styles.more_container}>
-        <div>
+      <div>
           <div className={styles.bg_wrap}>
             <Image
               alt="background"
@@ -25,12 +25,13 @@ export default function More() {
               priority
             />
           </div>
-        </div>
+          </div>
         <div className={styles.flexbox_container}>
-        
-        
-              <h1 className={styles.about_title1}><i className={styles.arrow}></i>About us</h1>
-<div className={styles.about_image}>
+              <h1 className={styles.about_title1}>
+                <i className={styles.arrow}>
+                  </i>About us</h1>
+
+              <div className={styles.about_image}>
               <Image
                 alt="Rectangle"
                 layout="fixed"
@@ -39,19 +40,14 @@ export default function More() {
                 width={328.96}
                 quality={100}
               />
-              
               </div>
 
-              <div className={styles.about_text}><p>We were born in 2022, and kicked off this project at 
-                our school in Stockholms Technical Institute. We worked in
-                 a cross-functionally teams with Java-developers and UX Designer.
-                 </p>
-                 </div>
-                 
-            
+              <div className={styles.about_text}>
+                <p>We were born in 2022, and kicked off this project at 
+                   our school in Stockholms Technical Institute. We worked in
+                   a cross-functionally teams with Java-developers and UX Designer.</p>            
+              </div>
 
-      
-          
         </div>
       </div>
     </Layout>
