@@ -46,6 +46,7 @@
 .more_hr {
   border: 1px solid black !important;
   margin: 15px;
+  background-color: black;
 }
 
 .more_footer {
