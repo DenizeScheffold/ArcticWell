@@ -91,7 +91,50 @@ const Map = () => {
             }}
             options={{ pixelOffset: new google.maps.Size(0, -37) }}
           >
-            <div>{selected.name}</div>
+            {/* @TODO: this should probably be moved to its own function when complete
+             *   currently not functional
+             */}
+            <div className={styles.infobox_super_container}>
+              {selected.name}
+              <div className={styles.infobox_icon_container}>
+                <Image
+                  className={styles.infobox_icons}
+                  alt="infoboxicon"
+                  src="/bi_sun_new.svg"
+                  layout="responsive"
+                  width={60}
+                  height={60}
+                  quality={100}
+                />
+                <Image
+                  className={styles.infobox_icons}
+                  alt="infoboxicon"
+                  src="/bi_sun_new.svg"
+                  layout="responsive"
+                  width={60}
+                  height={60}
+                  quality={100}
+                />
+                <Image
+                  className={styles.infobox_icons}
+                  alt="infoboxicon"
+                  src="/bi_sun_new.svg"
+                  layout="responsive"
+                  width={60}
+                  height={60}
+                  quality={100}
+                />
+                <Image
+                  className={styles.infobox_icons}
+                  alt="infoboxicon"
+                  src="/bi_sun_new.svg"
+                  layout="responsive"
+                  width={60}
+                  height={60}
+                  quality={100}
+                />
+              </div>
+            </div>
           </InfoWindow>
         ) : null}
         <button className={styles.location_container} onClick={centerMap}>
