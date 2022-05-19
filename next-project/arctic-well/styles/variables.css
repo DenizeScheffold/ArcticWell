@@ -14,6 +14,7 @@
   --brand-baby-blue: #8bdff0;
   --brand-yellow-snow: #fafc95;
   --brand-ice-blue: #c0f4ff;
+  --brand-freezing-ocean: #374146;
 
   --mobile-screen-width: 376px;
   --mobile-screen-height: 736px;
@@ -73,7 +74,7 @@
   --heading-mobile-3-line-height: 2rem;
 
   --heading-mobile-4-font-family: "K2D", sans-serif;
-  --heading-mobile-4-font-weight: 700;
+  --heading-mobile-4-font-weight: 600;
   --heading-mobile-4-font-size: 1.25rem;
   --heading-mobile-4-line-height: 1.625rem;
 
@@ -86,7 +87,7 @@
   /* In the style guide on figma this has a font-weight of 500, which seems weird for a bold font 
   *  @TODO: follow up and potentially change this value in case things look wonky
   */
-  --body-1-bold-font-weight: 700;
+  --body-1-bold-font-weight: 500;
   --body-1-bold-font-size: 1rem;
   --body-1-bold-line-height: 1.5rem;
 
