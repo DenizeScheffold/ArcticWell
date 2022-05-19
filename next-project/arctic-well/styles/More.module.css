@@ -52,13 +52,16 @@
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 100px;
-  font-weight: bold;
+  margin-top: 13em;
+  font-family: var( --body-1-bold-font-family);
+  font-weight: var( --body-1-bold-font-weight);
+  font-size: var(--body-1-bold-font-size);
+  line-height: var(--body-1-bold-line-height);
 }
 
 .flag{
-  margin-left: 20em;
-  margin-top: 14em;
+  margin-left: 20.3em;
+  margin-top: 14.03em;
 }
 
 .about_title1 {
