@@ -92,7 +92,7 @@ const Map = () => {
             options={{ pixelOffset: new google.maps.Size(0, -37) }}
           >
             {/* @TODO: this should probably be moved to its own function when complete
-             *   currently not functional
+             *   currently kinda functional
              */}
             <div className={styles.infobox_super_container}>
               {selected.name}
@@ -100,8 +100,8 @@ const Map = () => {
                 <Image
                   className={styles.infobox_icons}
                   alt="infoboxicon"
-                  src="/bi_sun_new.svg"
-                  layout="responsive"
+                  src="/boxMarker.png"
+                  layout="fixed"
                   width={60}
                   height={60}
                   quality={100}
@@ -109,8 +109,8 @@ const Map = () => {
                 <Image
                   className={styles.infobox_icons}
                   alt="infoboxicon"
-                  src="/bi_sun_new.svg"
-                  layout="responsive"
+                  src="/find_location_vector.png"
+                  layout="fixed"
                   width={60}
                   height={60}
                   quality={100}
@@ -118,8 +118,8 @@ const Map = () => {
                 <Image
                   className={styles.infobox_icons}
                   alt="infoboxicon"
-                  src="/bi_sun_new.svg"
-                  layout="responsive"
+                  src="/boxMarker.png"
+                  layout="fixed"
                   width={60}
                   height={60}
                   quality={100}
@@ -127,8 +127,8 @@ const Map = () => {
                 <Image
                   className={styles.infobox_icons}
                   alt="infoboxicon"
-                  src="/bi_sun_new.svg"
-                  layout="responsive"
+                  src="/find_location_vector.png"
+                  layout="fixed"
                   width={60}
                   height={60}
                   quality={100}

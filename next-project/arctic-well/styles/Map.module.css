@@ -26,14 +26,12 @@
   display: flex;
   flex-flow: column nowrap;
   position: relative;
-  width: fit-content;
-  height: fit-content;
 }
 
 .infobox_icon_container {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-between;
   z-index: 1;
   position: inherit;
   width: 100%;
@@ -44,12 +42,9 @@
 .infobox_icons {
   display: flex;
   position: inherit;
-  /* min-width: 60px;
-  max-width: 60px;
-  min-height: 10px;
-  max-height: 60px; */
-  width: 20px !important;
-  height: 20px !important;
-  z-index: 2;
+  padding: 2px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
   overflow: visible;
 }
