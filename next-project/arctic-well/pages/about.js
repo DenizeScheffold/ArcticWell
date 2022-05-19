@@ -46,7 +46,6 @@ export default function More() {
                 <p>We were born in 2022, and kicked off this project at 
                    our school in Stockholms Technical Institute. We worked in
                    a cross-functionally teams with Java-developers and UX Designer.</p>            
-              
               </div>
 
               

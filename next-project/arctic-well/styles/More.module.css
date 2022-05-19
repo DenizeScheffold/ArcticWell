@@ -97,3 +97,14 @@
   line-height: var(--body-1-line-height);
   margin-bottom: 350px;
 }
+
+.rent_text {
+  text-align: center;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-bottom: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
