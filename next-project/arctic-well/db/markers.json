@@ -4,62 +4,62 @@
         "lat": 59.31659359085035,
         "lng": 18.041815542691243,
         "map": "arctic-map",
-        "icon": "/boxMarker.png"
+        "icon": "/boxMarker.svg"
     },
     {
         "name": "Långholmsgatan 15E",
         "lat": 59.31686639105647,
         "lng": 18.033475947597925,
         "map": "arctic-map",
-        "icon": "/boxMarker.png"
+        "icon": "/boxMarker.svg"
     },
     {
         "name": "Mariatorget 3",
         "lat": 59.318299387018456,
         "lng": 18.064070414021298,
         "map": "arctic-map",
-        "icon": "/boxMarker.png"
+        "icon": "/boxMarker.svg"
     },
     {
         "name": "Kornhamnstorg 59",
         "lat": 59.32271988404267,
         "lng": 18.072194830717475,
         "map": "arctic-map",
-        "icon": "/boxMarker.png"
+        "icon": "/boxMarker.svg"
     },
     {
         "name": "Jussi Björlings allé",
         "lat": 59.331531357954,
         "lng": 18.070782428871436,
         "map": "arctic-map",
-        "icon": "/boxMarker.png"
+        "icon": "/boxMarker.svg"
     },
     {
         "name": "Sergels torg",
         "lat": 59.33501439604125,
         "lng": 18.064538246389937,
         "map": "arctic-map",
-        "icon": "/boxMarker.png"
+        "icon": "/boxMarker.svg"
     },
     {
         "name": "Karlavägen 32",
         "lat": 59.34101095207125,
         "lng": 18.07229127643133,
         "map": "arctic-map",
-        "icon": "/boxMarker.png"
+        "icon": "/boxMarker.svg"
     },
     {
         "name": "Dalagatan 11C",
         "lat": 59.34033021608915,
         "lng": 18.042788762900678,
         "map": "arctic-map",
-        "icon": "/boxMarker.png"
+        "icon": "/boxMarker.svg"
     },
     {
         "name": "Smedsuddsvägen 6",
         "lat": 59.32901508188088,
         "lng": 18.02371156289466,
         "map": "arctic-map",
-        "icon": "/boxMarker.png"
+        "icon": "/boxMarker.svg"
     }
 ]
