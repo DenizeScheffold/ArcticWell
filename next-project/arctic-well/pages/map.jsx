@@ -94,13 +94,13 @@ const Map = () => {
               minWidth: 300,
             }}
           >
-            {/* @TODO: this should probably be moved to its own function when complete */}
-            <div className={styles.infobox_super_container}>
+            {/* @TODO: this should probably be moved to its own function */}
+            <div className={styles.infowindow_super_container}>
               {selected.name}
-              <div className={styles.infobox_icon_container}>
+              <div className={styles.infowindow_icon_container}>
                 <Image
-                  className={styles.infobox_icons}
-                  alt="infoboxicon"
+                  className={styles.infowindow_icons}
+                  alt="infowindowicon"
                   src="/Snowflake.svg"
                   layout="fixed"
                   width={60}
@@ -108,8 +108,8 @@ const Map = () => {
                   quality={100}
                 />
                 <Image
-                  className={styles.infobox_icons}
-                  alt="infoboxicon"
+                  className={styles.infowindow_icons}
+                  alt="infowindowicon"
                   src="/Capacity.svg"
                   layout="fixed"
                   width={60}
@@ -117,8 +117,8 @@ const Map = () => {
                   quality={100}
                 />
                 <Image
-                  className={styles.infobox_icons}
-                  alt="infoboxicon"
+                  className={styles.infowindow_icons}
+                  alt="infowindowicon"
                   src="/Time.svg"
                   layout="fixed"
                   width={60}
@@ -126,8 +126,8 @@ const Map = () => {
                   quality={100}
                 />
                 <Image
-                  className={styles.infobox_icons}
-                  alt="infoboxicon"
+                  className={styles.infowindow_icons}
+                  alt="infowindowicon"
                   src="/Price.svg"
                   layout="fixed"
                   width={60}

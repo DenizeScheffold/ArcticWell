@@ -20,16 +20,18 @@
   cursor: pointer;
 }
 
-/* @TODO: complete styling with the actual icons when possible */
+/* @TODO: set the background color for the entire infowindow to var(--brand-ice-blue) */
 
-.infobox_super_container {
+.infowindow_super_container {
   display: flex;
   flex-flow: column nowrap;
   position: relative;
   text-align: center;
+  /* This sadly does not set the entire window to --brand-ice-blue */
+  background-color: var(--brand-ice-blue);
 }
 
-.infobox_icon_container {
+.infowindow_icon_container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -41,7 +43,7 @@
   overflow: visible;
 }
 
-.infobox_icons {
+.infowindow_icons {
   display: flex;
   position: relative;
   width: 60px;
