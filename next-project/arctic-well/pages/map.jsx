@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { memo, useState, useEffect, useRef, useCallback } from "react";
 import {
   GoogleMap,
@@ -9,12 +8,10 @@ import {
 import markerData from "../db/markers.json";
 import styles from "../styles/Map.module.css";
 import Image from "next/image";
+import mapStyles from "../components/mapStyles";
+import Navbar from "../components/Navbar";
 
 const Map = () => {
-  <Head>
-    <title>Find your Arctic Well</title>
-  </Head>;
-
   const [map, setMap] = useState(null);
 
   const [pos, setPos] = useState({
@@ -26,7 +23,7 @@ const Map = () => {
 
   const options = {
     disableDefaultUI: true,
-    // zoomControl: true,
+    styles: mapStyles,
   };
 
   const containerStyle = {
@@ -60,25 +57,9 @@ const Map = () => {
     setMap(null);
   }, []);
 
-  // function Locate({ centerMap }) {
-  //   <button className={styles.location_container} onClick={centerMap}>
-  //     {" "}
-  //     <Image
-  //       className={styles.centerBtn}
-  //       alt="locateBtn"
-  //       src="/find_location_vector.png"
-  //       layout="responsive"
-  //       width={4}
-  //       height={4}
-  //       quality={100}
-  //     />
-  //   </button>
-  // }
-
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
   return isLoaded ? (
     <div className={styles.map_container}>
-      {/* <Locate centerMap={centerMap}></Locate> */}
       <GoogleMap
         id={"arctic-map"}
         mapContainerStyle={containerStyle}
@@ -92,7 +73,10 @@ const Map = () => {
         {markerData.map((arcticWellMarker) => (
           <Marker
             key={arcticWellMarker.name}
-            position={{ lat: arcticWellMarker.lat, lng: arcticWellMarker.lng }}
+            position={{
+              lat: arcticWellMarker.lat,
+              lng: arcticWellMarker.lng,
+            }}
             icon={arcticWellMarker.icon}
             onClick={() => {
               setSelected(arcticWellMarker);
@@ -107,7 +91,50 @@ const Map = () => {
             }}
             options={{ pixelOffset: new google.maps.Size(0, -37) }}
           >
-            <div>{selected.name}</div>
+            {/* @TODO: this should probably be moved to its own function when complete
+             *   currently kinda functional
+             */}
+            <div className={styles.infobox_super_container}>
+              {selected.name}
+              <div className={styles.infobox_icon_container}>
+                <Image
+                  className={styles.infobox_icons}
+                  alt="infoboxicon"
+                  src="/boxMarker.png"
+                  layout="fixed"
+                  width={60}
+                  height={60}
+                  quality={100}
+                />
+                <Image
+                  className={styles.infobox_icons}
+                  alt="infoboxicon"
+                  src="/find_location_vector.png"
+                  layout="fixed"
+                  width={60}
+                  height={60}
+                  quality={100}
+                />
+                <Image
+                  className={styles.infobox_icons}
+                  alt="infoboxicon"
+                  src="/boxMarker.png"
+                  layout="fixed"
+                  width={60}
+                  height={60}
+                  quality={100}
+                />
+                <Image
+                  className={styles.infobox_icons}
+                  alt="infoboxicon"
+                  src="/find_location_vector.png"
+                  layout="fixed"
+                  width={60}
+                  height={60}
+                  quality={100}
+                />
+              </div>
+            </div>
           </InfoWindow>
         ) : null}
         <button className={styles.location_container} onClick={centerMap}>
@@ -121,7 +148,8 @@ const Map = () => {
             quality={100}
           />
         </button>
-        {/* Child components, such as markers and info windows go here */}
+        {/* Child components, such as markers and info windows go above <Navbar /> */}
+        <Navbar />
         <></>
       </GoogleMap>
     </div>

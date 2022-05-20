@@ -1,53 +1,57 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Onboarding.module.css";
+import Layout from "../components/Layout";
+import Link from "next/link";
 
 export default function onBoard() {
-  <Head>
-    <title>Welcome to Arctic Well</title>
-  </Head>;
   return (
-    <div>
-      <div>
-        <Image
-          alt="card"
-          layout="responsive"
-          src="/card.png"
-          width={377}
-          height={706}
-          quality={100}
-        />
+    <Layout>
+      <Head>
+        <title>Welcome to Arctic Well</title>
+      </Head>
+      <div className={styles.onboarding_container}>
+        <div>
+          <div className={styles.bg_wrap}>
+            <Image
+              alt="card"
+              layout="fixed"
+              src="/onboarding_bg_3.jpg"
+              width={376}
+              height={736}
+              quality={100}
+              priority
+            />
+          </div>
+        </div>
+        <div className={styles.flexbox_container}>
+          <Link href="./onBoard4" passHref>
+            <div className={styles.button}>
+              <Image
+                alt="Rectangle"
+                layout="fill"
+                src="/Rectangle_blue.svg"
+                height={48}
+                width={272}
+                quality={100}
+              />
+              <a className={styles.buttonText}>Next</a>{" "}
+            </div>
+          </Link>
+          <div className={styles.text1}>
+            <h1>Easy Payment</h1>
+          </div>
+          <div className={styles.text2}>
+            <p>
+              When you have found a box the transaction takes place on site.
+            </p>
+          </div>
+          <Link href="./map" passHref>
+            <a className={styles.textskip}>Skip</a>
+          </Link>
+        </div>
       </div>
-
-      <div className={styles.button2}>
-        <Image
-          className={styles.rectangel2}
-          alt="Rectangel"
-          layout="responsive"
-          src="/Rectangle_blue.png"
-          height={20}
-          width={140}
-          quality={100}
-        />
-        <a className={styles.buttonText2} href="./onBoard4">
-          Next
-        </a>
-      </div>
-
-      <div className={styles.textCard}>
-        <h1>Easy Payment</h1>
-      </div>
-
-      <div className={styles.textCard2}>
-        <p>
-          Scan your card at the box to start your experience. Simple as that!
-        </p>
-      </div>
-
-      <div className={styles.textskip}>
-        <a href="./map">skip</a>
-      </div>
-    </div>
+    </Layout>
   );
 }

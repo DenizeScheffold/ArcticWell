@@ -7,7 +7,7 @@
   position: absolute;
   height: 50px;
   width: 50px;
-  bottom: 94px;
+  bottom: 82px;
   right: 16px;
   background: none;
   border: none;
@@ -18,4 +18,35 @@
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+
+/* @TODO: complete styling with the actual icons when possible */
+
+.infobox_super_container {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  text-align: center;
+}
+
+.infobox_icon_container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  z-index: 1;
+  position: inherit;
+  padding-top: 8px;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.infobox_icons {
+  display: flex;
+  position: inherit;
+  padding: 2px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  overflow: visible;
 }

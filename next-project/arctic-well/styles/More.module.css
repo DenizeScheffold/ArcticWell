@@ -1,26 +1,110 @@
-.more_div {
+
+
+.more_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.flexbox_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: 0px var(--mobile-margin) 0px var(--mobile-margin);
+  flex-flow: column wrap;
+  /* @TODO: the code below this comment needs to be reworked and expanded to match the desired design */
+  justify-content: center;
+  margin: 0;
   padding: 0;
 }
 
+.bg_wrap {
+  position: absolute;
+  /*  I have no idea why the values on height and width make the background work as intended, but they do 
+  *   don't change them unless you know what you're doing
+  */
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  
+}
+
+.more_div {
+  padding: 0;
+  margin-top: 1em;
+}
+
 .more_links {
-  margin-top: 20px;
-  font-weight: bold;
-  margin-left: 20px;
-  font-size: large;
-  text-align: left;
+  font-family: var(--heading-mobile-4-font-family);
+  font-weight: var(--heading-mobile-4-font-weight);
+  font-size: var(--heading-mobile-4-font-size);
+  line-height: var(--heading-mobile-4-line-height);
+  margin: 15px;
 }
 
 .more_hr {
   border: 1px solid black !important;
+  margin: 15px;
   background-color: black;
-  margin: 20px;
 }
 
 .more_footer {
   position: absolute;
   width: 100%;
-  bottom: 70px;
   text-align: center;
-  font-weight: bold;
-  font-size: smaller;
+  margin-top: 13em;
+  font-family: var( --body-1-bold-font-family);
+  font-weight: var( --body-1-bold-font-weight);
+  font-size: var(--body-1-bold-font-size);
+  line-height: var(--body-1-bold-line-height);
+}
+
+.flag{
+  margin-left: 20.3em;
+  margin-top: 14.03em;
+}
+
+.about_title1 {
+  text-align: center;
+  font-family: var(--heading-mobile-4-font-family);
+  font-weight: var(--heading-mobile-4-font-weight);
+  font-size: var(--heading-mobile-4-font-size);
+  line-height: var(--heading-mobile-4-line-height);
+  margin-top: 50px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.about_image {
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+.about_text {
+  text-align: center;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-bottom: 350px;
+}
+
+.rent_text {
+  text-align: center;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-bottom: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
 }

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=K2D:wght@300;700&family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@300;600;700&family=Karla:wght@400;700&display=swap");
+
 
 :root {
   --brand-white: #ffffff;
@@ -13,9 +14,10 @@
   --brand-baby-blue: #8bdff0;
   --brand-yellow-snow: #fafc95;
   --brand-ice-blue: #c0f4ff;
+  --brand-freezing-ocean: #374146;
 
   --mobile-screen-width: 376px;
-  --mobile-screen-height: 810px;
+  --mobile-screen-height: 736px;
   --mobile-total-width: 344px;
   --mobile-margin: 16px;
 
@@ -28,9 +30,7 @@
 
   --heading-1-font-family: "K2D", sans-serif;
   --heading-1-font-weight: 700;
-  /* ~48px / 3rem */
   --heading-1-font-size: 3rem;
-  /* ~56px / 3.5rem */
   --heading-1-line-height: 3.5rem;
 
   --heading-2-font-family: "K2D", sans-serif;
@@ -39,12 +39,12 @@
   --heading-2-line-height: 3rem;
 
   --heading-3-font-family: "K2D", sans-serif;
-  --heading-3-font-weight: 700;
+  --heading-3-font-weight:600;
   --heading-3-font-size: 2rem;
   --heading-3-line-height: 2.5rem;
 
   --heading-4-font-family: "K2D", sans-serif;
-  --heading-4-font-weight: 700;
+  --heading-4-font-weight: 600;
   --heading-4-font-size: 1.5rem;
   --heading-4-line-height: 2rem;
 
@@ -60,23 +60,23 @@
 
   --heading-mobile-1-font-family: "K2D", sans-serif;
   --heading-mobile-1-font-weight: 700;
-  --heading-mobile-1-font-size: 3rem;
-  --heading-mobile-1-line-height: 3.5rem;
+  --heading-mobile-1-font-size: 2.4375rem;
+  --heading-mobile-1-line-height: 2.875rem;
 
   --heading-mobile-2-font-family: "K2D", sans-serif;
-  --heading-mobile-2-font-weight: 700;
-  --heading-mobile-2-font-size: 2.5rem;
-  --heading-mobile-2-line-height: 3rem;
+  --heading-mobile-2-font-weight: 600;
+  --heading-mobile-2-font-size: 2rem;
+  --heading-mobile-2-line-height: 2.4375rem;
 
   --heading-mobile-3-font-family: "K2D", sans-serif;
-  --heading-mobile-3-font-weight: 700;
-  --heading-mobile-3-font-size: 2rem;
-  --heading-mobile-3-line-height: 2.5rem;
+  --heading-mobile-3-font-weight: 600;
+  --heading-mobile-3-font-size: 1.625rem;
+  --heading-mobile-3-line-height: 2rem;
 
   --heading-mobile-4-font-family: "K2D", sans-serif;
-  --heading-mobile-4-font-weight: 700;
-  --heading-mobile-4-font-size: 1.5rem;
-  --heading-mobile-4-line-height: 2rem;
+  --heading-mobile-4-font-weight: 600;
+  --heading-mobile-4-font-size: 1.25rem;
+  --heading-mobile-4-line-height: 1.625rem;
 
   --body-1-font-family: "Karla", sans-serif;
   --body-1-font-weight: 400;
@@ -84,7 +84,10 @@
   --body-1-line-height: 1.5rem;
 
   --body-1-bold-font-family: "Karla", sans-serif;
-  --body-1-bold-font-weight: 700;
+  /* In the style guide on figma this has a font-weight of 500, which seems weird for a bold font 
+  *  @TODO: follow up and potentially change this value in case things look wonky
+  */
+  --body-1-bold-font-weight: 500;
   --body-1-bold-font-size: 1rem;
   --body-1-bold-line-height: 1.5rem;
 

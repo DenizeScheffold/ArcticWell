@@ -1,4 +1,4 @@
-[
+export default [
     {
       "featureType": "poi.business",
       "elementType": "labels",
@@ -63,3 +63,4 @@
       ]
     }
   ]
+
