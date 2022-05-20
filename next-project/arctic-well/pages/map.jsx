@@ -89,18 +89,19 @@ const Map = () => {
             onCloseClick={() => {
               setSelected(null);
             }}
-            options={{ pixelOffset: new google.maps.Size(0, -37) }}
+            options={{
+              pixelOffset: new google.maps.Size(0, -37),
+              minWidth: 300,
+            }}
           >
-            {/* @TODO: this should probably be moved to its own function when complete
-             *   currently kinda functional
-             */}
+            {/* @TODO: this should probably be moved to its own function when complete */}
             <div className={styles.infobox_super_container}>
               {selected.name}
               <div className={styles.infobox_icon_container}>
                 <Image
                   className={styles.infobox_icons}
                   alt="infoboxicon"
-                  src="/boxMarker.png"
+                  src="/Snowflake.svg"
                   layout="fixed"
                   width={60}
                   height={60}
@@ -109,7 +110,7 @@ const Map = () => {
                 <Image
                   className={styles.infobox_icons}
                   alt="infoboxicon"
-                  src="/find_location_vector.png"
+                  src="/Capacity.svg"
                   layout="fixed"
                   width={60}
                   height={60}
@@ -118,7 +119,7 @@ const Map = () => {
                 <Image
                   className={styles.infobox_icons}
                   alt="infoboxicon"
-                  src="/boxMarker.png"
+                  src="/Time.svg"
                   layout="fixed"
                   width={60}
                   height={60}
@@ -127,7 +128,7 @@ const Map = () => {
                 <Image
                   className={styles.infobox_icons}
                   alt="infoboxicon"
-                  src="/find_location_vector.png"
+                  src="/Price.svg"
                   layout="fixed"
                   width={60}
                   height={60}
