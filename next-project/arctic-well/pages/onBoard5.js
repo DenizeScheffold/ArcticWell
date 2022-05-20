@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Onboarding.module.css";
 import Layout from "../components/Layout";
+import Link from "next/link";
 
 export default function onBoard() {
   return (
@@ -25,19 +26,19 @@ export default function onBoard() {
           </div>
         </div>
         <div className={styles.flexbox_container}>
-          <div className={styles.button}>
-            <Image
-              alt="Rectangle"
-              layout="fill"
-              src="/Rectangle_blue.svg"
-              height={48}
-              width={272}
-              quality={100}
-            />
-            <a className={styles.buttonText} href="./map">
-              Let’s go!
-            </a>
-          </div>
+          <Link href="./map" passHref>
+            <div className={styles.button}>
+              <Image
+                alt="Rectangle"
+                layout="fill"
+                src="/Rectangle_blue.svg"
+                height={48}
+                width={272}
+                quality={100}
+              />
+              <a className={styles.buttonText}>Let’s go!</a>{" "}
+            </div>
+          </Link>
           <div className={styles.textReady}>
             <h1>Are you ready?</h1>
           </div>
