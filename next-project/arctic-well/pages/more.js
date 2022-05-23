@@ -50,21 +50,21 @@ export default function More() {
             <hr className={styles.more_lines}></hr>
 
             <div>
+              <p className={styles.more_footer}>
+                Designed by Arctic Well in Sweden.
+              </p>
 
-            <p className={styles.more_footer}>
-              Designed by Arctic Well in Sweden.
-            </p>
-            
-            <div className={styles.flag}>
-            <Image
-              alt="flag"
-              layout="fixed"
-              src="/sverige_flagga.svg"
-              width={18.05}
-              height={18}
-              quality={100}
-              priority
-            />
+              <div className={styles.flag}>
+                <Image
+                  alt="flag"
+                  layout="fixed"
+                  src="/sverige_flagga.svg"
+                  width={18.05}
+                  height={18}
+                  quality={100}
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
