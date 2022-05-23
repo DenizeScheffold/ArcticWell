@@ -6,9 +6,7 @@ import Navbar from "../components/Navbar";
 import Link from "next/link";
 
 export default function More() {
-  // @TODO: change background to the correct one and style according to figma
   return (
-   
     <><Head>
       <title>Arctic Well</title>
     </Head>
@@ -147,6 +145,5 @@ export default function More() {
         
         <Navbar />
       </div></>
-  
   );
 }

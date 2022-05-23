@@ -54,7 +54,6 @@ export default function More() {
             <p className={styles.more_footer}>
               Designed by Arctic Well in Sweden.
             </p>
-
             
             <div className={styles.flag}>
             <Image
@@ -67,8 +66,6 @@ export default function More() {
               priority
             />
             </div>
-
-      </div>
           </div>
         </div>
       </div>

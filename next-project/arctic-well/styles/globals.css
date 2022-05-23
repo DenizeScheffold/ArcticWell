@@ -139,6 +139,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 #__next {
@@ -147,4 +148,6 @@ body {
 
 #layout-div {
   height: 100%;
+  max-width: 376px;
+  margin: auto 0;
 }
