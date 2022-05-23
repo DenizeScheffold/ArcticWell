@@ -1,8 +1,6 @@
 .banner_container {
   display: flex;
   padding-top: 0.5em;
-  align-self: stretch;
-  flex-grow: 2;
   position: absolute;
   height: 4em;
   top: 0;
@@ -64,7 +62,6 @@
 
 .weather_subcontainer {
   max-width: 367px;
-  width: 360px;
   height: 2.14em;
   flex-grow: 0;
   display: flex;
