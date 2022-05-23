@@ -53,19 +53,18 @@ export default function More() {
             </p>
 
             <div>
-            <div className={styles.flag}>
-            <Image
-              alt="flag"
-              layout="fixed"
-              src="/sverige_flagga.svg"
-              width={18.05}
-              height={18}
-              quality={100}
-              priority
-            />
+              <div className={styles.flag}>
+                <Image
+                  alt="flag"
+                  layout="fixed"
+                  src="/sverige_flagga.svg"
+                  width={18.05}
+                  height={18}
+                  quality={100}
+                  priority
+                />
+              </div>
             </div>
-
-      </div>
           </div>
         </div>
       </div>

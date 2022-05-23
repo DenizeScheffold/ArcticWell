@@ -13,7 +13,7 @@ export default function More() {
         <title>Arctic Well</title>
       </Head>
       <div className={styles.more_container}>
-      <div>
+        <div>
           <div className={styles.bg_wrap}>
             <Image
               alt="background"
@@ -25,26 +25,20 @@ export default function More() {
               priority
             />
           </div>
-          </div>
+        </div>
         <div className={styles.flexbox_container}>
-              <h1 className={styles.about_title1}>
-                Health Benefits</h1>
+          <h1 className={styles.about_title1}>Health Benefits</h1>
 
-              <div className={styles.about_image}>
-              <Image
-                alt="Rectangle"
-                layout="fixed"
-                src="/health_benefits.jpg"
-                height={164}
-                width={328.96}
-                quality={100}
-              />
-              </div>
-
-        
-
-              
-
+          <div className={styles.about_image}>
+            <Image
+              alt="Rectangle"
+              layout="fixed"
+              src="/health_benefits.jpg"
+              height={164}
+              width={328.96}
+              quality={100}
+            />
+          </div>
         </div>
       </div>
     </Layout>
