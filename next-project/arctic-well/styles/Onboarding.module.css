@@ -57,36 +57,21 @@
 }
 
 .button {
-  position: absolute;
-  width: 272px;
-  height: 48px;
-  overflow: hidden;
-  top: 35em;
-  left: 3.21em;
-  right: 0;
-  bottom: 0;
-}
-
-/* Work in progress -- do not delete
-.button {
   display: flex;
   position: relative;
-  height: 48px;
-  width: 272px;
   height: 100%;
   width: 100%;
   max-height: 48px;
   max-width: 272px;
   overflow: hidden;
-  top: 14em;
+  /* @TODO: adjust top value */
+  top: 2em;
   left: 0;
   right: 0;
   bottom: 0;
-  justify-content: center;
-  align-self: center;
   margin: auto 0;
-  z-index: 1;
-} */
+  align-self: center;
+}
 
 .buttonText {
   position: absolute;
@@ -117,7 +102,7 @@
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   /* @TODO: adjust top value */
-  top: 17em;
+  top: 28em;
   left: 0;
   right: 0;
   bottom: 0;
