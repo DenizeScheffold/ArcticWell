@@ -42,9 +42,9 @@ export default function onBoard() {
           <div className={styles.text1}>
             <h1>Easy Payment</h1>
           </div>
-          <div className={styles.text2}>
+          <div className={styles.text2_1}>
             <p>
-              When you have found a box the transaction takes place on site.
+              When you have found a box the transaction {<br></br>}takes place on site.
             </p>
           </div>
           <Link href="./map" passHref>

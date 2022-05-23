@@ -32,7 +32,7 @@
   font-size: var(--heading-mobile-3-font-size);
   line-height: var(--heading-mobile-3-line-height);
   /* @TODO: adjust top value */
-  top: 3em;
+  top: 4.3em;
   left: 0;
   right: 0;
   bottom: 0;
@@ -50,9 +50,41 @@
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   /* @TODO: adjust top value */
-  top: 12em;
+  top: 15.8em;
   bottom: 0;
   margin: auto 0;
+  text-align: center;
+}
+
+.text2_1 {
+  position: absolute;
+  height: fit-content;
+  max-width: 376px;
+  color: var(--brand-dark-black);
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  /* @TODO: adjust top value */
+  top: 28em;
+  bottom: 0;
+  margin-left: 2em;
+  text-align: center;
+}
+
+.text2_2 {
+  position: absolute;
+  height: fit-content;
+  max-width: 376px;
+  color: var(--brand-dark-black);
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  /* @TODO: adjust top value */
+  top: 28em;
+  bottom: 0;
+  margin-left: 1.3em;
   text-align: center;
 }
 
@@ -65,7 +97,7 @@
   max-width: 272px;
   overflow: hidden;
   /* @TODO: adjust top value */
-  top: 2em;
+  top: 3.37em;
   left: 0;
   right: 0;
   bottom: 0;
@@ -119,7 +151,7 @@
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   /* @TODO: adjust top value */
-  top: 28em;
+  top: 29em;
   left: 0;
   right: 0;
   bottom: 0;
@@ -135,7 +167,7 @@
   font-size: var(--heading-mobile-2-font-size);
   line-height: var(--heading-mobile-2-line-height);
   /* @TODO: potentially adjust top value */
-  top: 2em;
+  top: 2.1em;
   margin: auto 0;
   align-self: center;
 }

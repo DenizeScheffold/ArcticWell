@@ -46,8 +46,8 @@ export default function onBoard() {
 
           <div className={styles.text2}>
             <p>
-              Say hello to the fastest way to go from overheated to refreshed.
-              Our cooling technology will give you an arctic experience wherever
+              Say hello to the fastest way to go from {<br></br>}overheated to refreshed.
+              Our cooling {<br></br>}technology will give you an arctic experience wherever
               you are.
             </p>
           </div>

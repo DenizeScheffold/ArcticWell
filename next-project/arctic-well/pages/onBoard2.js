@@ -44,9 +44,9 @@ export default function onBoard() {
             <h1>Find your box</h1>
           </div>
 
-          <div className={styles.text2}>
+          <div className={styles.text2_1}>
             <p>
-              On the map-view you can find all our boxes and see which is
+              On the map-view you can find all our boxes {<br></br>}and see which is
               closest to you.
             </p>
           </div>
