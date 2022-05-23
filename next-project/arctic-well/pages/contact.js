@@ -51,8 +51,30 @@ export default function More() {
           priority />
         </div>
 
+        <div className={styles.icon}>
+        <Image 
+          alt="telephon"
+          layout="fixed"
+          src="/phone.svg"
+          width={56}
+          height={56}
+          quality={100}
+          priority />
+        </div>
+
         <div className={styles.rent_nr}>
         <p>+46 732 84 4566</p>
+        </div>
+
+        <div className={styles.icon}>
+        <Image 
+          alt="telephon"
+          layout="fixed"
+          src="/email.svg"
+          width={56}
+          height={56}
+          quality={100}
+          priority />
         </div>
 
         <div className={styles.rent_email}>

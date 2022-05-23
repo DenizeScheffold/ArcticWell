@@ -59,8 +59,30 @@ export default function More() {
         <p>An Arctic Well at your event does nor olny make for happier attendees but also helps to make your event stand out in the crowd. Don&apos;t be the next Fyre Festival - rent a box.</p>
         </div>
 
+        <div className={styles.icon}>
+        <Image 
+          alt="telephon"
+          layout="fixed"
+          src="/phone.svg"
+          width={56}
+          height={56}
+          quality={100}
+          priority />
+        </div>
+
         <div className={styles.rent_nr}>
         <p>+46 732 84 4566</p>
+        </div>
+
+        <div className={styles.icon}>
+        <Image 
+          alt="telephon"
+          layout="fixed"
+          src="/email.svg"
+          width={56}
+          height={56}
+          quality={100}
+          priority />
         </div>
 
         <div className={styles.rent_email}>

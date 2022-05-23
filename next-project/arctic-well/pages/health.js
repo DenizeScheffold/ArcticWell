@@ -41,7 +41,7 @@ export default function More() {
         <h1 className={styles.heading_text}>Health Benefits</h1>
  
         <div className={styles.picture_health}>
-        <Image className={styles.picture_health}
+        <Image 
           alt="health"
           layout="fixed"
           src="/health.png"
@@ -50,9 +50,101 @@ export default function More() {
           quality={100}
           priority />
         </div>
+       
+        <div className={styles.icon_health}>
 
+        <div>
+        <Image 
+          alt="blood"
+          layout="fixed"
+          src="/blood.svg"
+          width={90}
+          height={90}
+          quality={100}
+          priority />
+        </div>
+
+        <div>
+        <Image 
+          alt="emotional"
+          layout="fixed"
+          src="/emotional.svg"
+          width={90}
+          height={90}
+          quality={100}
+          priority />
+        </div>
+
+        <div>
+        <Image 
+          alt="sleep"
+          layout="fixed"
+          src="/sleep.svg"
+          width={90}
+          height={90}
+          quality={100}
+          priority />
+        </div>
+
+        <div>
+        <Image 
+          alt="stress"
+          layout="fixed"
+          src="/stress.svg"
+          width={90}
+          height={90}
+          quality={100}
+          priority />
+        </div>
+        </div>
+
+        <div className={styles.icon_health2}>
+
+        <div>
+        <Image 
+          alt="boost"
+          layout="fixed"
+          src="/boost.svg"
+          width={90}
+          height={90}
+          quality={100}
+          priority />
+        </div>
+
+        <div>
+        <Image 
+          alt="improves"
+          layout="fixed"
+          src="/alert.svg"
+          width={90}
+          height={90}
+          quality={100}
+          priority />
+        </div>
+
+        <div>
+        <Image 
+          alt="depp"
+          layout="fixed"
+          src="/happy.svg"
+          width={90}
+          height={90}
+          quality={100}
+          priority />
+        </div>
+
+        <div>
+        <Image 
+          alt="meta"
+          layout="fixed"
+          src="/metabolism.svg"
+          width={90}
+          height={90}
+          quality={100}
+          priority />
+        </div>
+        </div>
         
-
         <Navbar />
       </div></>
   
