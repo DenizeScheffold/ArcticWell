@@ -79,14 +79,12 @@
 .picture_about {
   margin-top: 2em;
   margin-left: 1.45em;
-
-  /*border-radius: 10px;
-  overflow: hidden;
-  perspective: 1px;*/
+  border-radius: 5px;
 }
 
+
 .about_text {
-  text-align: center;
+  text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
@@ -106,7 +104,7 @@
 }
 
 .charity_text{
-  text-align: center;
+  text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
@@ -203,6 +201,7 @@
 .picture_health{
   margin-left: 1em;
   margin-top: 1.5em;
+  border-radius: 5px;
 }
 
 .rent_text{

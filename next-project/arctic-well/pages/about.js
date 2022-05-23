@@ -41,7 +41,7 @@ export default function More() {
         <h1 className={styles.heading_text}>About us</h1>
  
         <div className={styles.picture_about}>
-        <Image
+        <Image className={styles.picture_about}
           alt="background"
           layout="fixed"
           src="/about_us.jpg"

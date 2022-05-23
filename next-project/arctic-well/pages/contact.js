@@ -41,7 +41,7 @@ export default function More() {
         <h1 className={styles.heading_text}>Contact us</h1>
  
         <div className={styles.picture_health}>
-        <Image
+        <Image className={styles.picture_health}
           alt="contact"
           layout="fixed"
           src="/contact.jpg"
