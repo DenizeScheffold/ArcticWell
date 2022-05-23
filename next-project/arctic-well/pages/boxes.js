@@ -39,7 +39,7 @@ export default function More() {
           </Link>
         </div>
 
-        <h1 className={styles.heading_text}>Our Boxes</h1>
+        <h1 className={styles.heading_text_box}>Our Boxes</h1>
         <p className={styles.our_boxes_text}>
           We have a box for every occasion!
         </p>
