@@ -56,7 +56,7 @@ export default function More() {
               quality={100}
             />
           </div>
-
+          {/* @TODO: this needs adjusting */}
           <div className={styles.about_text1}>
             <p>
               We were born in 2022, and kicked off this project at our school in

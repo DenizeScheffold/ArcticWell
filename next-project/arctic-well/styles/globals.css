@@ -147,4 +147,6 @@ body {
 
 #layout-div {
   height: 100%;
+  max-width: 376px;
+  margin: auto 0;
 }

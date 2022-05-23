@@ -49,8 +49,9 @@
 .more_footer {
   position: absolute;
   width: 100%;
-  text-align: center;
   margin-top: 13em;
+  /* @TODO: adjust margin-left to make it look right */
+  margin-left: 1em;
   font-family: var(--body-1-bold-font-family);
   font-weight: var(--body-1-bold-font-weight);
   font-size: var(--body-1-bold-font-size);
@@ -75,10 +76,6 @@
   margin-right: 100px;
   width: 16px;
   height: 16px;
-  /* min-width: 16px;
-  max-width: 16px;
-  min-height: 16px;
-  max-height: 16px; */
 }
 
 .about_title2 {
