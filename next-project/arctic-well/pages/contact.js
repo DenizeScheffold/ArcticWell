@@ -3,6 +3,7 @@ import styles from "../styles/More.module.css";
 import React from "react";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 
 export default function More() {
   return (
@@ -24,7 +25,21 @@ export default function More() {
         </div>
       </div>
       <div className={styles.flexbox_container}>
-        <h1 className={styles.about_title1}>Contact us</h1>
+        <h1 className={styles.about_title1}>
+          <Link href="/more" passHref>
+            <span className={styles.about_arrow}>
+              <Image
+                alt="backarrow"
+                layout="fixed"
+                src="/back_arrow.svg"
+                width={16}
+                height={16}
+                quality={100}
+              />
+            </span>
+          </Link>
+          Contact us
+        </h1>
 
         <div className={styles.about_image}>
           <Image
