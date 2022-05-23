@@ -1,38 +1,30 @@
-
-
 .more_container {
   display: flex;
   height: 100%;
   width: 100%;
+  max-width: 376px;
 }
 
 .flexbox_container {
   display: flex;
   height: 100%;
   width: 100%;
-  margin: 0px var(--mobile-margin) 0px var(--mobile-margin);
   flex-flow: column wrap;
-  /* @TODO: the code below this comment needs to be reworked and expanded to match the desired design */
   justify-content: center;
-  margin: 0;
+  margin: auto 0;
   padding: 0;
+  max-width: 376px;
 }
 
 .bg_wrap {
   position: absolute;
-  /*  I have no idea why the values on height and width make the background work as intended, but they do 
-  *   don't change them unless you know what you're doing
-  */
-  height: 100vh;
-  width: 100%;
   overflow: hidden;
   z-index: -1;
-  
 }
 
 .more_div {
+  margin-top: 0.5em;
   padding: 0;
-  margin-top: 1em;
 }
 
 .more_links {
@@ -40,71 +32,254 @@
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
-  margin: 15px;
+  margin: var(--mobile-margin);
 }
 
-.more_hr {
-  border: 1px solid black !important;
+.more_lines {
+  border: 1px solid #374146 !important;
   margin: 15px;
-  background-color: black;
+  background-color: #374146;
 }
 
-.more_footer {
-  position: absolute;
-  width: 100%;
-  text-align: center;
+.more_footer{
+  display: inline-flex;
   margin-top: 13em;
-  font-family: var( --body-1-bold-font-family);
-  font-weight: var( --body-1-bold-font-weight);
+  margin-left: 1.8em;
+}
+
+.more_footer_text {
+  /*position: absolute;*/
+  width: 100%;
+  margin-left: 1em;
+  font-family: var(--body-1-bold-font-family);
+  font-weight: var(--body-1-bold-font-weight);
   font-size: var(--body-1-bold-font-size);
   line-height: var(--body-1-bold-line-height);
 }
 
 .flag{
-  margin-left: 20.3em;
-  margin-top: 14.03em;
+  margin-left: 0.8em;
+  margin-top: 0.2em;
 }
+/*<<<<<<< gabby-test
+.flag{
+  margin-left: 19.3em;
+  margin-top: 14.03em;
+=======*/
+ /* Old values, delete these if you don't need them */
+  /* margin-left: 20.3em;
+  margin-top: 14.03em; */
+  /*.flag {
+    display: flex;
+    /* @TODO: this needs to be adjusted to match the design on figma */
+   /* justify-content: flex-end;
+    /* --mobile-margin == 16px == 1em */
+   /* margin-right: var(--mobile-margin);
+    margin-top: var(--mobile-margin);
+  } 
+  */
 
-.about_title1 {
+.heading_text {
   text-align: center;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
-  margin-top: 50px;
+  margin-top: -1em;
 }
 
 .arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+  margin-left: 1em;
+  padding-top: 23px;
 }
 
-.about_image {
-  margin: auto;
-  margin-top: 25px;
-  border-radius: 10px;
+.picture_about {
+  margin-top: 2em;
+  margin-left: 1.45em;
+  border-radius: 5px;
 }
 
 .about_text {
-  text-align: center;
+  text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-bottom: 350px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 1.5em;
+}
+
+.charity {
+  text-align: center;
+  font-family: var(--heading-mobile-4-font-family);
+  font-weight: var(--heading-mobile-4-font-weight);
+  font-size: var(--heading-mobile-4-font-size);
+  line-height: var(--heading-mobile-4-line-height);
+  margin-top: 2.5em;
+}
+
+.charity_text {
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 1em;
+}
+
+.picture_charity {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.our_boxes_text {
+  text-align: center;
+  font-family: var(--body-1-bold-font-family);
+  font-weight: var(--body-1-bold-font-weight);
+  font-size: var(--body-1-bold-font-size);
+  line-height: var(--body-1-bold-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 1em;
+}
+
+.picture_box {
+  margin-left: 13.1em;
+  margin-top: 3em;
+}
+
+.heading_text_2 {
+  text-align: left;
+  font-family: var(--heading-mobile-4-font-family);
+  font-weight: var(--heading-mobile-4-font-weight);
+  font-size: var(--heading-mobile-4-font-size);
+  line-height: var(--heading-mobile-4-line-height);
+  margin-top: -12em;
+  margin-left: 1em;
+}
+
+.city_text {
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0.3em;
+}
+
+.list {
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0.4em;
+}
+
+.line {
+  margin-top: -21em;
+  margin-left: 2.4em;
+}
+
+.heading_text_3 {
+  text-align: left;
+  font-family: var(--heading-mobile-4-font-family);
+  font-weight: var(--heading-mobile-4-font-weight);
+  font-size: var(--heading-mobile-4-font-size);
+  line-height: var(--heading-mobile-4-line-height);
+  margin-top: -19em;
+  margin-left: 1em;
+}
+
+.festival_box_text {
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0em;
+}
+
+.picture_bigbox {
+  margin-left: 8.7em;
+  margin-top: -4.5em;
+}
+
+.picture_health {
+  margin-left: 1em;
+  margin-top: 1.5em;
+  border-radius: 5px;
 }
 
 .rent_text {
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 1.5em;
+}
+
+.rent_text2 {
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 1.5em;
+}
+
+.rent_nr {
   text-align: center;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-bottom: 250px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: -20px;
+  margin-right: 16px;
+  margin-top: -2.8em;
+}
+
+.rent_email {
+  text-align: center;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 17px;
+  margin-top: -2.8em;
+}
+
+.icon {
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 2em;
+}
+
+.icon_health {
+  display: inline-flex;
+  text-align: left;
+  margin-top: 4em;
+  margin-left: 0.3em;
+}
+
+.icon_health2 {
+  display: inline-flex;
+  text-align: left;
+  margin-top: 1em;
+  margin-left: 0.3em;
 }

@@ -27,7 +27,7 @@ export default function onBoard() {
         </div>
         <div className={styles.flexbox_container}>
           <Link href="./map" passHref>
-            <div className={styles.button}>
+            <div className={styles.lets_go_button}>
               <Image
                 alt="Rectangle"
                 layout="fill"

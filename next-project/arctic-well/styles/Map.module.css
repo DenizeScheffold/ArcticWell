@@ -1,6 +1,7 @@
 .map_container {
   width: 100%;
   height: 100%;
+  max-width: 376px;
 }
 
 .location_container {
@@ -28,7 +29,7 @@
   position: relative;
   text-align: center;
   /* This sadly does not set the entire window to --brand-ice-blue */
-  background-color: var(--brand-ice-blue);
+  /* background-color: var(--brand-ice-blue); */
 }
 
 .infowindow_icon_container {

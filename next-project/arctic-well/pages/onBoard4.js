@@ -42,10 +42,10 @@ export default function onBoard() {
           <div className={styles.text1}>
             <h1>Open Box</h1>
           </div>
-          <div className={styles.text2}>
+          <div className={styles.text2_2}>
             <p>
               When your payment is completed, the door {<br></br>}will unlock. As soon as
-              you close the door your 90 seconds cooling starts.
+              you close the door your {<br></br>}90 seconds cooling starts.
             </p>
           </div>
           <Link href="./map" passHref>

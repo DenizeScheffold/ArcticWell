@@ -1,40 +1,42 @@
 .landing_container {
   display: flex;
+  max-width: 376px;
+  margin: auto 0;
   height: 100%;
   width: 100%;
 }
 
 .flexbox_container {
   display: flex;
+  max-width: 376px;
   height: 100%;
   width: 100%;
   margin: 0px var(--mobile-margin) 0px var(--mobile-margin);
   flex-flow: column-reverse wrap;
-  /* @TODO: the code below this comment needs to be reworked and expanded to match the desired design */
   justify-content: center;
   align-content: center;
 }
 
 .bg_wrap {
   position: absolute;
-  /*  I have no idea why the values on height and width make the background work as intended, but they do 
-  *   don't change them unless you know what you're doing
-  */
-  height: 100vh;
-  width: 100vw;
   overflow: hidden;
   z-index: -1;
 }
 
 .button {
-  position: absolute;
-  width: 272px;
-  height: 48px;
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-height: 48px;
+  max-width: 272px;
   overflow: hidden;
-  top: 35.5em;
-  left: 3.3em;
+  top: 12.05em;
+  left: 0;
   right: 0;
   bottom: 0;
+  margin: auto 0;
+  align-self: center;
 }
 
 .buttonText {
@@ -62,8 +64,8 @@
   position: relative;
   width: fit-content;
   text-align: center;
-  top: -8em;
-  left: 0;
+  top: 2.5em;
+  left: 1em;
   right: 0;
   bottom: 0;
 }
