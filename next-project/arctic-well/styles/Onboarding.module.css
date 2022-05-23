@@ -31,7 +31,6 @@
   font-weight: var(--heading-mobile-3-font-weight);
   font-size: var(--heading-mobile-3-font-size);
   line-height: var(--heading-mobile-3-line-height);
-  /* @TODO: adjust top value */
   top: 4.3em;
   left: 0;
   right: 0;
@@ -49,7 +48,6 @@
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  /* @TODO: adjust top value */
   top: 15.8em;
   bottom: 0;
   margin: auto 0;
@@ -65,7 +63,6 @@
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  /* @TODO: adjust top value */
   top: 28em;
   bottom: 0;
   margin-left: 2em;
@@ -81,7 +78,6 @@
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  /* @TODO: adjust top value */
   top: 28em;
   bottom: 0;
   margin-left: 1.3em;
@@ -96,7 +92,6 @@
   max-height: 48px;
   max-width: 272px;
   overflow: hidden;
-  /* @TODO: adjust top value */
   top: 3.37em;
   left: 0;
   right: 0;
@@ -105,7 +100,7 @@
   align-self: center;
 }
 
-.go_button {
+.lets_go_button {
   display: flex;
   position: relative;
   height: 100%;
@@ -113,8 +108,7 @@
   max-height: 48px;
   max-width: 272px;
   overflow: hidden;
-  /* @TODO: adjust top value */
-  top: 13.2em;
+  top: 14.55em;
   left: 0;
   right: 0;
   bottom: 0;
@@ -168,23 +162,6 @@
   line-height: var(--heading-mobile-2-line-height);
   /* @TODO: potentially adjust top value */
   top: 2.1em;
-  margin: auto 0;
-  align-self: center;
-}
-
-.lets_go_button{
-  display: flex;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  max-height: 48px;
-  max-width: 272px;
-  overflow: hidden;
-  /* @TODO: adjust top value */
-  top: 14.5em;
-  left: 0;
-  right: 0;
-  bottom: 0;
   margin: auto 0;
   align-self: center;
 }
