@@ -9,12 +9,11 @@
   display: flex;
   height: 100%;
   width: 100%;
-  /* margin: 0px var(--mobile-margin) 0px var(--mobile-margin); */
+  max-width: 376px;
   flex-flow: column-reverse wrap;
   justify-content: center;
   margin: auto 0;
   padding: 0;
-  max-width: 376px;
 }
 
 .bg_wrap {
@@ -68,41 +67,62 @@
   bottom: 0;
 }
 
+/* Work in progress -- do not delete
+.button {
+  display: flex;
+  position: relative;
+  height: 48px;
+  width: 272px;
+  height: 100%;
+  width: 100%;
+  max-height: 48px;
+  max-width: 272px;
+  overflow: hidden;
+  top: 14em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-self: center;
+  margin: auto 0;
+  z-index: 1;
+} */
+
 .buttonText {
-  color: var(--brand-dark-black);
   position: absolute;
   height: fit-content;
+  color: var(--brand-dark-black);
   font-family: var(--heading-4-font-family);
   font-weight: var(--heading-4-font-weight);
   font-size: var(--heading-4-font-size);
   line-height: var(--heading-4-line-height);
-  text-align: center;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto 0;
   text-decoration: none;
+  text-align: center;
 }
 
 .textskip {
   display: flex;
-  align-self: center;
   position: relative;
+  width: fit-content;
   text-decoration: none;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
   color: var(--brand-white);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin: auto 0;
   /* @TODO: adjust top value */
   top: 17em;
   left: 0;
   right: 0;
   bottom: 0;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
-  width: fit-content;
+  margin: auto 0;
+  align-self: center;
 }
 
 .textReady {
@@ -112,6 +132,8 @@
   font-weight: var(--heading-mobile-2-font-weight);
   font-size: var(--heading-mobile-2-font-size);
   line-height: var(--heading-mobile-2-line-height);
+  /* @TODO: potentially adjust top value */
+  top: 2em;
+  margin: auto 0;
   align-self: center;
-  margin-top: -18em;
 }
