@@ -23,7 +23,7 @@
 }
 
 .more_div {
-  margin-top: 1em;
+  margin-top: 0.5em;
   padding: 0;
 }
 
@@ -36,21 +36,20 @@
 }
 
 .more_lines {
-  border: 1px solid black !important;
+  border: 1px solid #374146 !important;
   margin: 15px;
-  background-color: black;
+  background-color: #374146;
 }
-/*
-.more_hr {
-  border: 1px solid var(--brand-dark-black) !important;
-  margin: var(--mobile-margin);
-  background-color: var(--brand-dark-black);
-} */
 
-.more_footer {
-  position: absolute;
+.more_footer{
+  display: inline-flex;
+  margin-top: 13em;
+  margin-left: 1.8em;
+}
+
+.more_footer_text {
+  /*position: absolute;*/
   width: 100%;
-  /* @TODO: adjust margin-left to make it look right */
   margin-left: 1em;
   font-family: var(--body-1-bold-font-family);
   font-weight: var(--body-1-bold-font-weight);
@@ -58,22 +57,27 @@
   line-height: var(--body-1-bold-line-height);
 }
 
+.flag{
+  margin-left: 0.8em;
+  margin-top: 0.2em;
+}
 /*<<<<<<< gabby-test
 .flag{
   margin-left: 19.3em;
   margin-top: 14.03em;
 =======*/
-.flag {
-  /* Old values, delete these if you don't need them */
+ /* Old values, delete these if you don't need them */
   /* margin-left: 20.3em;
   margin-top: 14.03em; */
-  display: flex;
-  /* @TODO: this needs to be adjusted to match the design on figma */
-  justify-content: flex-end;
-  /* --mobile-margin == 16px == 1em */
-  margin-right: var(--mobile-margin);
-  margin-top: var(--mobile-margin);
-}
+  /*.flag {
+    display: flex;
+    /* @TODO: this needs to be adjusted to match the design on figma */
+   /* justify-content: flex-end;
+    /* --mobile-margin == 16px == 1em */
+   /* margin-right: var(--mobile-margin);
+    margin-top: var(--mobile-margin);
+  } 
+  */
 
 .heading_text {
   text-align: center;

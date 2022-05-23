@@ -49,8 +49,8 @@ export default function More() {
             </Link>
             <hr className={styles.more_lines}></hr>
 
-            <div>
-              <p className={styles.more_footer}>
+            <div className={styles.more_footer}>
+              <p className={styles.more_footer_text}>
                 Designed by Arctic Well in Sweden.
               </p>
 
