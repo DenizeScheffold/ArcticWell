@@ -73,6 +73,23 @@
   align-self: center;
 }
 
+.go_button {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-height: 48px;
+  max-width: 272px;
+  overflow: hidden;
+  /* @TODO: adjust top value */
+  top: 13.2em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto 0;
+  align-self: center;
+}
+
 .buttonText {
   position: absolute;
   height: fit-content;
