@@ -10,7 +10,6 @@
   height: 100%;
   width: 100%;
   flex-flow: column wrap;
-  /* @TODO: the code below this comment needs to be reworked and expanded to match the desired design */
   justify-content: center;
   margin: auto 0;
   padding: 0;
@@ -19,11 +18,6 @@
 
 .bg_wrap {
   position: absolute;
-  /*  I have no idea why the values on height and width make the background work as intended, but they do 
-  *   don't change them unless you know what you're doing
-  */
-  /* height: 100vh; */
-  /* width: 100%; */
   overflow: hidden;
   z-index: -1;
 }
@@ -46,7 +40,7 @@
   margin: 15px;
   background-color: black;
 }
-  /*
+/*
 .more_hr {
   border: 1px solid var(--brand-dark-black) !important;
   margin: var(--mobile-margin);
@@ -81,7 +75,7 @@
   margin-top: var(--mobile-margin);
 }
 
-.heading_text{
+.heading_text {
   text-align: center;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
@@ -101,7 +95,6 @@
   border-radius: 5px;
 }
 
-
 .about_text {
   text-align: left;
   font-family: var(--body-1-font-family);
@@ -113,7 +106,7 @@
   margin-top: 1.5em;
 }
 
-.charity{
+.charity {
   text-align: center;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
@@ -122,7 +115,7 @@
   margin-top: 2.5em;
 }
 
-.charity_text{
+.charity_text {
   text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -131,15 +124,14 @@
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 1em;
-
 }
 
-.picture_charity{
+.picture_charity {
   margin-top: 1em;
   text-align: center;
 }
 
-.our_boxes_text{
+.our_boxes_text {
   text-align: center;
   font-family: var(--body-1-bold-font-family);
   font-weight: var(--body-1-bold-font-weight);
@@ -150,12 +142,12 @@
   margin-top: 1em;
 }
 
-.picture_box{
+.picture_box {
   margin-left: 13.1em;
   margin-top: 3em;
 }
 
-.heading_text_2{
+.heading_text_2 {
   text-align: left;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
@@ -165,7 +157,7 @@
   margin-left: 1em;
 }
 
-.city_text{
+.city_text {
   text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -176,7 +168,7 @@
   margin-top: 0.3em;
 }
 
-.list{
+.list {
   text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -187,12 +179,12 @@
   margin-top: 0.4em;
 }
 
-.line{
+.line {
   margin-top: -21em;
   margin-left: 2.4em;
 }
 
-.heading_text_3{
+.heading_text_3 {
   text-align: left;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
@@ -202,7 +194,7 @@
   margin-left: 1em;
 }
 
-.festival_box_text{
+.festival_box_text {
   text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -213,18 +205,18 @@
   margin-top: 0em;
 }
 
-.picture_bigbox{
+.picture_bigbox {
   margin-left: 8.7em;
   margin-top: -4.5em;
 }
 
-.picture_health{
+.picture_health {
   margin-left: 1em;
   margin-top: 1.5em;
   border-radius: 5px;
 }
 
-.rent_text{
+.rent_text {
   text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -235,7 +227,7 @@
   margin-top: 1.5em;
 }
 
-.rent_text2{
+.rent_text2 {
   text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -246,7 +238,7 @@
   margin-top: 1.5em;
 }
 
-.rent_nr{
+.rent_nr {
   text-align: center;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -257,7 +249,7 @@
   margin-top: -2.8em;
 }
 
-.rent_email{
+.rent_email {
   text-align: center;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -268,20 +260,20 @@
   margin-top: -2.8em;
 }
 
-.icon{
-text-align: left;
-margin-left:1em ;
-margin-top: 2em;
+.icon {
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 2em;
 }
 
-.icon_health{
+.icon_health {
   display: inline-flex;
   text-align: left;
   margin-top: 4em;
   margin-left: 0.3em;
 }
 
-.icon_health2{
+.icon_health2 {
   display: inline-flex;
   text-align: left;
   margin-top: 1em;

@@ -2,58 +2,59 @@
   display: flex;
   height: 100%;
   width: 100%;
-}
-
-.bg_wrap {
-  position: absolute;
-  /*  I have no idea why the values on height and width make the background work as intended, but they do 
-  *   don't change them unless you know what you're doing
-  */
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  z-index: -1;
+  max-width: 376px;
 }
 
 .flexbox_container {
   display: flex;
   height: 100%;
   width: 100%;
-  margin: 0px var(--mobile-margin) 0px var(--mobile-margin);
+  /* margin: 0px var(--mobile-margin) 0px var(--mobile-margin); */
   flex-flow: column-reverse wrap;
-  /* @TODO: the code below this comment needs to be reworked and expanded to match the desired design */
   justify-content: center;
+  margin: auto 0;
+  padding: 0;
+  max-width: 376px;
+}
+
+.bg_wrap {
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .text1 {
   position: absolute;
   height: fit-content;
+  max-width: 376px;
   color: var(--brand-dark-black);
   font-family: var(--heading-mobile-3-font-family);
   font-weight: var(--heading-mobile-3-font-weight);
   font-size: var(--heading-mobile-3-font-size);
   line-height: var(--heading-mobile-3-line-height);
-  top: 15.5em;
+  /* @TODO: adjust top value */
+  top: 3em;
   left: 0;
   right: 0;
   bottom: 0;
+  margin: auto 0;
   text-align: center;
 }
 
-
 .text2 {
   position: absolute;
+  height: fit-content;
+  max-width: 376px;
   color: var(--brand-dark-black);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  text-align: center;
-  height: fit-content;
-  top: 28em;
-  left: 16px;
-  right: 16px;
+  /* @TODO: adjust top value */
+  top: 12em;
   bottom: 0;
+  margin: auto 0;
+  text-align: center;
 }
 
 .button {
@@ -68,35 +69,40 @@
 }
 
 .buttonText {
+  color: var(--brand-dark-black);
+  position: absolute;
+  height: fit-content;
   font-family: var(--heading-4-font-family);
   font-weight: var(--heading-4-font-weight);
   font-size: var(--heading-4-font-size);
   line-height: var(--heading-4-line-height);
-  color: var(--brand-dark-black);
   text-align: center;
-  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: fit-content;
-  margin: auto;
+  margin: auto 0;
   text-decoration: none;
 }
 
 .textskip {
-  position: absolute;
+  display: flex;
+  align-self: center;
+  position: relative;
   text-decoration: none;
   color: var(--brand-white);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  top: 39em;
-  left: 10.71em;
+  margin: auto 0;
+  /* @TODO: adjust top value */
+  top: 17em;
+  left: 0;
   right: 0;
   bottom: 0;
-  text-shadow:1px 1px 0px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+  width: fit-content;
 }
 
 .textReady {
