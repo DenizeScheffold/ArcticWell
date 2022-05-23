@@ -1,87 +1,81 @@
 import Head from "next/head";
-import Link from "next/link";
 import styles from "../styles/More.module.css";
 import React from "react";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
+import Link from "next/link";
+
 
 export default function More() {
   // @TODO: change background to the correct one and style according to figma
-  return (
-    <div className={styles.more_container}>
-      <Head>
-        <title>Arctic Well</title>
-      </Head>
-      <div>
-        <div className={styles.bg_wrap}>
-          <Image
-            alt="background"
-            layout="fixed"
-            src="/more_bg.jpg"
-            width={376}
-            height={736}
-            quality={100}
-            priority
-          />
+  return (  
+    <><Head>
+      <title>Arctic Well</title>
+    </Head>
+   
+   <div>
+    <div className={styles.bg_wrap}>
+        <Image
+          alt="background"
+          layout="fixed"
+          src="/more_bg.jpg"
+          width={376}
+          height={736}
+          quality={100}
+          priority />
         </div>
-      </div>
-      <div className={styles.flexbox_container}>
-        <h1 className={styles.about_title1}>
-          <Link href="/more" passHref>
-            <span className={styles.about_arrow}>
-              <Image
-                alt="backarrow"
-                layout="fixed"
-                src="/back_arrow.svg"
-                width={16}
-                height={16}
-                quality={100}
-              />
-            </span>
+       
+        <div className={styles.arrow}>
+        <Link href="./more" passHref>
+        <Image
+          alt="Arrow"
+          layout="fixed"
+          src="/Arrow.svg"
+          width={16}
+          height={15.93}
+          quality={100}
+          priority />
           </Link>
-          About us
-        </h1>
+          </div>
 
-        <div className={styles.about_image1}>
-          <Image
-            alt="Rectangle"
-            layout="fixed"
-            src="/about_us.jpg"
-            height={164}
-            width={328.96}
-            quality={100}
-          />
+        <h1 className={styles.heading_text}>About us</h1>
+ 
+        <div className={styles.picture_about}>
+        <Image className={styles.picture_about}
+          alt="background"
+          layout="fixed"
+          src="/about_us.jpg"
+          width={328.96}
+          height={164}
+          quality={100}
+          priority />
         </div>
 
-        <div className={styles.about_text1}>
-          <p>
-            We were born in 2022, and kicked off this project at our school in
-            Stockholms Technical Institute. We worked in a cross-functionally
-            teams with Java-developers and UX Designer.
-          </p>
+        <div className={styles.about_text}>
+        <p>We were born in 2022, and kicked off this project at our school in Stockholm Technical Institute. We worked in a cross-functionally teams whid Java-developers and UX Designer.</p>
         </div>
 
-        <h1 className={styles.about_title2}>Charity Work</h1>
 
-        <div className={styles.about_text2}>
-          <p>
-            We are proud supporters of the Arctic Council and thier mission to
-            preserve arctic wildlife for future generations.
-          </p>
+        <h1 className={styles.charity}>Charity work</h1>
+   
+
+        <div className={styles.charity_text}>
+        <p>We are proud supporters of the Arctic Council and thier mission to presserve arctic wildlife for future genorations.</p>
         </div>
 
-        <div className={styles.about_image2}>
-          <Image
-            alt="Rectangle"
-            layout="fixed"
-            src="/arctic_council.png"
-            height={61}
-            width={131}
-            quality={100}
-          />
+        <div className={styles.picture_charity}>
+        <Image
+          alt="fox"
+          layout="fixed"
+          src="/fox.svg"
+          width={113}
+          height={69}
+          quality={100}
+          priority />
         </div>
-      </div>
-      <Navbar />
-    </div>
+
+
+        <Navbar />
+      </div></>
   );
 }

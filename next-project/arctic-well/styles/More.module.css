@@ -29,6 +29,7 @@
 }
 
 .more_div {
+  margin-top: 1em;
   padding: 0;
 }
 
@@ -40,11 +41,17 @@
   margin: var(--mobile-margin);
 }
 
+.more_lines {
+  border: 1px solid black !important;
+  margin: 15px;
+  background-color: black;
+}
+  /*
 .more_hr {
-  border: 0.5px solid var(--brand-dark-black) !important;
+  border: 1px solid var(--brand-dark-black) !important;
   margin: var(--mobile-margin);
   background-color: var(--brand-dark-black);
-}
+} */
 
 .more_footer {
   position: absolute;
@@ -57,6 +64,11 @@
   line-height: var(--body-1-bold-line-height);
 }
 
+/*<<<<<<< gabby-test
+.flag{
+  margin-left: 19.3em;
+  margin-top: 14.03em;
+=======*/
 .flag {
   /* Old values, delete these if you don't need them */
   /* margin-left: 20.3em;
@@ -69,73 +81,209 @@
   margin-top: var(--mobile-margin);
 }
 
-.about_title1 {
+.heading_text{
   text-align: center;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
-  margin-top: 60px;
-  margin-right: 120px;
-}
-.about_arrow {
-  margin-right: 100px;
-  width: 16px;
-  height: 16px;
+  margin-top: -1em;
 }
 
-.about_title2 {
+.arrow {
+  margin-left: 1em;
+  padding-top: 23px;
+}
+
+.picture_about {
+  margin-top: 2em;
+  margin-left: 1.45em;
+  border-radius: 5px;
+}
+
+
+.about_text {
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 1.5em;
+}
+
+.charity{
   text-align: center;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
-  margin-top: 50px;
-  margin-bottom: 8px;
+  margin-top: 2.5em;
 }
 
-.about_image1 {
-  margin: auto;
-  margin-top: 25px;
-  border-radius: 10px;
+.charity_text{
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 1em;
+
 }
 
-.about_image2 {
-  margin: auto;
-  margin-top: 10px;
-  border-radius: 10px;
-  margin-bottom: 100px;
+.picture_charity{
+  margin-top: 1em;
+  text-align: center;
 }
 
-.about_text1 {
-  margin-left: 10px;
-  margin-right: 10px;
+.our_boxes_text{
+  text-align: center;
+  font-family: var(--body-1-bold-font-family);
+  font-weight: var(--body-1-bold-font-weight);
+  font-size: var(--body-1-bold-font-size);
+  line-height: var(--body-1-bold-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 1em;
+}
+
+.picture_box{
+  margin-left: 13.1em;
+  margin-top: 3em;
+}
+
+.heading_text_2{
+  text-align: left;
+  font-family: var(--heading-mobile-4-font-family);
+  font-weight: var(--heading-mobile-4-font-weight);
+  font-size: var(--heading-mobile-4-font-size);
+  line-height: var(--heading-mobile-4-line-height);
+  margin-top: -12em;
+  margin-left: 1em;
+}
+
+.city_text{
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0.3em;
+}
+
+.list{
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0.4em;
+}
+
+.line{
+  margin-top: -21em;
+  margin-left: 2.4em;
+}
+
+.heading_text_3{
+  text-align: left;
+  font-family: var(--heading-mobile-4-font-family);
+  font-weight: var(--heading-mobile-4-font-weight);
+  font-size: var(--heading-mobile-4-font-size);
+  line-height: var(--heading-mobile-4-line-height);
+  margin-top: -19em;
+  margin-left: 1em;
+}
+
+.festival_box_text{
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0em;
+}
+
+.picture_bigbox{
+  margin-left: 8.7em;
+  margin-top: -4.5em;
+}
+
+.picture_health{
+  margin-left: 1em;
+  margin-top: 1.5em;
+  border-radius: 5px;
+}
+
+.rent_text{
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 1.5em;
+}
+
+.rent_text2{
+  text-align: left;
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 1.5em;
+}
+
+.rent_nr{
   text-align: center;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-bottom: 0px;
+  margin-left: -20px;
+  margin-right: 16px;
+  margin-top: -2.8em;
 }
 
-.about_text2 {
-  margin-left: 10px;
-  margin-right: 10px;
+.rent_email{
   text-align: center;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-bottom: 5px;
+  margin-left: 16px;
+  margin-right: 17px;
+  margin-top: -2.8em;
 }
 
-.rent_text {
-  text-align: center;
-  font-family: var(--body-1-font-family);
-  font-weight: var(--body-1-font-weight);
-  font-size: var(--body-1-font-size);
-  line-height: var(--body-1-line-height);
-  margin-bottom: 250px;
-  margin-left: 10px;
-  margin-right: 10px;
+.icon{
+text-align: left;
+margin-left:1em ;
+margin-top: 2em;
+}
+
+.icon_health{
+  display: inline-flex;
+  text-align: left;
+  margin-top: 4em;
+  margin-left: 0.3em;
+}
+
+.icon_health2{
+  display: inline-flex;
+  text-align: left;
+  margin-top: 1em;
+  margin-left: 0.3em;
 }

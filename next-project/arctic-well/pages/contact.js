@@ -7,52 +7,79 @@ import Link from "next/link";
 
 export default function More() {
   return (
-    <div className={styles.more_container}>
-      <Head>
-        <title>Arctic Well</title>
-      </Head>
-      <div>
-        <div className={styles.bg_wrap}>
-          <Image
-            alt="background"
-            layout="fixed"
-            src="/more_bg.jpg"
-            width={376}
-            height={736}
-            quality={100}
-            priority
-          />
+    <><Head>
+      <title>Arctic Well</title>
+    </Head>
+   
+   <div>
+    <div className={styles.bg_wrap}>
+        <Image
+          alt="background"
+          layout="fixed"
+          src="/more_bg.jpg"
+          width={376}
+          height={736}
+          quality={100}
+          priority />
         </div>
-      </div>
-      <div className={styles.flexbox_container}>
-        <h1 className={styles.about_title1}>
-          <Link href="/more" passHref>
-            <span className={styles.about_arrow}>
-              <Image
-                alt="backarrow"
-                layout="fixed"
-                src="/back_arrow.svg"
-                width={16}
-                height={16}
-                quality={100}
-              />
-            </span>
+       
+        <div className={styles.arrow}>
+        <Link href="./more" passHref>
+        <Image
+          alt="Arrow"
+          layout="fixed"
+          src="/Arrow.svg"
+          width={16}
+          height={15.93}
+          quality={100}
+          priority />
           </Link>
-          Contact us
-        </h1>
+          </div>
 
-        <div className={styles.about_image}>
-          <Image
-            alt="Rectangle"
-            layout="fixed"
-            src="/contact.jpg"
-            height={164}
-            width={328.96}
-            quality={100}
-          />
+        <h1 className={styles.heading_text}>Contact us</h1>
+ 
+        <div className={styles.picture_health}>
+        <Image className={styles.picture_health}
+          alt="contact"
+          layout="fixed"
+          src="/contact.jpg"
+          width={344}
+          height={164}
+          quality={100}
+          priority />
         </div>
-      </div>
-      <Navbar />
-    </div>
+
+        <div className={styles.icon}>
+        <Image 
+          alt="telephon"
+          layout="fixed"
+          src="/phone.svg"
+          width={56}
+          height={56}
+          quality={100}
+          priority />
+        </div>
+
+        <div className={styles.rent_nr}>
+        <p>+46 732 84 4566</p>
+        </div>
+
+        <div className={styles.icon}>
+        <Image 
+          alt="telephon"
+          layout="fixed"
+          src="/email.svg"
+          width={56}
+          height={56}
+          quality={100}
+          priority />
+        </div>
+
+        <div className={styles.rent_email}>
+        <p>hello@arcticwell.com</p>
+        </div>
+
+        <Navbar />
+      </div></>
   );
 }
