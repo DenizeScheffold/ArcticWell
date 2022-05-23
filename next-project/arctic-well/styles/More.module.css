@@ -2,18 +2,19 @@
   display: flex;
   height: 100%;
   width: 100%;
+  max-width: 376px;
 }
 
 .flexbox_container {
   display: flex;
   height: 100%;
   width: 100%;
-  margin: 0px var(--mobile-margin) 0px var(--mobile-margin);
   flex-flow: column wrap;
   /* @TODO: the code below this comment needs to be reworked and expanded to match the desired design */
   justify-content: center;
-  margin: 0;
+  margin: auto 0;
   padding: 0;
+  max-width: 376px;
 }
 
 .bg_wrap {
@@ -21,15 +22,14 @@
   /*  I have no idea why the values on height and width make the background work as intended, but they do 
   *   don't change them unless you know what you're doing
   */
-  height: 100vh;
-  width: 100%;
+  /* height: 100vh; */
+  /* width: 100%; */
   overflow: hidden;
   z-index: -1;
 }
 
 .more_div {
   padding: 0;
-  margin-top: 1em;
 }
 
 .more_links {
@@ -37,19 +37,18 @@
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
-  margin: 15px;
+  margin: var(--mobile-margin);
 }
 
 .more_hr {
-  border: 0.5px solid black !important;
-  margin: 15px;
-  background-color: black;
+  border: 0.5px solid var(--brand-dark-black) !important;
+  margin: var(--mobile-margin);
+  background-color: var(--brand-dark-black);
 }
 
 .more_footer {
   position: absolute;
   width: 100%;
-  margin-top: 13em;
   /* @TODO: adjust margin-left to make it look right */
   margin-left: 1em;
   font-family: var(--body-1-bold-font-family);
@@ -59,8 +58,15 @@
 }
 
 .flag {
-  margin-left: 20.3em;
-  margin-top: 14.03em;
+  /* Old values, delete these if you don't need them */
+  /* margin-left: 20.3em;
+  margin-top: 14.03em; */
+  display: flex;
+  /* @TODO: this needs to be adjusted to match the design on figma */
+  justify-content: flex-end;
+  /* --mobile-margin == 16px == 1em */
+  margin-right: var(--mobile-margin);
+  margin-top: var(--mobile-margin);
 }
 
 .about_title1 {
@@ -85,16 +91,7 @@
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
   margin-top: 50px;
-  margin-bottom: 10px;
-}
-
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+  margin-bottom: 8px;
 }
 
 .about_image1 {
