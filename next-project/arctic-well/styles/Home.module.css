@@ -31,8 +31,7 @@
   max-height: 48px;
   max-width: 272px;
   overflow: hidden;
-  /* @TODO: adjust top value */
-  top: 12em;
+  top: 12.05em;
   left: 0;
   right: 0;
   bottom: 0;
