@@ -12,26 +12,32 @@ export default () => {
   });
 
   useEffect(() => {
-    getLocation()
-
+    getLocation();
   }, []);
 
+  // function getLocation() {
+  //   navigator.geolocation.getCurrentPosition((position) => {
+  //     (position.coords.latitude, position.coords.longitude);
 
+  //     const apiKey = process.env.NEXT_PUBLIC_OPEYYYN_WEATHERMAP_API_KEY;
 
- const getLocation = () => {
+  //     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}`;
+  //     //   `https://api.openweathermap.org/data/2.5/weather?q=` + query + apiKey;
+  //       console.log(url);
 
- navigator?.geolocation.getCurrentPosition(
-   ({ coords: { latitude: lat, longitude: lng } }) => {
-     setPos({ lat, lng });
-     console.log("geoSuccess, lat=" + lat + ", lng=" + lng);
+  //   })};
 
-   }
-   )
-  }
+  const getLocation = () => {
+    navigator?.geolocation.getCurrentPosition(
+      ({ coords: { latitude: lat, longitude: lng } }) => {
+        setPos({ lat, lng });
+        console.log("geoSuccess, lat=" + lat + ", lng=" + lng);
+      }
+    );
+  };
 
   useEffect(() => {
-    getWeather()
-
+    getWeather();
   }, []);
   const getWeather = async () => {
     // const latLng = { lat: 59.3095651, lng: 18.0194099 };
@@ -41,7 +47,7 @@ export default () => {
 
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${pos.lat}&lon=${pos.lng}&appid=${apiKey}`;
     //   `https://api.openweathermap.org/data/2.5/weather?q=` + query + apiKey;
-      console.log(url);
+    console.log(url);
 
     const getdata = await fetch(url, {
       method: "GET",
@@ -58,4 +64,3 @@ export default () => {
     </div>
   );
 };
-
