@@ -1,15 +1,34 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import getLocation from "../components/getLocation";
 import Conditions from "../components/WeatherConditions";
 import styles from "../styles/Weather.module.css";
 
 export default () => {
   const [responseObj, setResponseObj] = useState({});
+  const [pos, setPos] = useState(null);
 
   useEffect(() => {
-    getWeather();
+    getLocation()
+
   }, []);
 
+
+
+ function getLocation() {
+    (navigator.geolocation) 
+ navigator?.geolocation.getCurrentPosition(
+   ({ coords: { latitude: lat, longitude: lng } }) => {
+     setPos({ lat, lng });
+     console.log("geoSuccess, lat=" + lat + ", lng=" + lng);
+   }
+   )
+  }
+
+  useEffect(() => {
+    getWeather()
+
+  }, []);
   const getWeather = async () => {
     const latLng = { lat: 59.3095651, lng: 18.0194099 };
     console.log("coord: ", latLng);
