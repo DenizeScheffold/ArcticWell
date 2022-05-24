@@ -216,10 +216,10 @@
 
 .rent_text {
   text-align: left;
-  font-family: var(--body-1-font-family);
-  font-weight: var(--body-1-font-weight);
-  font-size: var(--body-1-font-size);
-  line-height: var(--body-1-line-height);
+  font-family: var(--body-1-bold-font-family);
+  font-weight: var(--body-1-bold-font-weight);
+  font-size: var(--body-1-bold-font-size);
+  line-height: var(--body-1-bold-line-height);
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 1.5em;
