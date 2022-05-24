@@ -56,7 +56,7 @@ export default function More() {
         </div>
 
         <div className={styles.heading_text_2}>
-          <h1>Arctic box City</h1>
+          <h1>Arctic Box City</h1>
         </div>
 
         <div className={styles.city_text}>

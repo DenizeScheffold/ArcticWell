@@ -48,7 +48,7 @@ export default function onBoard() {
             <p>
               Say hello to the fastest way to go from {<br></br>}overheated to
               refreshed! Our cooling {<br></br>}technology will give you an
-              arctic experience wherever you are.
+              Arctic experience wherever you are.
             </p>
           </div>
           <Link href="./map" passHref>
