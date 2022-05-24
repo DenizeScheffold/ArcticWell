@@ -1,57 +1,50 @@
 .container {
-  width: 100%;
-  max-width: var(--mobile-screen-width);
-  height: 4.125em;
-  position: fixed;
-  bottom: 0;
-  border-top: 2px solid var(--brand-dark-black);
   display: flex;
-  justify-content: space-evenly;
-  background-color: var(--brand-navy-dark);
+  position: fixed;
+  max-width: var(--mobile-screen-width);
+  width: 100%;
+  height: 4.125em;
+  bottom: 0;
   color: var(--brand-white);
+  background-color: var(--brand-navy-dark);
+  border-top: 2px solid var(--brand-dark-black);
+  justify-content: space-evenly;
   text-underline-offset: 0.3em;
 }
 
 .navlinks {
+  display: flex;
   max-width: var(--mobile-screen-width);
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   font-family: var(--body-1-bold-font-family);
   font-weight: var(--body-1-bold-font-weight);
   font-size: var(--body-1-bold-font-size);
   line-height: var(--body-1-bold-line-height);
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .home_nav {
   padding: 0.8em;
   margin: -0.8em;
-  flex-direction: column;
-  align-items: flex-end;
   cursor: pointer;
 }
 
 .map_nav {
   padding: 0.8em;
   margin: -0.8em;
-  flex-direction: column;
-  align-items: flex-end;
   cursor: pointer;
 }
 
 .more_nav {
   padding: 0.8em;
   margin: -0.8em;
-  flex-direction: column;
-  align-items: flex-end;
   cursor: pointer;
 }
 
 .link_styles {
   padding: 0;
-  justify-content: space-around;
 }
 
 .underline {
