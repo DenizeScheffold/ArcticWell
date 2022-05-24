@@ -62,8 +62,8 @@ export default function More() {
         <div className={styles.rent_text2}>
           <p>
             An Arctic Well at your event not only makes for happier attendees,
-            it also makes your event stand out. {<br></br>} Don&apos;t be the
-            next Fyre Festival - rent a box!
+            it also makes your event stand out. Don&apos;t be the
+            next Fyre Festival {<br></br>}- rent a box!
           </p>
         </div>
 

@@ -51,10 +51,10 @@
 .more_footer_text {
   width: 100%;
   margin-left: 1em;
-  font-family: var(--body-1-bold-font-family);
-  font-weight: var(--body-1-bold-font-weight);
-  font-size: var(--body-1-bold-font-size);
-  line-height: var(--body-1-bold-line-height);
+  font-family: var(--body-12-bold-font-family);
+  font-weight: var(--body-12-bold-font-weight);
+  font-size: var(--body-12-bold-font-size);
+  line-height: var(--body-12-bold-line-height);
 }
 
 .flag {
@@ -101,7 +101,7 @@
   line-height: var(--body-1-line-height);
   margin-left: 16px;
   margin-right: 16px;
-  margin-top: 1.5em;
+  margin-top: 1.2em;
 }
 
 .charity {
@@ -110,7 +110,7 @@
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
-  margin-top: 2.5em;
+  margin-top: 2.1em;
 }
 
 .charity_text {
@@ -125,7 +125,7 @@
 }
 
 .picture_charity {
-  margin-top: 1em;
+  margin-top: 0.5em;
   text-align: center;
 }
 
