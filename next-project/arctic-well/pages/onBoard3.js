@@ -44,7 +44,7 @@ export default function onBoard() {
           </div>
           <div className={styles.text2_1}>
             <p>
-              Scan your card at the Arctic box. All payments are secured by
+              Scan your card at the Arctic box. {<br></br>}All payments are secured by
               PaySafe ©
             </p>
           </div>
