@@ -42,7 +42,7 @@ export default function onBoard() {
           <div className={styles.text1}>
             <h1>Open Box</h1>
           </div>
-          <div className={styles.text2_2}>
+          <div className={styles.text2_3}>
             <p>
               The door unlocks when your payment is complete. Your 90
               second cooling experience starts as soon as you close the door.

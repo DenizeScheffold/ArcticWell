@@ -86,6 +86,22 @@
   text-align: center;
 }
 
+.text2_3 {
+  position: absolute;
+  height: fit-content;
+  max-width: 376px;
+  color: var(--brand-dark-black);
+  font-family: var(--body-1-font-family);
+  font-weight: var(--body-1-font-weight);
+  font-size: var(--body-1-font-size);
+  line-height: var(--body-1-line-height);
+  top: 28em;
+  bottom: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  text-align: center;
+}
+
 .button {
   display: flex;
   position: relative;

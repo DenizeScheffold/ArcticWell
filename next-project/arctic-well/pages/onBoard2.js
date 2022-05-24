@@ -44,7 +44,7 @@ export default function onBoard() {
             <h1>Find your Arctic Well</h1>
           </div>
 
-          <div className={styles.text2_1}>
+          <div className={styles.text2_2}>
             <p>
               Feeling warm with no box in sight? Simply use the map view to find
               an Arctic Well near you.
