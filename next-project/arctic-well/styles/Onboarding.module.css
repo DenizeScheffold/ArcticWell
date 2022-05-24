@@ -2,14 +2,14 @@
   display: flex;
   height: 100%;
   width: 100%;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
 }
 
 .flexbox_container {
   display: flex;
   height: 100%;
   width: 100%;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
   flex-flow: column-reverse wrap;
   justify-content: center;
   margin: auto 0;
@@ -25,7 +25,7 @@
 .text1 {
   position: absolute;
   height: fit-content;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
   color: var(--brand-dark-black);
   font-family: var(--heading-mobile-3-font-family);
   font-weight: var(--heading-mobile-3-font-weight);
@@ -42,7 +42,7 @@
 .text2 {
   position: absolute;
   height: fit-content;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
   color: var(--brand-dark-black);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -57,7 +57,7 @@
 .text2_1 {
   position: absolute;
   height: fit-content;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
   color: var(--brand-dark-black);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -66,14 +66,14 @@
   top: 28em;
   bottom: 0;
   margin-left: 48px;
-  margin-right: 16px;
+  margin-right: var(--mobile-margin);
   text-align: center;
 }
-
+/* @TODO: this text is currently a bit off */
 .text2_2 {
   position: absolute;
   height: fit-content;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
   color: var(--brand-dark-black);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -81,15 +81,15 @@
   line-height: var(--body-1-line-height);
   top: 28em;
   bottom: 0;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   text-align: center;
 }
-
+/* @TODO: this text is currently a bit off */
 .text2_3 {
   position: absolute;
   height: fit-content;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
   color: var(--brand-dark-black);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -97,8 +97,8 @@
   line-height: var(--body-1-line-height);
   top: 28em;
   bottom: 0;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   text-align: center;
 }
 
@@ -164,7 +164,6 @@
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  /* @TODO: adjust top value */
   top: 29em;
   left: 0;
   right: 0;
@@ -180,7 +179,6 @@
   font-weight: var(--heading-mobile-2-font-weight);
   font-size: var(--heading-mobile-2-font-size);
   line-height: var(--heading-mobile-2-line-height);
-  /* @TODO: potentially adjust top value */
   top: 2.1em;
   margin: auto 0;
   align-self: center;
