@@ -51,10 +51,11 @@
 .more_footer_text {
   width: 100%;
   margin-left: 1em;
-  font-family: var(--body-12-bold-font-family);
-  font-weight: var(--body-12-bold-font-weight);
-  font-size: var(--body-12-bold-font-size);
-  line-height: var(--body-12-bold-line-height);
+  font-family: var(--body-1-bold-font-family);
+  /* --body-1-bold-font-weight should not be used here */
+  font-weight: 500;
+  font-size: var(--body-1-bold-font-size);
+  line-height: var(--body-1-bold-line-height);
 }
 
 .flag {
