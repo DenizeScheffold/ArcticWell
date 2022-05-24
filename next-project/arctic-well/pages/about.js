@@ -54,9 +54,10 @@ export default function More() {
 
         <div className={styles.about_text}>
           <p>
-            We were born in 2022, and kicked off this project at our school in
-            Stockholm Technical Institute. We worked in a cross-functionally
-            teams whid Java-developers and UX Designer.
+            Arctic Well was born in 2022 by a group of students at the Stockholm
+            Technical Institute. After experiencing record breaking heat waves
+            they saw the need for new ways to cool down. Our mission is to
+            create wellness solutions in a constantly warmer world.
           </p>
         </div>
 
@@ -64,8 +65,8 @@ export default function More() {
 
         <div className={styles.charity_text}>
           <p>
-            We are proud supporters of the Arctic Council and thier mission to
-            presserve arctic wildlife for future genorations.
+            We are proud supporters of the Arctic Council's efforts to preserve
+            arctic wildlife for future generations.
           </p>
         </div>
 

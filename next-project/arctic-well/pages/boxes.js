@@ -61,15 +61,14 @@ export default function More() {
 
         <div className={styles.city_text}>
           <p>
-            The standard City Box {<br></br>}suitable for 1 person or{" "}
-            {<br></br>}
-            possibly 2.
+            The standard City Box {<br></br>}suitable for 1 to 3 {<br></br>}
+            persons.
           </p>
         </div>
 
         <div className={styles.list}>
           <p>
-            • -8 °C{<br></br>}• 1 Person{<br></br>}• 1x1 Meters
+            • -8 °C{<br></br>}• 1-3 persons{<br></br>}• 1,5 m2
           </p>
         </div>
 
@@ -97,7 +96,7 @@ export default function More() {
 
         <div className={styles.list}>
           <p>
-            • -8 °C{<br></br>}• 1-10 Person{<br></br>}• 3x4 Meters
+            • -8 °C{<br></br>}• 1-10 persons{<br></br>}• 8 m2
           </p>
         </div>
 
