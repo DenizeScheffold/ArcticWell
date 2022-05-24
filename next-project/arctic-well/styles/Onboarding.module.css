@@ -57,7 +57,7 @@
 .text2_1 {
   position: absolute;
   height: fit-content;
-  max-width: var(--mobile-screen-width);
+  max-width: var(--mobile-total-width);
   color: var(--brand-dark-black);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -69,11 +69,11 @@
   margin-right: var(--mobile-margin);
   text-align: center;
 }
-/* @TODO: this text is currently a bit off */
+
 .text2_2 {
   position: absolute;
   height: fit-content;
-  max-width: var(--mobile-screen-width);
+  max-width: var(--mobile-total-width);
   color: var(--brand-dark-black);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
@@ -85,11 +85,11 @@
   margin-right: var(--mobile-margin);
   text-align: center;
 }
-/* @TODO: this text is currently a bit off */
+
 .text2_3 {
   position: absolute;
   height: fit-content;
-  max-width: var(--mobile-screen-width);
+  max-width: var(--mobile-total-width);
   color: var(--brand-dark-black);
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
