@@ -2,7 +2,7 @@
   display: flex;
   height: 100%;
   width: 100%;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
 }
 
 .flexbox_container {
@@ -13,7 +13,7 @@
   justify-content: center;
   margin: auto 0;
   padding: 0;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
 }
 
 .bg_wrap {
@@ -100,8 +100,8 @@
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 1.2em;
 }
 
@@ -120,8 +120,8 @@
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 1em;
 }
 
@@ -162,8 +162,8 @@
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 0.3em;
 }
 
@@ -173,8 +173,8 @@
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 0.4em;
 }
 
@@ -199,8 +199,8 @@
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 0em;
 }
 
@@ -221,8 +221,8 @@
   font-weight: var(--body-1-bold-font-weight);
   font-size: var(--body-1-bold-font-size);
   line-height: var(--body-1-bold-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 1.5em;
 }
 
@@ -232,8 +232,8 @@
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 1.5em;
 }
 

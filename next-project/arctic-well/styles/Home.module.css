@@ -1,6 +1,6 @@
 .landing_container {
   display: flex;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
   margin: auto 0;
   height: 100%;
   width: 100%;
@@ -8,7 +8,7 @@
 
 .flexbox_container {
   display: flex;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
   height: 100%;
   width: 100%;
   margin: 0px var(--mobile-margin) 0px var(--mobile-margin);

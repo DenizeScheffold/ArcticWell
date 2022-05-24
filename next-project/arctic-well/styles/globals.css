@@ -147,6 +147,6 @@ body {
 
 #layout-div {
   height: 100%;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
   margin: auto 0;
 }

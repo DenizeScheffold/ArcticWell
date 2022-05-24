@@ -11,7 +11,7 @@
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   z-index: 1;
-  max-width: 376px;
+  max-width: var(--mobile-screen-width);
 }
 
 .arctic_well_logo {
@@ -61,7 +61,7 @@
 }
 
 .weather_subcontainer {
-  max-width: 367px;
+  max-width: var(--mobile-screen-width);
   height: 2.14em;
   flex-grow: 0;
   display: flex;
