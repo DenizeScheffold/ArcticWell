@@ -1,7 +1,7 @@
 .banner_container {
-  max-width: var(--mobile-screen-width);
   display: flex;
   position: absolute;
+  max-width: var(--mobile-screen-width);
   padding-top: 0.5em;
   height: 4em;
   top: 0;
@@ -61,8 +61,8 @@
 }
 
 .weather_subcontainer {
-  max-width: var(--mobile-screen-width);
   display: flex;
+  max-width: var(--mobile-screen-width);
   height: 2.14em;
   flex-grow: 0;
   flex-direction: row;
