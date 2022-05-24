@@ -22,6 +22,7 @@
   z-index: -1;
 }
 
+/* Headline for all onboarding pages except onBoard5.js */
 .text1 {
   position: absolute;
   height: fit-content;
@@ -39,6 +40,20 @@
   text-align: center;
 }
 
+/* Special headline used only in onBoard5.js */
+.textReady {
+  position: absolute;
+  color: var(--brand-dark-black);
+  font-family: var(--heading-mobile-2-font-family);
+  font-weight: var(--heading-mobile-2-font-weight);
+  font-size: var(--heading-mobile-2-font-size);
+  line-height: var(--heading-mobile-2-line-height);
+  top: 2.1em;
+  margin: auto 0;
+  align-self: center;
+}
+
+/* Used in onBoard1.js */
 .text2 {
   position: absolute;
   height: fit-content;
@@ -54,6 +69,7 @@
   text-align: center;
 }
 
+/* Used in onBoard3.js */
 .text2_1 {
   position: absolute;
   height: fit-content;
@@ -70,6 +86,7 @@
   text-align: center;
 }
 
+/* Used in onBoard2.js */
 .text2_2 {
   position: absolute;
   height: fit-content;
@@ -86,6 +103,7 @@
   text-align: center;
 }
 
+/* Used in onBoard4.js */
 .text2_3 {
   position: absolute;
   height: fit-content;
@@ -102,6 +120,7 @@
   text-align: center;
 }
 
+/* Button used in all onboarding pages except onBoard5.js  */
 .button {
   display: flex;
   position: relative;
@@ -119,6 +138,7 @@
   cursor: pointer;
 }
 
+/* Special button used in onBoard5.js */
 .lets_go_button {
   display: flex;
   position: relative;
@@ -136,6 +156,7 @@
   cursor: pointer;
 }
 
+/* Text inside the button; used in all onboarding pages */
 .buttonText {
   position: absolute;
   height: fit-content;
@@ -153,6 +174,7 @@
   text-align: center;
 }
 
+/* Skip hyperlink used on all onboarding pages except onBoard5.js */
 .textskip {
   display: flex;
   position: relative;
@@ -168,18 +190,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto 0;
-  align-self: center;
-}
-
-.textReady {
-  position: absolute;
-  color: var(--brand-dark-black);
-  font-family: var(--heading-mobile-2-font-family);
-  font-weight: var(--heading-mobile-2-font-weight);
-  font-size: var(--heading-mobile-2-font-size);
-  line-height: var(--heading-mobile-2-line-height);
-  top: 2.1em;
   margin: auto 0;
   align-self: center;
 }
