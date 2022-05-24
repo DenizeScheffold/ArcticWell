@@ -55,7 +55,7 @@ export default function Navbar({ children }) {
               src="/navbar_more.svg"
               layout="responsive"
               width={24}
-              height={19}
+              height={18}
               quality={100}
             />
             <a
