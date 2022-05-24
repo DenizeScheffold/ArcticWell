@@ -65,8 +65,8 @@ export default function More() {
 
         <div className={styles.charity_text}>
           <p>
-            We are proud supporters of the Arctic Council's efforts to preserve
-            arctic wildlife for future generations.
+            We are proud supporters of the Arctic Council&apos;s efforts to
+            preserve arctic wildlife for future generations.
           </p>
         </div>
 
