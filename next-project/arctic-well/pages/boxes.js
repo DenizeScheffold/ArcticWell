@@ -5,7 +5,6 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 
-// @TODO: the text on this page needs a thorough do-over. The phrasing is a bit awkward
 export default function More() {
   return (
     <div className={styles.more_container}>

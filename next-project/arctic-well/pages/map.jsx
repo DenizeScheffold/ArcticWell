@@ -1,4 +1,4 @@
-import { memo, useState, useEffect, useRef, useCallback } from "react";
+import { memo, useState, useCallback } from "react";
 import {
   GoogleMap,
   useJsApiLoader,
@@ -40,16 +40,11 @@ const Map = () => {
     navigator?.geolocation.getCurrentPosition(
       ({ coords: { latitude: lat, longitude: lng } }) => {
         setPos({ lat, lng });
-        console.log("geoSuccess, lat=" + lat + ", lng=" + lng);
       }
     );
   }, []);
 
   const onLoad = useCallback(function callback(map) {
-    // bounds is causing the zoom bug
-    // most likely fitBounds should be called differently, though I'm not sure we need to use it at all
-    // const bounds = new window.google.maps.LatLngBounds(pos);
-    // map.fitBounds(bounds);
     setMap(map);
   }, []);
 
@@ -94,7 +89,7 @@ const Map = () => {
               minWidth: 300,
             }}
           >
-            {/* @TODO: this should probably be moved to its own function */}
+            {/* @TODO: this should be moved to its own function */}
             <div className={styles.infowindow_super_container}>
               {selected.name}
               <div className={styles.infowindow_icon_container}>
