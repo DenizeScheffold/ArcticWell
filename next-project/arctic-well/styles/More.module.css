@@ -33,6 +33,7 @@
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
   margin: var(--mobile-margin);
+  cursor: pointer;
 }
 
 .more_lines {
@@ -41,7 +42,7 @@
   background-color: #374146;
 }
 
-.more_footer{
+.more_footer {
   display: inline-flex;
   margin-top: 13em;
   margin-left: 1.8em;
@@ -56,11 +57,10 @@
   line-height: var(--body-1-bold-line-height);
 }
 
-.flag{
+.flag {
   margin-left: 0.8em;
   margin-top: 0.2em;
 }
-
 
 .heading_text {
   text-align: center;
@@ -71,7 +71,7 @@
   margin-top: -1.22em;
 }
 
-.heading_text_box{
+.heading_text_box {
   text-align: center;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
@@ -79,12 +79,12 @@
   line-height: var(--heading-mobile-4-line-height);
   margin-top: -1.22em;
   margin-left: 1.6em;
-  
 }
 
 .arrow {
   margin-left: 1em;
   padding-top: 23px;
+  cursor: pointer;
 }
 
 .picture_about {
