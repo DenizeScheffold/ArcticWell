@@ -41,13 +41,13 @@ export default function onBoard() {
             </div>
           </Link>
           <div className={styles.text1}>
-            <h1>Find your box</h1>
+            <h1>Find your Arctic Well</h1>
           </div>
 
           <div className={styles.text2_1}>
             <p>
-              On the map-view you can find all our boxes {<br></br>}and see which is
-              closest to you.
+              Feeling warm with no box in sight? Simply use the map view to find
+              an Arctic Well near you.
             </p>
           </div>
 

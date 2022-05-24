@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 
 export default function Navbar({ children }) {
   const router = useRouter();
-  //console.log("pathname check: ", router.asPath);
   return (
     <div className={styles.container}>
       <nav className={styles.navlinks}>

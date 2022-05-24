@@ -6,7 +6,6 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 
 export default function More() {
-  // @TODO: change background to the correct one and style according to figma
   return (
     <Layout>
       <Head>

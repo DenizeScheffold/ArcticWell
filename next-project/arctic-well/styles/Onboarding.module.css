@@ -65,7 +65,8 @@
   line-height: var(--body-1-line-height);
   top: 28em;
   bottom: 0;
-  margin-left: 2em;
+  margin-left: 48px;
+  margin-right: 16px;
   text-align: center;
 }
 
@@ -80,7 +81,8 @@
   line-height: var(--body-1-line-height);
   top: 28em;
   bottom: 0;
-  margin-left: 1.3em;
+  margin-left: 16px;
+  margin-right: 16px;
   text-align: center;
 }
 
@@ -98,6 +100,7 @@
   bottom: 0;
   margin: auto 0;
   align-self: center;
+  cursor: pointer;
 }
 
 .lets_go_button {
@@ -114,6 +117,7 @@
   bottom: 0;
   margin: auto 0;
   align-self: center;
+  cursor: pointer;
 }
 
 .buttonText {

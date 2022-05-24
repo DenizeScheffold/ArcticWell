@@ -44,8 +44,8 @@ export default function onBoard() {
           </div>
           <div className={styles.text2_2}>
             <p>
-              When your payment is completed, the door {<br></br>}will unlock. As soon as
-              you close the door your {<br></br>}90 seconds cooling starts.
+              The door unlocks when your payment is complete. Your 90
+              second cooling experience starts as soon as you close the door.
             </p>
           </div>
           <Link href="./map" passHref>

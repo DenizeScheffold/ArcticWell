@@ -33,6 +33,7 @@
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
   margin: var(--mobile-margin);
+  cursor: pointer;
 }
 
 .more_lines {
@@ -41,43 +42,25 @@
   background-color: #374146;
 }
 
-.more_footer{
+.more_footer {
   display: inline-flex;
   margin-top: 13em;
   margin-left: 1.8em;
 }
 
 .more_footer_text {
-  /*position: absolute;*/
   width: 100%;
   margin-left: 1em;
-  font-family: var(--body-1-bold-font-family);
-  font-weight: var(--body-1-bold-font-weight);
-  font-size: var(--body-1-bold-font-size);
-  line-height: var(--body-1-bold-line-height);
+  font-family: var(--body-12-bold-font-family);
+  font-weight: var(--body-12-bold-font-weight);
+  font-size: var(--body-12-bold-font-size);
+  line-height: var(--body-12-bold-line-height);
 }
 
-.flag{
+.flag {
   margin-left: 0.8em;
   margin-top: 0.2em;
 }
-/*<<<<<<< gabby-test
-.flag{
-  margin-left: 19.3em;
-  margin-top: 14.03em;
-=======*/
- /* Old values, delete these if you don't need them */
-  /* margin-left: 20.3em;
-  margin-top: 14.03em; */
-  /*.flag {
-    display: flex;
-    /* @TODO: this needs to be adjusted to match the design on figma */
-   /* justify-content: flex-end;
-    /* --mobile-margin == 16px == 1em */
-   /* margin-right: var(--mobile-margin);
-    margin-top: var(--mobile-margin);
-  } 
-  */
 
 .heading_text {
   text-align: center;
@@ -85,12 +68,23 @@
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
-  margin-top: -1em;
+  margin-top: -1.22em;
+}
+
+.heading_text_box {
+  text-align: center;
+  font-family: var(--heading-mobile-4-font-family);
+  font-weight: var(--heading-mobile-4-font-weight);
+  font-size: var(--heading-mobile-4-font-size);
+  line-height: var(--heading-mobile-4-line-height);
+  margin-top: -1.22em;
+  margin-left: 1.6em;
 }
 
 .arrow {
   margin-left: 1em;
   padding-top: 23px;
+  cursor: pointer;
 }
 
 .picture_about {
@@ -107,7 +101,7 @@
   line-height: var(--body-1-line-height);
   margin-left: 16px;
   margin-right: 16px;
-  margin-top: 1.5em;
+  margin-top: 1.2em;
 }
 
 .charity {
@@ -116,7 +110,7 @@
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
-  margin-top: 2.5em;
+  margin-top: 2.1em;
 }
 
 .charity_text {
@@ -131,7 +125,7 @@
 }
 
 .picture_charity {
-  margin-top: 1em;
+  margin-top: 0.5em;
   text-align: center;
 }
 
@@ -141,7 +135,7 @@
   font-weight: var(--body-1-bold-font-weight);
   font-size: var(--body-1-bold-font-size);
   line-height: var(--body-1-bold-line-height);
-  margin-left: 16px;
+  margin-left: 50px;
   margin-right: 16px;
   margin-top: 1em;
 }
@@ -158,7 +152,7 @@
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
   margin-top: -12em;
-  margin-left: 1em;
+  margin-left: 16px;
 }
 
 .city_text {
@@ -195,7 +189,7 @@
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
   margin-top: -19em;
-  margin-left: 1em;
+  margin-left: 16px;
 }
 
 .festival_box_text {
@@ -222,10 +216,10 @@
 
 .rent_text {
   text-align: left;
-  font-family: var(--body-1-font-family);
-  font-weight: var(--body-1-font-weight);
-  font-size: var(--body-1-font-size);
-  line-height: var(--body-1-line-height);
+  font-family: var(--body-1-bold-font-family);
+  font-weight: var(--body-1-bold-font-weight);
+  font-size: var(--body-1-bold-font-size);
+  line-height: var(--body-1-bold-line-height);
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 1.5em;
@@ -248,7 +242,7 @@
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: -20px;
+  margin-left: -43.5px;
   margin-right: 16px;
   margin-top: -2.8em;
 }

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=K2D:wght@300;600;700&family=Karla:wght@400;700&display=swap");
 
-
 :root {
   --brand-white: #ffffff;
   --brand-navy-dark: #374146;
@@ -39,7 +38,7 @@
   --heading-2-line-height: 3rem;
 
   --heading-3-font-family: "K2D", sans-serif;
-  --heading-3-font-weight:600;
+  --heading-3-font-weight: 600;
   --heading-3-font-size: 2rem;
   --heading-3-line-height: 2.5rem;
 
@@ -84,12 +83,16 @@
   --body-1-line-height: 1.5rem;
 
   --body-1-bold-font-family: "Karla", sans-serif;
-  /* In the style guide on figma this has a font-weight of 500, which seems weird for a bold font 
-  *  @TODO: follow up and potentially change this value in case things look wonky
-  */
-  --body-1-bold-font-weight: 500;
+  --body-1-bold-font-weight: 700;
   --body-1-bold-font-size: 1rem;
   --body-1-bold-line-height: 1.5rem;
+
+
+  --body-12-bold-font-family: "Karla", sans-serif;
+  --body-12-bold-font-weight: 500;
+  --body-12-bold-font-size: 1rem;
+  --body-12-bold-line-height: 1.5rem;
+
 
   --body-2-font-family: "Karla", sans-serif;
   --body-2-font-weight: 400;

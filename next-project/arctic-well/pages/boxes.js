@@ -5,7 +5,6 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 
-// @TODO: the text on this page needs a thorough do-over. The phrasing is a bit awkward
 export default function More() {
   return (
     <div className={styles.more_container}>
@@ -39,7 +38,7 @@ export default function More() {
           </Link>
         </div>
 
-        <h1 className={styles.heading_text}>Our Boxes</h1>
+        <h1 className={styles.heading_text_box}>Our Boxes</h1>
         <p className={styles.our_boxes_text}>
           We have a box for every occasion!
         </p>
@@ -56,20 +55,19 @@ export default function More() {
         </div>
 
         <div className={styles.heading_text_2}>
-          <h1>Arctic box City</h1>
+          <h1>Arctic Box City</h1>
         </div>
 
         <div className={styles.city_text}>
           <p>
-            The standard City Box {<br></br>}suitable for 1 person or{" "}
-            {<br></br>}
-            possibly 2.
+            The standard City Box {<br></br>}suitable for 1 to 3 {<br></br>}
+            persons.
           </p>
         </div>
 
         <div className={styles.list}>
           <p>
-            • -8 °C{<br></br>}• 1 Person{<br></br>}• 1x1 Meters
+            • -8 °C{<br></br>}• 1-3 persons{<br></br>}• 1,5 m2
           </p>
         </div>
 
@@ -97,7 +95,7 @@ export default function More() {
 
         <div className={styles.list}>
           <p>
-            • -8 °C{<br></br>}• 1-10 Person{<br></br>}• 3x4 Meters
+            • -8 °C{<br></br>}• 1-10 persons{<br></br>}• 8 m2
           </p>
         </div>
 

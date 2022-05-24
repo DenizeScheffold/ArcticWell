@@ -54,16 +54,16 @@ export default function More() {
 
         <div className={styles.rent_text}>
           <p>
-            With just a couple hundred of visitors even an {<br></br>}open air
-            event can reach sauna-like {<br></br>}temperatures within hours.
+            With hundreds of visitors even an open air {<br></br>} event can
+            reach sauna-like temperatures.
           </p>
         </div>
 
         <div className={styles.rent_text2}>
           <p>
-            An Arctic Well at your event does not only make for happier
-            attendees but also helps to make your event stand out in the crowd.
-            Don&apos;t be the next Fyre Festival - rent a box.
+            An Arctic Well at your event not only makes {<br></br>}for happier attendees,
+            it also makes {<br></br>}your event stand out. Don&apos;t be the
+            next {<br></br>}Fyre Festival - rent a box!
           </p>
         </div>
 

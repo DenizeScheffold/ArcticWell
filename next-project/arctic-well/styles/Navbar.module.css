@@ -30,6 +30,7 @@
   margin: -2em;
   flex-direction: column;
   align-items: flex-end;
+  cursor: pointer;
 }
 
 .map_nav {
@@ -37,6 +38,7 @@
   margin: -2em;
   flex-direction: column;
   align-items: flex-end;
+  cursor: pointer;
 }
 
 .more_nav {
@@ -44,6 +46,7 @@
   margin: -2em;
   flex-direction: column;
   align-items: flex-end;
+  cursor: pointer;
 }
 
 .link_styles {
