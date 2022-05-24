@@ -46,8 +46,8 @@ export default function onBoard() {
 
           <div className={styles.text2_1}>
             <p>
-              On the map-view you can find all our boxes {<br></br>}and see which is
-              closest to you.
+              Feeling warm with no box in sight? Simply use the map view to find
+              a box near you.
             </p>
           </div>
 

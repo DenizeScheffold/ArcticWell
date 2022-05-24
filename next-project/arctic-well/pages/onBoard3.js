@@ -44,7 +44,8 @@ export default function onBoard() {
           </div>
           <div className={styles.text2_1}>
             <p>
-              When you have found a box the transaction {<br></br>}takes place on site.
+              Scan your card at the Arctic box. All payments are secured by
+              PaySafe ©
             </p>
           </div>
           <Link href="./map" passHref>
