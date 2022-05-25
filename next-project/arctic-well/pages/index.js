@@ -4,8 +4,10 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/Layout";
+import { useState } from "react";
 
 export default function Home() {
+  const [loaded, setLoaded] = useState(false);
   return (
     <Layout>
       <Head>
@@ -21,6 +23,8 @@ export default function Home() {
               width={376}
               height={736}
               quality={100}
+              className={loaded ? "unblur" : ""}
+              onLoadingComplete={() => setLoaded(true)}
               priority
             />
           </div>

@@ -4,8 +4,10 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function More() {
+  const [loaded, setLoaded] = useState(false);
   return (
     <div className={styles.more_container}>
       <Head>
@@ -21,6 +23,8 @@ export default function More() {
             width={376}
             height={736}
             quality={100}
+            className={loaded ? "unblur" : ""}
+            onLoadingComplete={() => setLoaded(true)}
             priority
           />
         </div>
@@ -51,6 +55,8 @@ export default function More() {
             width={110}
             height={211}
             quality={100}
+            className={loaded ? "unblur" : ""}
+            onLoadingComplete={() => setLoaded(true)}
           />
         </div>
 
@@ -107,6 +113,8 @@ export default function More() {
             width={184}
             height={162}
             quality={100}
+            className={loaded ? "unblur" : ""}
+            onLoadingComplete={() => setLoaded(true)}
           />
         </div>
         <Navbar />

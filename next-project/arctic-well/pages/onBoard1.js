@@ -4,8 +4,10 @@ import styles from "../styles/Onboarding.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/Layout";
+import { useState } from "react";
 
 export default function onBoard() {
+  const [loaded, setLoaded] = useState(false);
   return (
     <Layout>
       <Head>
@@ -21,6 +23,8 @@ export default function onBoard() {
               width={376}
               height={736}
               quality={100}
+              className={loaded ? "unblur" : ""}
+              onLoadingComplete={() => setLoaded(true)}
               priority
             />
           </div>

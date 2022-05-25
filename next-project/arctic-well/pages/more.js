@@ -4,8 +4,10 @@ import styles from "../styles/More.module.css";
 import React from "react";
 import Image from "next/image";
 import Layout from "../components/Layout";
+import { useState } from "react";
 
 export default function More() {
+  const [loaded, setLoaded] = useState(false);
   return (
     <Layout>
       <Head>
@@ -21,6 +23,8 @@ export default function More() {
               width={376}
               height={736}
               quality={100}
+              className={loaded ? "unblur" : ""}
+              onLoadingComplete={() => setLoaded(true)}
               priority
             />
           </div>

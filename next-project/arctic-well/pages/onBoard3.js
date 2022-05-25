@@ -4,8 +4,10 @@ import Image from "next/image";
 import styles from "../styles/Onboarding.module.css";
 import Layout from "../components/Layout";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function onBoard() {
+  const [loaded, setLoaded] = useState(false);
   return (
     <Layout>
       <Head>
@@ -21,6 +23,8 @@ export default function onBoard() {
               width={376}
               height={736}
               quality={100}
+              className={loaded ? "unblur" : ""}
+              onLoadingComplete={() => setLoaded(true)}
               priority
             />
           </div>
@@ -44,8 +48,8 @@ export default function onBoard() {
           </div>
           <div className={styles.text2_1}>
             <p>
-              Scan your card at the Arctic box. {<br></br>}All payments are secured by
-              PaySafe ©
+              Scan your card at the Arctic box. {<br></br>}All payments are
+              secured by PaySafe ©
             </p>
           </div>
           <Link href="./map" passHref>
