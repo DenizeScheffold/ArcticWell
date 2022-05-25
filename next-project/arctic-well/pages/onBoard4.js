@@ -4,8 +4,10 @@ import Image from "next/image";
 import styles from "../styles/Onboarding.module.css";
 import Layout from "../components/Layout";
 import Link from "next/link";
+import { useState } from "react";
 
-export default function onBoard() {
+export default function OnBoard() {
+  const [loaded, setLoaded] = useState(false);
   return (
     <Layout>
       <Head>
@@ -21,6 +23,8 @@ export default function onBoard() {
               width={376}
               height={736}
               quality={100}
+              className={loaded ? "unblur" : ""}
+              onLoadingComplete={() => setLoaded(true)}
               priority
             />
           </div>
@@ -44,8 +48,8 @@ export default function onBoard() {
           </div>
           <div className={styles.text2_3}>
             <p>
-              The door unlocks when your payment is complete. Your 90
-              second cooling experience starts as soon as you close the door.
+              The door unlocks when your payment is complete. Your 90 second
+              cooling experience starts as soon as you close the door.
             </p>
           </div>
           <Link href="./map" passHref>

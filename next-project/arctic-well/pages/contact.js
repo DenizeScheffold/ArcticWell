@@ -4,8 +4,10 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function More() {
+  const [loaded, setLoaded] = useState(false);
   return (
     <div className={styles.more_container}>
       <Head>
@@ -21,6 +23,8 @@ export default function More() {
             width={376}
             height={736}
             quality={100}
+            className={loaded ? "unblur" : ""}
+            onLoadingComplete={() => setLoaded(true)}
             priority
           />
         </div>
@@ -42,19 +46,20 @@ export default function More() {
 
         <div className={styles.picture_health}>
           <Image
-            className={styles.picture_health}
             alt="contact"
             layout="fixed"
             src="/contact.jpg"
             width={344}
             height={164}
             quality={100}
+            className={loaded ? "unblur" : ""}
+            onLoadingComplete={() => setLoaded(true)}
           />
         </div>
 
         <div className={styles.icon}>
           <Image
-            alt="telephon"
+            alt="telephone"
             layout="fixed"
             src="/phone.svg"
             width={56}
@@ -69,7 +74,7 @@ export default function More() {
 
         <div className={styles.icon}>
           <Image
-            alt="telephon"
+            alt="email"
             layout="fixed"
             src="/email.svg"
             width={56}

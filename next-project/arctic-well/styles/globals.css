@@ -150,3 +150,17 @@ body {
   max-width: var(--mobile-screen-width);
   margin: auto 0;
 }
+
+/* Blur effect used while image assets are being loaded */
+.unblur {
+  animation: unblur 0.8s linear;
+}
+
+@keyframes unblur {
+  from {
+    filter: blur(20px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
