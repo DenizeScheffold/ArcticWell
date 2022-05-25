@@ -8,6 +8,7 @@ import {
 import markerData from "../db/markers.json";
 import styles from "../styles/Map.module.css";
 import Image from "next/image";
+import Head from "next/head";
 import mapStyles from "../components/mapStyles";
 import Navbar from "../components/Navbar";
 
@@ -55,6 +56,9 @@ const Map = () => {
   // The first Marker is the user's (geolocated) position, the 2nd loads the values in markers.json
   return isLoaded ? (
     <div className={styles.map_container}>
+      <Head>
+        <title>Arctic Well</title>
+      </Head>
       <GoogleMap
         id={"arctic-map"}
         mapContainerStyle={containerStyle}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=K2D:wght@300;600;700&family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@300;600;700&family=Karla:wght@400;500;700&display=swap");
 
 :root {
   --brand-white: #ffffff;
@@ -86,13 +86,6 @@
   --body-1-bold-font-weight: 700;
   --body-1-bold-font-size: 1rem;
   --body-1-bold-line-height: 1.5rem;
-
-
-  --body-12-bold-font-family: "Karla", sans-serif;
-  --body-12-bold-font-weight: 500;
-  --body-12-bold-font-size: 1rem;
-  --body-12-bold-line-height: 1.5rem;
-
 
   --body-2-font-family: "Karla", sans-serif;
   --body-2-font-weight: 400;

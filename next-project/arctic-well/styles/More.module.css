@@ -1,19 +1,19 @@
 .more_container {
   display: flex;
+  max-width: var(--mobile-screen-width);
   height: 100%;
   width: 100%;
-  max-width: 376px;
 }
 
 .flexbox_container {
   display: flex;
+  max-width: var(--mobile-screen-width);
   height: 100%;
   width: 100%;
   flex-flow: column wrap;
   justify-content: center;
   margin: auto 0;
   padding: 0;
-  max-width: 376px;
 }
 
 .bg_wrap {
@@ -37,9 +37,9 @@
 }
 
 .more_lines {
-  border: 1px solid #374146 !important;
+  border: 1px solid var(--brand-freezing-ocean) !important;
   margin: 15px;
-  background-color: #374146;
+  background-color: var(--brand-freezing-ocean);
 }
 
 .more_footer {
@@ -50,11 +50,12 @@
 
 .more_footer_text {
   width: 100%;
-  margin-left: 1em;
-  font-family: var(--body-12-bold-font-family);
-  font-weight: var(--body-12-bold-font-weight);
-  font-size: var(--body-12-bold-font-size);
-  line-height: var(--body-12-bold-line-height);
+  margin-left: var(--mobile-margin);
+  font-family: var(--body-1-bold-font-family);
+  /* --body-1-bold-font-weight should not be used here */
+  font-weight: 500;
+  font-size: var(--body-1-bold-font-size);
+  line-height: var(--body-1-bold-line-height);
 }
 
 .flag {
@@ -63,22 +64,22 @@
 }
 
 .heading_text {
-  text-align: center;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
   margin-top: -1.22em;
+  text-align: center;
 }
 
 .heading_text_box {
-  text-align: center;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
   margin-top: -1.22em;
   margin-left: 1.6em;
+  text-align: center;
 }
 
 .arrow {
@@ -94,34 +95,34 @@
 }
 
 .about_text {
-  text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 1.2em;
+  text-align: left;
 }
 
 .charity {
-  text-align: center;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
   margin-top: 2.1em;
+  text-align: center;
 }
 
 .charity_text {
-  text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-top: 1em;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
+  margin-top: var(--mobile-margin);
+  text-align: left;
 }
 
 .picture_charity {
@@ -130,14 +131,14 @@
 }
 
 .our_boxes_text {
-  text-align: center;
   font-family: var(--body-1-bold-font-family);
   font-weight: var(--body-1-bold-font-weight);
   font-size: var(--body-1-bold-font-size);
   line-height: var(--body-1-bold-line-height);
   margin-left: 50px;
-  margin-right: 16px;
-  margin-top: 1em;
+  margin-right: var(--mobile-margin);
+  margin-top: var(--mobile-margin);
+  text-align: center;
 }
 
 .picture_box {
@@ -146,35 +147,35 @@
 }
 
 .heading_text_2 {
-  text-align: left;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
   margin-top: -12em;
-  margin-left: 16px;
+  margin-left: var(--mobile-margin);
+  text-align: left;
 }
 
 .city_text {
-  text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 0.3em;
+  text-align: left;
 }
 
 .list {
-  text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 0.4em;
+  text-align: left;
 }
 
 .line {
@@ -183,24 +184,24 @@
 }
 
 .heading_text_3 {
-  text-align: left;
   font-family: var(--heading-mobile-4-font-family);
   font-weight: var(--heading-mobile-4-font-weight);
   font-size: var(--heading-mobile-4-font-size);
   line-height: var(--heading-mobile-4-line-height);
   margin-top: -19em;
-  margin-left: 16px;
+  margin-left: var(--mobile-margin);
+  text-align: left;
 }
 
 .festival_box_text {
-  text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 0em;
+  text-align: left;
 }
 
 .picture_bigbox {
@@ -209,71 +210,71 @@
 }
 
 .picture_health {
-  margin-left: 1em;
+  margin-left: var(--mobile-margin);
   margin-top: 1.5em;
   border-radius: 5px;
 }
 
 .rent_text {
-  text-align: left;
   font-family: var(--body-1-bold-font-family);
   font-weight: var(--body-1-bold-font-weight);
   font-size: var(--body-1-bold-font-size);
   line-height: var(--body-1-bold-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 1.5em;
+  text-align: left;
 }
 
 .rent_text2 {
-  text-align: left;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: var(--mobile-margin);
+  margin-right: var(--mobile-margin);
   margin-top: 1.5em;
+  text-align: left;
 }
 
 .rent_nr {
-  text-align: center;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
   margin-left: -43.5px;
-  margin-right: 16px;
+  margin-right: var(--mobile-margin);
   margin-top: -2.8em;
+  text-align: center;
 }
 
 .rent_email {
-  text-align: center;
   font-family: var(--body-1-font-family);
   font-weight: var(--body-1-font-weight);
   font-size: var(--body-1-font-size);
   line-height: var(--body-1-line-height);
-  margin-left: 16px;
+  margin-left: var(--mobile-margin);
   margin-right: 17px;
   margin-top: -2.8em;
+  text-align: center;
 }
 
 .icon {
-  text-align: left;
-  margin-left: 1em;
+  margin-left: var(--mobile-margin);
   margin-top: 2em;
+  text-align: left;
 }
 
 .icon_health {
   display: inline-flex;
-  text-align: left;
   margin-top: 4em;
   margin-left: 0.3em;
+  text-align: left;
 }
 
 .icon_health2 {
   display: inline-flex;
-  text-align: left;
-  margin-top: 1em;
+  margin-top: var(--mobile-margin);
   margin-left: 0.3em;
+  text-align: left;
 }
