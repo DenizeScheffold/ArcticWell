@@ -153,7 +153,7 @@ body {
 
 /* Blur effect used while image assets are being loaded */
 .unblur {
-  animation: unblur 0.5s linear;
+  animation: unblur 0.6s linear;
 }
 
 @keyframes unblur {
