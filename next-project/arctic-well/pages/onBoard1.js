@@ -6,7 +6,7 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 import { useState } from "react";
 
-export default function onBoard() {
+export default function OnBoard() {
   const [loaded, setLoaded] = useState(false);
   return (
     <Layout>
